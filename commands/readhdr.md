@@ -30,6 +30,6 @@ filelist
 
 ### 说明
 
-这个命令将一系列SAC文件的头段读入内存，你可以列出头段内容（[listhdr](/commands/listhdr.html)）、
-改变头段值（[chnhdr](/commands/chnhdr.html)）、将头段写回磁盘（[writehdr](/commands/writehdr.html)）。
+这个命令将一系列SAC文件的头段读入内存，你可以列出头段内容（[listhdr](/commands/listhdr.md)）、
+改变头段值（[chnhdr](/commands/chnhdr.md)）、将头段写回磁盘（[writehdr](/commands/writehdr.md)）。
 当你只需要文件的头段的时候，只读取头段要比读取整个文件到内存快很多。

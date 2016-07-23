@@ -1,3 +1,5 @@
+# SAC I/O
+
 SAC提供的命令可以帮助用户实现地震数据的预处理，但无法实现所有的数据
 分析功能。日常科研中会需要自己写一套算法对数据进行处理，以得到想要的
 结果。这就需要能够在自己的程序中读写SAC文件，即SAC I/O。
@@ -7,3 +9,8 @@ SAC提供的命令可以帮助用户实现地震数据的预处理，但无法�
 数据区，由此即可实现SAC数据的读写。
 
 这一章将介绍如何在C、Fortran、Matlab、Python中读写SAC文件。
+
+* [C程序中的SAC I/O](sacio-in-c.md)
+* [Fortran程序中的SAC I/O](sacio-in-fortran.md)
+* [Matlab程序中的SAC I/O](sacio-in-matlab.md)
+* [Python程序中的SAC I/O](sacio-in-python.md)

@@ -7,15 +7,11 @@
 程序的实现都写在源文件 `sacio.f90` 中。项目中包含了详细的使用说明
 及演示示例，此处仅简单列出每个子程序的功能：
 
-  子程序                功能
-  --------------------- -----------------------------
-  `sacio_readhead`      仅读取SAC文件的头段部分
-  `sacio_readsac`       读取整个SAC文件
-  `sacio_writesac`      将数据写到SAC文件中
-  `sacio_readsac_cut`   读取SAC文件中一部分
-  `sacio_nullhead`      获得一个未定义状态的SAC头段
-  `sacio_newhead`       初始化SAC头段
-
-  : sacio模块中的子程序<span data-label="table:sacio_Fortran"></span>
-
-
+子程序               | 功能
+---------------------|-----------------------------
+`sacio_readhead`     | 仅读取SAC文件的头段部分
+`sacio_readsac`      | 读取整个SAC文件
+`sacio_writesac`     | 将数据写到SAC文件中
+`sacio_readsac_cut`  | 读取SAC文件中一部分
+`sacio_nullhead`     | 获得一个未定义状态的SAC头段
+`sacio_newhead`      | 初始化SAC头段

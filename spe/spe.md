@@ -106,5 +106,5 @@ nameref-spe-plotspe 命令来检验谱分析结果。有几种确定比例的选
 
 ### 终止
 
-可以使用quitsub命令终止谱估计子程序，或使用 [quit](/commands/quit.html)
+可以使用quitsub命令终止谱估计子程序，或使用 [quit](/commands/quit.md)
 命令终止整个SAC程序的运行。

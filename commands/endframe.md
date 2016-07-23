@@ -10,4 +10,4 @@ E`ND`F`RAME`
 
 ### 说明
 
-参见 [beginframe](/commands/beginframe.html) 命令的相关说明。
+参见 [beginframe](/commands/beginframe.md) 命令的相关说明。

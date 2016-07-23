@@ -1,11 +1,11 @@
 ## 等值线图 {#sec:contour}
 
-SAC中 [spectrogram](/commands/spectrogram.html)
+SAC中 [spectrogram](/commands/spectrogram.md)
 等命令可以生成IXYZ数据（即3D数据），
-这种数据需要用等值线图来展示。[contour](/commands/contour.html)
+这种数据需要用等值线图来展示。[contour](/commands/contour.md)
 命令用于等值线，
-[zcolors](/commands/zcolors.html)、[zlabels](/commands/zlabels.html)、[zlevels](/commands/zlevels.html)、
-[zlines](/commands/zlines.html)、[zticks](/commands/zticks.html)
+[zcolors](/commands/zcolors.md)、[zlabels](/commands/zlabels.md)、[zlevels](/commands/zlevels.md)、
+[zlines](/commands/zlines.md)、[zticks](/commands/zticks.md)
 分别用于控制等值线的颜色、 标签、间距、线型以及刻度。
 
 下面的例子中，读入了XYZ文件contourdata，从头段中找出Z数据的范围。

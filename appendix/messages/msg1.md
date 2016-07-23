@@ -1,4 +1,4 @@
-执行 [load](/commands/load.html)
+执行 [load](/commands/load.md)
 命令时找不到外部命令。产生该错误的原因很多，可能 是环境变量
 `LD_LIBRARY_PATH` 不包含要载入的共享库的所在目录，或 `$SACSOLIST`
 中不包含要载入的共享库的名字。
@@ -12,7 +12,7 @@
 `rm`。在SAC中直接执行rm命令会出现如上所示的错误。出现该
 错误的原因是SAC禁用了系统命令 `rm`，主要目的是为了防止将 `r *.SAC`
 误敲成 `rm *.SAC` 而导致数据的误删除。可以使用
-[systemcommand](/commands/systemcommand.html) 命令显式
+[systemcommand](/commands/systemcommand.md) 命令显式
 调用系统命令，如下：
 
 ``` {.bash}
@@ -41,7 +41,7 @@ SAC> sc rm BAD*.SAC
 
 没有要写入的文件列表。
 
-通常在使用 [write](/commands/write.html)
+通常在使用 [write](/commands/write.md)
 命令时会出现该问题。出现该错误的原因是内存中的
 波形文件的数目与write命令给出的文件名的数目不想匹配。在该错误信息的后面，紧接着
 会给出write命令中给出的文件数目以及内存中的波形数目。
@@ -50,36 +50,36 @@ SAC> sc rm BAD*.SAC
 
 系统内存不足。
 
-[cut](/commands/cut.html)
+[cut](/commands/cut.md)
 命令中时间窗的起始参考头段未定义。默认情况下，会使用磁盘
-文件的起始时间代替，也可以使用 [cuterr](/commands/cuterr.html)
+文件的起始时间代替，也可以使用 [cuterr](/commands/cuterr.md)
 命令控制该错误的处理方式。
 
-[cut](/commands/cut.html)
+[cut](/commands/cut.md)
 命令中时间窗的结束参考头段未定义。默认情况下，会使用磁盘
-文件的结束时间代替，也可以使用 [cuterr](/commands/cuterr.html)
+文件的结束时间代替，也可以使用 [cuterr](/commands/cuterr.md)
 命令控制该错误的处理方式。
 
-[cut](/commands/cut.html)
+[cut](/commands/cut.md)
 命令中时间窗的开始时间早于磁盘文件的开始时间。默认情况下，
-会使用磁盘文件的开始时间代替，也可以使用 [cuterr](/commands/cuterr.html)
+会使用磁盘文件的开始时间代替，也可以使用 [cuterr](/commands/cuterr.md)
 命令控制该错误的 处理方式。
 
-[cut](/commands/cut.html)
+[cut](/commands/cut.md)
 命令中时间窗的结束时间晚于磁盘文件的结束时间。默认情况下，
-会使用磁盘文件的结束时间代替，也可以使用 [cuterr](/commands/cuterr.html)
+会使用磁盘文件的结束时间代替，也可以使用 [cuterr](/commands/cuterr.md)
 命令控制该错误的 处理方式。
 
-[cut](/commands/cut.html) 命令中时间窗的开始时间晚于文件结束时间。
+[cut](/commands/cut.md) 命令中时间窗的开始时间晚于文件结束时间。
 
-文件中数据点的值超过了所允许的范围。比如 [log](/commands/log.html)
+文件中数据点的值超过了所允许的范围。比如 [log](/commands/log.md)
 中要求数据为正。
 
-使用了 [sort](/commands/sort.html) 命令，但未指定按照哪个参数排序。
+使用了 [sort](/commands/sort.md) 命令，但未指定按照哪个参数排序。
 
-[sort](/commands/sort.html) 命令中用于排序的参数太多。
+[sort](/commands/sort.md) 命令中用于排序的参数太多。
 
-无效的 [sort](/commands/sort.html) 参数。
+无效的 [sort](/commands/sort.md) 参数。
 
 排序失败。
 
@@ -94,8 +94,8 @@ SAC中与FFT相关的命令，所能允许的最大数据点数是$2^{24}=167772
 数据文件中存在非正值。
 
 该错误出现在
-[addf](/commands/addf.html)、[subf](/commands/subf.html)、[divf](/commands/divf.html)、[mulf](/commands/mulf.html)
-以及 [merge](/commands/merge.html) 和 [beam](/commands/beam.html) 中。
+[addf](/commands/addf.md)、[subf](/commands/subf.md)、[divf](/commands/divf.md)、[mulf](/commands/mulf.md)
+以及 [merge](/commands/merge.md) 和 [beam](/commands/beam.md) 中。
 
 出现该错误的原因是多个数据文件中的头段变量不匹配。该命令会明确给出不匹配的头段变量名，以及
 出现不匹配的数据文件，以供用户查错。会出现不匹配的头段变量包括npts、delta、kstnm、knetwk、
@@ -103,7 +103,7 @@ kcmpnm。
 
 要进行操作的两个数据的时间段不完全重合。
 
-[addf](/commands/addf.html)、[subf](/commands/subf.html)、[merge](/commands/merge.html)
+[addf](/commands/addf.md)、[subf](/commands/subf.md)、[merge](/commands/merge.md)
 等命令需要先读入二进制数据，再对数据做操作。
 
-使用 [merge](/commands/merge.html) 命令时，两段数据间存在时间间断。
+使用 [merge](/commands/merge.md) 命令时，两段数据间存在时间间断。

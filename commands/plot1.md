@@ -33,12 +33,12 @@ plot1 absolute perplot off
 ### 说明
 
 `plot1` 用于一次性绘制多个波形，多个波形共用同一个X轴，但各自拥有
-一个单独的Y轴。绘图的总尺寸由当前视口决定（[xvport](/commands/xvport.html)
+一个单独的Y轴。绘图的总尺寸由当前视口决定（[xvport](/commands/xvport.md)
 和
-[yvport](/commands/yvport.html)）。每一个子图的大小由视口大小以及要绘制的波形数目
-决定。绘图的X轴范围可以是固定的（[xlim](/commands/xlim.html)）也可以是与数据长度
+[yvport](/commands/yvport.md)）。每一个子图的大小由视口大小以及要绘制的波形数目
+决定。绘图的X轴范围可以是固定的（[xlim](/commands/xlim.md)）也可以是与数据长度
 成比例的。每个子图的Y轴范围由文件极值决定或者可以通过
-[ylim](/commands/ylim.html) 命令自己设置。
+[ylim](/commands/ylim.md) 命令自己设置。
 
 多个波形共用X轴时，有 `absolute` 和 `relative` 两种绘图 模式。在
 `absolute` 模式下，所有波形将按照其绝对时刻对齐，即X轴

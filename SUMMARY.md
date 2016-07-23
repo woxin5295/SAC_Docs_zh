@@ -23,14 +23,12 @@
   * [绘图](basic/display.md)
 
 * [SAC文件格式](fileformat/README.md)
-  * [SAC格式简介](fileformat/intro-to-fileformat.md)
   * [两种数据形式](fileformat/binary-and-alphanumeric.md)
   * [SAC头段结构](fileformat/header-structure.md)
   * [SAC头段变量](fileformat/header-variables.md)
   * [SAC中的时间概念](fileformat/sac-time.md)
 
 * [SAC数据处理](data-process/README.md)
-  * [数据处理简介](data-process/intro-to-process.md)
   * [数据申请](data-process/data-request.md)
   * [数据格式转换](data-process/data-format.md)
   * [合并数据](data-process/merge-traces.md)
@@ -52,7 +50,7 @@
   * [数据分析](data-process/data-analysis.md)
 
 * [SAC图像](graphics/README.md)
-  * [图形设备](graphics/intro-to-gui.md)
+  * [SAC图形设备](graphics/graphic-devices.md)
   * [SAC绘图流程](graphics/begin-devices.md)
   * [绘图命令](graphics/plot-commands.md)
   * [图像外观](graphics/plot-appearance.md)
@@ -62,14 +60,12 @@
   * [图像格式转换](graphics/format-conversion.md)
 
 * [SAC编程](macros/README.md)
-  * [SAC编程简介](macros/intro-to-sac-programming.md)
   * [引用头段变量值](macros/header-variables.md)
   * [黑板变量](macros/blackboard-variables.md)
   * [内联函数](macros/inline-functions.md)
   * [SAC宏](macros/macros.md)
 
 * [脚本中调用SAC](call-in-script/README.md)
-  * [脚本语言](call-in-script/intro-to-scripts.md)
   * [Bash中调用SAC](call-in-script/call-sac-in-bash.md)
   * [Perl中调用SAC](call-in-script/call-sac-in-perl.md)
   * [Python中调用SAC](call-in-script/call-sac-in-python.md)
@@ -80,7 +76,6 @@
   * [调用libsac库](libs/call-libsac.md)
 
 * [SAC I/O](sacio/README.md)
-  * [简介](sacio/intro-to-sacio.md)
   * [C程序中的SAC I/O](sacio/sacio-in-c.md)
   * [Fortran程序中的SAC I/O](sacio/sacio-in-fortran.md)
   * [Matlab程序中的SAC I/O](sacio/sacio-in-matlab.md)

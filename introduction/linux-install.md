@@ -75,7 +75,8 @@ $ sudo make install
 
 ### 配置变量
 
-向 `~/.bashrc` [^1] 中加入如下语句以配置环境变量和SAC全局变量：
+向 `~/.bashrc` （某些发行版需要修改 `~/.bash_profile`） 中加入如下语句
+以配置环境变量和SAC全局变量：
 
 ``` {.bash}
 export SACHOME=/usr/local/sac
@@ -95,9 +96,9 @@ export SAC_USE_DATABASE=0
 -   `SAC_DISPLAY_COPYRIGHT` 用于控制是否在启动SAC时显示版本和版权
     信息，一般设置为1。在脚本中多次调用SAC时会重复显示版本和版权信息，
     干扰脚本的正常输出，因而在脚本中一般将其值设置为0。具体的设置方法
-    可以参考 [在脚本中调用SAC](/introduction) 中的相关内容
+    可以参考 [在脚本中调用SAC](/call-in-script) 中的相关内容
 -   `SAC_PPK_LARGE_CROSSHAIRS` 用于控制震相拾取过程中光标的大小， 在
-    [震相拾取](/data-process/picking-phase.html) 时会用到
+    [震相拾取](/data-process/picking-phase.md) 时会用到
 -   `SAC_USE_DATABASE` 用于控制是否允许将SAC格式转换为GSE2.0格式，
     一般用不到该特性，故而设置其值为0
 
@@ -109,7 +110,7 @@ $ source ~/.bashrc
 
 ### 启动SAC
 
-终端键入小写的sac[^2]，显示 如下则表示SAC安装成功：
+终端键入小写的 `sac`，显示 如下则表示SAC安装成功：
 
 ```
 $ sac
@@ -118,7 +119,3 @@ $ sac
 
 SAC>
 ```
-
-[^1]: 某些发行版需要修改 `~/.bash_profile`!
-
-[^2]: Ubuntu的源里有一个名叫sac的软件，是用来显示登录账户的一些信息；CentOS的源里也有一个名叫sac的软件，是CSS语法分析器的Java接口。所以一定不要试图用发行版自带的软件包管理器安装sac！

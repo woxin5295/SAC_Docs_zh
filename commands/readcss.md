@@ -36,7 +36,7 @@ MORE
 
 :   将读入的波形数据放在内存中的原有波形之后，若不使用该选项，
     则新读入的波形数据会覆盖内存中的原有波形数据，详情参考
-    [read](/commands/read.html) 命令。
+    [read](/commands/read.md) 命令。
 
 VERBOSE ON|OFF
 
@@ -60,8 +60,8 @@ SCALE ON|OFF
     `SCALE` 的值为1.0。设置 `SCALE ON`， 将数据乘以 `CALIB`
     值，在某种程度上可以认为是对数据去除了仪器
     响应，但该方法很粗糙，完整地去除仪器响应应使用
-    [transfer](/commands/transfer.html) 命令。仅当
-    [transfer](/commands/transfer.html)
+    [transfer](/commands/transfer.md) 命令。仅当
+    [transfer](/commands/transfer.md)
     命令所需的仪器响应信息无法获取时， 才建议使用 `SCALE ON`。
 
 MAGNITUDE

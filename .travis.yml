@@ -11,6 +11,7 @@ install:
     - sudo pip install ghp-import
     - npm install -g gitbook-cli
     - gitbook fetch
+    - gitbook install
 
 script:
     - gitbook build

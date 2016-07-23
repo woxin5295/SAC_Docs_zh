@@ -14,7 +14,7 @@ P`LOT`A`LPHA` \[MORE\] \[DIR CURRENT|name\] \[FREE|FORMAT text\]
 MORE
 
 :   将新读入的文件加到内存中老文件之后。如果没有这个选项，新文件
-    将代替内存中的老文件。参见 [read](/commands/read.html) 命令
+    将代替内存中的老文件。参见 [read](/commands/read.md) 命令
 
 DIR CURRENT
 
@@ -35,7 +35,7 @@ FORMAT text
 CONTENT text
 
 :   定义filelist中数据每个字段的含义。`text` 的 含义参见
-    [readtable](/commands/readtable.html) 命令中的
+    [readtable](/commands/readtable.md) 命令中的
 
 filelist
 
@@ -47,8 +47,8 @@ plotalpha free content y. dir current
 
 ### 说明
 
-参考 [readtable](/commands/readtable.html) 命令的相关说明。该命令与
-`readtable` 之后再 [plot](/commands/plot.html)
+参考 [readtable](/commands/readtable.md) 命令的相关说明。该命令与
+`readtable` 之后再 [plot](/commands/plot.md)
 不同，因为它允许你在每个数据点上绘制标签。
 
 ### 示例

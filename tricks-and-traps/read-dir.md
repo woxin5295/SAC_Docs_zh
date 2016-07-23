@@ -21,7 +21,7 @@ SAC> r data/*.SAC
 SAC> ...
 ```
 
-第三种，使用 [read](/commands/read.html)命令的 `dir` 选项：
+第三种，使用 [read](/commands/read.md)命令的 `dir` 选项：
 
 ``` {.bash}
 SAC> r dir data *.SAC

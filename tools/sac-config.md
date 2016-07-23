@@ -1,4 +1,4 @@
-## sac-config {#sec:sac-config}
+## sac-config
 
 `sac-config` 是SAC提供的一个简单的配置脚本，用于返回编译、链接
 SAC函数库时所需要的一些信息。

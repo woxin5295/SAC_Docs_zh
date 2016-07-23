@@ -32,10 +32,10 @@ READSP AMPH
 
 ### 说明
 
-[writesp](/commands/writesp.html)
+[writesp](/commands/writesp.md)
 命令将每个谱数据分量作为一个单独的文件写入磁盘，
 你可以分别处理每个分量。这个命令让你能从两个分量重建谱数据，参见
-[writesp](/commands/writesp.html)。 SPE选项允许你读取并转换由
+[writesp](/commands/writesp.md)。 SPE选项允许你读取并转换由
 nameref-spe-writespe 写出的谱文件格式。 这也使你可以使用
-[mulomega](/commands/mulomega.html) 和
-[divomega](/commands/divomega.html) 命令。
+[mulomega](/commands/mulomega.md) 和
+[divomega](/commands/divomega.md) 命令。

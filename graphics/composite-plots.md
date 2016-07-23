@@ -11,9 +11,9 @@ SAC提供了绘制组合图的功能，这其中牵涉到一些新的概念，�
 
 在frame中，每次执行绘图命令时，不会擦除窗口中的已有图像，从而实现了将
 多个命令的绘图效果同时显示在一个窗口中。使用
-[beginframe](/commands/beginframe.html)
+[beginframe](/commands/beginframe.md)
 打开frame时，首先会擦除整个窗口，进入“组合图模式”；当组合图绘制完成时，
-需要使用 [endframe](/commands/endframe.html) 命令关闭frame。
+需要使用 [endframe](/commands/endframe.md) 命令关闭frame。
 
 除了frame之外，在绘制组合图时还需要了解与窗口有关的几个概念，如图
 nameref-fig-window-viewspace-viewport：
@@ -25,11 +25,11 @@ nameref-fig-window-viewspace-viewport：
 ![window、viewspace和viewport](viewspace-viewport){width="80.00000%"}
 
 图 nameref-fig-window-viewspace-viewport 中给出了window、viewspace、
-viewport的相互关系。可以使用 [window](/commands/window.html)
+viewport的相互关系。可以使用 [window](/commands/window.md)
 命令设定窗口相对于
-整个屏幕的位置以及X、Y方向的范围；[vspace](/commands/vspace.html)
-用于设定整个 绘图区的比例；[xvport](/commands/xvport.html) 和
-[yvport](/commands/yvport.html) 则分别定义
+整个屏幕的位置以及X、Y方向的范围；[vspace](/commands/vspace.md)
+用于设定整个 绘图区的比例；[xvport](/commands/xvport.md) 和
+[yvport](/commands/yvport.md) 则分别定义
 了单个绘图命令所能使用的X、Y方向的范围。
 
 一个典型的组合图的绘制如下所示：

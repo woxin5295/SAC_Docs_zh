@@ -34,25 +34,25 @@ SAC> p                      // 绘图
 
 TITLE
 
-:   图像的标题。[title](/commands/title.html)
+:   图像的标题。[title](/commands/title.md)
     命令可控制标题文本、位置和尺寸
 
 XLABEL、YLABEL
 
-:   轴标签。[xlabel](/commands/xlabel.html) 和
-    [ylabel](/commands/ylabel.html)
+:   轴标签。[xlabel](/commands/xlabel.md) 和
+    [ylabel](/commands/ylabel.md)
     命令可指定X和Y轴标签文本、位置和尺寸。
 
 PLABEL
 
-:   通用标签。[plabel](/commands/plabel.html)
+:   通用标签。[plabel](/commands/plabel.md)
     可指定通用标签的文本、位置和尺寸。
 
 标签文本需要用单引号或双引号包围，文本尺寸选项 `size` 可以选择
 `tiny`、`small`、`medium` 或 `large`， 文本位置选项 `location` 则可以取
 `top`、`bottom`、 `left` 或 `right`。
 
-可以通过 [plabel](/commands/plabel.html)
+可以通过 [plabel](/commands/plabel.md)
 命令定义最多三个通用标签。通用标签与轴标
 签类似，其更通用之处在于可以任意指定其位置。每个标签可以用
 `position x y a` 来指定其位置，其中x、y为标签位置相对于窗口尺寸
@@ -65,21 +65,21 @@ PLABEL
 
 FILEID
 
-:   文件ID。[fileid](/commands/fileid.html)
+:   文件ID。[fileid](/commands/fileid.md)
     用于控制文件ID的内容、位置及其格式。
 
 FILENO
 
-:   文件号。[filenumber](/commands/filenumber.html) 控制文件号显示与否。
+:   文件号。[filenumber](/commands/filenumber.md) 控制文件号显示与否。
 
 PICKS
 
-:   到时标记。[picks](/commands/picks.html)
+:   到时标记。[picks](/commands/picks.md)
     用于控制是否显示到时标记以及显示效果。
 
 QDP
 
-:   QDP因子。[qdp](/commands/qdp.html) 用于控制qdp因子的大小。
+:   QDP因子。[qdp](/commands/qdp.md) 用于控制qdp因子的大小。
 
 QDP，全称为“quick and dirty plot”。在开发SAC的那个年代，计算机的性能
 一般，若在绘图时绘制全部数据点，则绘图过程会耗费大量时间。因而SAC采用了
@@ -102,19 +102,19 @@ SAC中，每条边都可以用四种不同的形式表示：
 从上面的定义可以看到，四种形式的边存在包含与被包含的关系，因而在设
 定边时，有如下规则：
 
-1.  用 [axes](/commands/axes.html) 控制在哪些边使用“axes”；
+1.  用 [axes](/commands/axes.md) 控制在哪些边使用“axes”；
 
-2.  只有不使用“axes”的边才可以用 [ticks](/commands/ticks.html) 命令控制
+2.  只有不使用“axes”的边才可以用 [ticks](/commands/ticks.md) 命令控制
     是否使用“ticks”；
 
 3.  只有不使用“axes”和“ticks”的边才可以使用
-    [border](/commands/border.html) 命令控制是否使用“border”；
+    [border](/commands/border.md) 命令控制是否使用“border”；
 
 4.  不使用“axes”、“ticks”和“borders”的边则不绘制。
 
-除了边之外，还可以使用 [grid](/commands/grid.html)
+除了边之外，还可以使用 [grid](/commands/grid.md)
 命令控制网格的显示以及网格的 线型，或使用
-[xgrid](/commands/xgrid.html)、[ygrid](/commands/ygrid.html)
+[xgrid](/commands/xgrid.md)、[ygrid](/commands/ygrid.md)
 分别控制横、纵方 向网格的显示和属性。
 
 ### 图像控制
@@ -141,18 +141,18 @@ xfudge
 
 绘制时间序列一般使用线性坐标系，SAC也提供了一系列命令以指定X、Y轴为线性
 坐标轴或对数坐标轴。这些命令包括：
-[linlin](/commands/linlin.html)、[linlog](/commands/linlog.html)、
-[loglin](/commands/loglin.html)、[loglog](/commands/loglog.html)、[xlin](/commands/xlin.html)、[xlog](/commands/xlog.html)、
-[ylin](/commands/ylin.html)、[ylog](/commands/ylog.html)。
+[linlin](/commands/linlin.md)、[linlog](/commands/linlog.md)、
+[loglin](/commands/loglin.md)、[loglog](/commands/loglog.md)、[xlin](/commands/xlin.md)、[xlog](/commands/xlog.md)、
+[ylin](/commands/ylin.md)、[ylog](/commands/ylog.md)。
 
 对于对数坐标轴，还有一些命令可以控制其外观，比如
-[xfull](/commands/xfull.html)、
-[loglab](/commands/loglab.html)、[floor](/commands/floor.html)。
+[xfull](/commands/xfull.md)、
+[loglab](/commands/loglab.md)、[floor](/commands/floor.md)。
 
 ### 线条属性 {#subsec:line-attribution}
 
-线条的属性包括线型（[line](/commands/line.html)）、线宽（[width](/commands/width.html)）、
-颜色（[color](/commands/color.html)）和符号（[symbol](/commands/symbol.html)）。
+线条的属性包括线型（[line](/commands/line.md)）、线宽（[width](/commands/width.md)）、
+颜色（[color](/commands/color.md)）和符号（[symbol](/commands/symbol.md)）。
 
 下面的命令展示了如何修改线条的属性。
 
@@ -178,7 +178,7 @@ SAC> p
 
 ![线条属性递增](attribution2){width="70.00000%"}
 
-[line](/commands/line.html)
+[line](/commands/line.md)
 命令不仅可以设置线条的线型，同时可以对波形数据 进行颜色填充：
 
 ``` {.bash}

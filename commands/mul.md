@@ -28,7 +28,7 @@ mul 1.0
 
 ### 说明
 
-参见 [add](/commands/add.html) 的相关说明。
+参见 [add](/commands/add.md) 的相关说明。
 
 ### 头段变量改变
 

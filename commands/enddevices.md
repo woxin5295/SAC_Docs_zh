@@ -24,4 +24,4 @@ XWINDOWS
 
 ### 说明
 
-参见命令 [begindevices](/commands/begindevices.html) 的说明。
+参见命令 [begindevices](/commands/begindevices.md) 的说明。

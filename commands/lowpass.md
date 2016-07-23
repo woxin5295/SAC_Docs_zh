@@ -53,7 +53,7 @@ lowpass butter corner 0.2 npoles 2 passes 1 tranbw 0.3 atten 30
 
 ### 说明
 
-参见 [bandpass](/commands/bandpass.html) 命令的相关说明。
+参见 [bandpass](/commands/bandpass.md) 命令的相关说明。
 
 ### 示例
 

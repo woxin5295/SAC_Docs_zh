@@ -24,4 +24,4 @@ yvport 0.1 0.9
 
 ### 说明
 
-参考 [xvport](/commands/xvport.html) 命令的说明。
+参考 [xvport](/commands/xvport.md) 命令的说明。

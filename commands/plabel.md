@@ -50,9 +50,9 @@ POSITION x y a
 ### 说明
 
 该命令允许你为接下来的绘图命令定义通用的绘图标签。你可以定义每个标签的
-位置及文本尺寸。文本质量以及字体可以用 [gtext](/commands/gtext.html)
+位置及文本尺寸。文本质量以及字体可以用 [gtext](/commands/gtext.md)
 命令设定， 也可以使用
-[title](/commands/title.html)、[xlabel](/commands/xlabel.html)、[ylabel](/commands/ylabel.html)
+[title](/commands/title.md)、[xlabel](/commands/xlabel.md)、[ylabel](/commands/ylabel.md)
 生成图形的标题以及轴标签。
 
 ### 示例

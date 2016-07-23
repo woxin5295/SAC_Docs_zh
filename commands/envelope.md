@@ -22,7 +22,7 @@ $$C(t) = A(t) e^{i\Phi(t)}$$
 其中$A(t)$即为包络函数，其可以进一步表示为
 $$A(t) = \sqrt{s(t)^2+H(t)^2}$$
 
-和 [hilbert](/commands/hilbert.html)
+和 [hilbert](/commands/hilbert.md)
 一样，数据点数不得少于201，且超长周期的数据需要 在处理之前进行减采样。
 
 ### 头段变量

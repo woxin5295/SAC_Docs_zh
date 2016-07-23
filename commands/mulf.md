@@ -22,7 +22,7 @@ filelist
 
 ### 说明
 
-参见 [addf](/commands/addf.html) 命令的相关说明。
+参见 [addf](/commands/addf.md) 命令的相关说明。
 
 ### 头段变量
 

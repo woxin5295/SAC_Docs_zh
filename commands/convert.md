@@ -34,5 +34,5 @@ convert from sac infile over sac
 ### 说明
 
 该命令将单个文件从一种格式转换为另一种格式。该命令已经逐渐被
-[read](/commands/read.html) 和 [write](/commands/write.html)
+[read](/commands/read.md) 和 [write](/commands/write.md)
 命令所取代，`convert` 命令已经不再需要， 保留该命令只是为了兼容性考虑。

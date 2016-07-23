@@ -3,8 +3,8 @@
 Signal Stack Subprocess，是SAC提供的一个用于信号迭加的子程序。
 
 在SAC中键入“`sss`”即可进入该子程序；在子程序中键入
-[quitsub](/commands/quitsub.html) 即可 退出子程序并回到主程序；也可键入
-[quit](/commands/quit.html) 直接从子程序中退出SAC。
+[quitsub](/commands/quitsub.md) 即可 退出子程序并回到主程序；也可键入
+[quit](/commands/quit.md) 直接从子程序中退出SAC。
 
 在对多个信号进行迭加时，每个信号都有各自的属性，比如静延迟、震中距、权重因子、
 数据极性，也可以根据normal moveout或折射波速度模型计算动延迟。

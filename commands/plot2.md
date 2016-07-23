@@ -20,13 +20,13 @@ p2 absolute
 
 ### 说明
 
-所有波形数据将绘制在一个绘图窗口中，所有波形共用X轴和Y轴。[xlim](/commands/xlim.html)
-和 [ylim](/commands/ylim.html)
+所有波形数据将绘制在一个绘图窗口中，所有波形共用X轴和Y轴。[xlim](/commands/xlim.md)
+和 [ylim](/commands/ylim.md)
 用于控制X轴和Y轴的范围，若未指定轴范围，则根据所有
 文件的极值确定轴范围。由于所有波形重叠在一起，所以通常需要用
-[line](/commands/line.html)、
-[color](/commands/color.html)、[symbol](/commands/symbol.html)、[width](/commands/width.html)
-为不同波形 设置不同的属性，图例的位置由 [fileid](/commands/fileid.html)
+[line](/commands/line.md)、
+[color](/commands/color.md)、[symbol](/commands/symbol.md)、[width](/commands/width.md)
+为不同波形 设置不同的属性，图例的位置由 [fileid](/commands/fileid.md)
 控制。
 
 多个波形共用X轴时，有 `absolute` 和 `relative` 两种绘图 模式。在
@@ -35,15 +35,15 @@ p2 absolute
 将按照文件开始时间对齐，X轴的范围为0到最大时间差（所有文件中结束时间和
 开始时间的最大时间差，即最大 `e-b`），每个波形从X轴的零点开始绘制。
 
-与 [plot](/commands/plot.html) 和 [plot1](/commands/plot1.html)
-不同，[plot2](/commands/plot2.html)
+与 [plot](/commands/plot.md) 和 [plot1](/commands/plot1.md)
+不同，[plot2](/commands/plot2.md)
 可以直接用于绘制谱文件。实部-虚部格式的谱数据被绘制为实部-频率。振幅-相位
 数据被绘制为振幅-频率图，虚部和相位信息被忽略。谱文件总是用 `relative`
 模式绘图。在频率域 `b`、`e` 和 `delta` 分别被设置为0、
 Nqquist频率以及频率间隔 `df`。头段值 `depmin` 和 `depmax` 未改变。与
-[plotsp](/commands/plotsp.html) 类似，若 `xlim off`，绘图将从 `df=delta`
-处开始，而非0。若 [xlim](/commands/xlim.html) 或
-[ylim](/commands/ylim.html) 在数据变换到频率域之前被改变了，最好在使用
+[plotsp](/commands/plotsp.md) 类似，若 `xlim off`，绘图将从 `df=delta`
+处开始，而非0。若 [xlim](/commands/xlim.md) 或
+[ylim](/commands/ylim.md) 在数据变换到频率域之前被改变了，最好在使用
 `plot2` 绘图之前输入 `xlim off` 和 `ylim off`。
 
 若内存中同时存在时间序列文件和谱文件，且绘图时没有选择 `relative`

@@ -1,27 +1,27 @@
 ## 如何学习SAC？
 
 学习SAC最好的方式是找一个有经验且有耐心的人，让他/她给你演示SAC是如何
-工作的。如果没有这样一个人的话，那么你就需要打开终端从头开始自学
+工作的。如果没有这样一个人的话，那么你就需要打开终端从头开始自学。
 
 学习SAC的过程大致可以分成三个阶段，下面列出了每个阶段的具体要求。
 普通用户需要达到SAC进阶才能满足日常数据处理的要求。
 
 ### SAC初阶
 
-1.  掌握SAC中最常用的命令，包括但不限于 [help](/commands/help.html)、
-    [read](/commands/read.html)、 [write](/commands/write.html)、
-    [plot](/commands/plot.html)、 [quit](/commands/quit.html)、
-    [plotpk](/commands/plotpk.html)、
-    [listhdr](/commands/listhdr.html)、
-    [chnhdr](/commands/chnhdr.html)、 [rmean](/commands/rmean.html)、
-    [rtrend](/commands/rtrend.html)、 [taper](/commands/taper.html)、
-    [bandpass](/commands/bandpass.html)、
-    [plot1](/commands/plot1.html)、 [plot2](/commands/plot2.html)、
-    [cut](/commands/cut.html)、 [fft](/commands/fft.html)、
-    [transfer](/commands/transfer.html)；
+1.  掌握SAC中最常用的命令，包括但不限于 [help](/commands/help.md)、
+    [read](/commands/read.md)、 [write](/commands/write.md)、
+    [plot](/commands/plot.md)、 [quit](/commands/quit.md)、
+    [plotpk](/commands/plotpk.md)、
+    [listhdr](/commands/listhdr.md)、
+    [chnhdr](/commands/chnhdr.md)、 [rmean](/commands/rmean.md)、
+    [rtrend](/commands/rtrend.md)、 [taper](/commands/taper.md)、
+    [bandpass](/commands/bandpass.md)、
+    [plot1](/commands/plot1.md)、 [plot2](/commands/plot2.md)、
+    [cut](/commands/cut.md)、 [fft](/commands/fft.md)、
+    [transfer](/commands/transfer.md)；
 2.  理解地震数据处理流程，见 [SAC数据处理](/data-process)一章；
-3.  了解 [SAC文件格式](/fileformat)，掌握常见的 [SAC头段变量](/fileformat/header-variables.html)，理解 [SAC中的时间概念](/fileformat/sac-time.html)
-4.  SAC 相关工具： [saclst](/tools/saclst.html)
+3.  了解 [SAC文件格式](/fileformat)，掌握常见的 [SAC头段变量](/fileformat/header-variables.md)，理解 [SAC中的时间概念](/fileformat/sac-time.md)
+4.  SAC 相关工具： [saclst](/tools/saclst.md)
 
 ### SAC进阶
 

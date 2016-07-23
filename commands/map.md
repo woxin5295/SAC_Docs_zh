@@ -83,7 +83,7 @@ SAC中可以使用的投影方式包括：
 -   `FILE`：默认的输出文件名为 `gmt.ps`，你可以通过 `FILE`
     选项指定文件名
 
-可以用SAC的 [title](/commands/title.html) 命令指定地图标题。
+可以用SAC的 [title](/commands/title.md) 命令指定地图标题。
 
 ### 缺省值
 
@@ -116,7 +116,7 @@ Using Default Postscript Viewer
 
 台站纬度（`stla`）以及经度（`stlo`）必须在头段中被定义。
 如果事件纬度（`evla`）以及经度（`evlo`）被定义则其会被包含
-在地图中。如果这个命令在执行 [bbfk](/commands/bbfk.html) 之后执行，`map`
+在地图中。如果这个命令在执行 [bbfk](/commands/bbfk.md) 之后执行，`map`
 将沿着反方位角方向绘制大圆弧路径。这个版本的 `map` 是基于4.0版本的
 Generic Mapping Tools，要执行这个命令，你需要将GMT4.0安装在你的机器上并
 保证可执行文件位于路径中。

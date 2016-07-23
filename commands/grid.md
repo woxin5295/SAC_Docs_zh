@@ -32,5 +32,5 @@ grid off
 
 ### 说明
 
-该命令控制X和Y轴的网格线的绘制。可以使用 [xgrid](/commands/xgrid.html)
-和 [ygrid](/commands/ygrid.html) 分别控制单个坐标轴的网格类型。
+该命令控制X和Y轴的网格线的绘制。可以使用 [xgrid](/commands/xgrid.md)
+和 [ygrid](/commands/ygrid.md) 分别控制单个坐标轴的网格类型。

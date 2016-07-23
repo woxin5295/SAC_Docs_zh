@@ -11,4 +11,4 @@ YLAB`E`L \[ON|OFF|text\] \[L`OCATION` T`OP`|B`OTTOM`|R`IGHT`|L`EFT`\]
 
 ### 说明
 
-该命令的输入、默认值、说明，与 [xlabel](/commands/xlabel.html) 相同。
+该命令的输入、默认值、说明，与 [xlabel](/commands/xlabel.md) 相同。

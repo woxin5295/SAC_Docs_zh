@@ -1,6 +1,6 @@
 ## 去毛刺
 
-相关命令：[rglitches](/commands/rglitches.html)
+相关命令：[rglitches](/commands/rglitches.md)
 
 地震仪器偶尔会出现问题，导致连续地震数据流中出现尖锋或者数据丢失。
 这些所谓的毛刺，肉眼很容易识别，但是在使用程序自动处理数据时却很

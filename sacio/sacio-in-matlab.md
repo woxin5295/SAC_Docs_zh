@@ -9,11 +9,8 @@ SAC官方自带了几个可以读写SAC文件的Matlab脚本，位于 `${SACHOME
 为要读取的SAC文件名。文件名可以是：
 
 1.  单个文件名
-
 2.  多个文件名组成的字符串数组
-
 3.  含通配符的字符串或字符串数组
-
 4.  空字符串，表示读取当前目录下的全部SAC文件
 
 `readsac` 函数有三种用法。第一种用法：
@@ -86,7 +83,4 @@ ans = 50.8900
 除了SAC官方提供的几个Matlab脚本之外，还有其他人也提供了一些Matlab脚本：
 
 -   <http://geophysics.eas.gatech.edu/people/zpeng/Teaching/MatSAC.tar.gz>
-
 -   <http://web.utah.edu/thorne/software.html>
-
-

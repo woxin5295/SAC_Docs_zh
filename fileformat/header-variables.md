@@ -131,7 +131,7 @@ SAC> lh depmax
 不太方便。此时可以将数据乘以$10^{20}$变成合适的量级，并修改
 `scale=1.0e20`，这样就可以知道自己对数据人为放大了多少倍。
 
-101.5之前的版本中，在使用 [transfer](/commands/transfer.html)
+101.5之前的版本中，在使用 [transfer](/commands/transfer.md)
 命令去仪器响应时， 若 `scale`
 的值有定义，则输出的数据会根据该值进行放大并修改
 `scale`。在101.5及其之后的版本中，`scale` 被忽略。
@@ -366,7 +366,7 @@ node\[anchor=north east\]<span>$U$</span>;
 构成`amarker`，`f` 和 `kf` 可以构成 `fmarker`， `o` 和 `ko` 可以构成
 `omarker`，`tn` 和 `ktn` 可以构成 `tnmarker`（n=0–9）。
 
-这些辅助型变量可以在 [listhdr](/commands/listhdr.html) 中使用。
+这些辅助型变量可以在 [listhdr](/commands/listhdr.md) 中使用。
 
 ### 仪器相关变量
 

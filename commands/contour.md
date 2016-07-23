@@ -26,19 +26,19 @@ contour aspect off
 ### 说明
 
 这个命令用于绘制二维数组数据的等值线图，包括
-[spectrogram](/commands/spectrogram.html)
+[spectrogram](/commands/spectrogram.md)
 命令的输出。这个文件操作的SAC文件必须“XYZ”类型的（SAC头段中 `IFTYPE` 为
 `IXYZ`）。有些命令可以控制数据显示的方式：
 
--   [zlevels](/commands/zlevels.html) 控制等值线的数目以及间隔
+-   [zlevels](/commands/zlevels.md) 控制等值线的数目以及间隔
 
--   [zlines](/commands/zlines.html) 控制等值线的线型
+-   [zlines](/commands/zlines.md) 控制等值线的线型
 
--   [zlabels](/commands/zlabels.html) 控制等值线标签
+-   [zlabels](/commands/zlabels.md) 控制等值线标签
 
--   [zticks](/commands/zticks.html) 控制方向标记
+-   [zticks](/commands/zticks.md) 控制方向标记
 
--   [zcolors](/commands/zcolors.html) 控制等值线颜色
+-   [zcolors](/commands/zcolors.md) 控制等值线颜色
 
 根据 `contour` 选项的不同，有两种不同的绘制等值线算法。一种快速
 扫描方法用于既不选择实线型也没有时标和标识的情况。另一种慢一点的方法，

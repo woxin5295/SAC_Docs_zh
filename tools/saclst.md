@@ -1,4 +1,4 @@
-## `saclst` {#sec:saclst}
+## `saclst`
 
 `saclst` 是很常用的一个SAC工具，用于列出头段变量的值，其语法很简单：
 
@@ -9,7 +9,7 @@ $ saclst header_lists f file_lists
 其中 `header_lists` 为要查看的头段变量名列表；`f` 为关键字，
 表明接下来的所有参数都是SAC文件；`file_lists` 为SAC文件列表。需要
 注意的是，头段变量名是不区分大小写的，除了头段变量 `F` 以外。 大写的 `F`
-被当作头段变量名，小写的 `f` 被作为关键字。 [^1]
+被当作头段变量名，小写的 `f` 被作为关键字。
 
 查看单个文件的单个头段：
 
@@ -49,5 +49,3 @@ use warnings;
 my ($fname, $stla, $stlo) = split /\s+/, `saclst stla stlo f seis`;
 print "$stla $stlo \n";
 ```
-
-[^1]: 这是设计不合理的地方。

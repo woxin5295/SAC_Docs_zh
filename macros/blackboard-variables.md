@@ -3,11 +3,11 @@
 既然是SAC编程，就必然少不了变量，SAC中的变量称之为黑板变量。
 
 黑板变量是SAC中用于临时储存和取回信息而设计的。黑板变量不需要声明即可
-直接使用，可以用 [setbb](/commands/setbb.html) 和
-[evaluate](/commands/evaluate.html) 命令给 黑板变量赋值，用
-[getbb](/commands/getbb.html) 获取黑板变量的值。也可以用
-[writebbf](/commands/writebbf.html) 将黑板变量保存在磁盘文件中，然后使用
-[readbbf](/commands/readbbf.html) 命令重新将这些变量读入SAC中。
+直接使用，可以用 [setbb](/commands/setbb.md) 和
+[evaluate](/commands/evaluate.md) 命令给 黑板变量赋值，用
+[getbb](/commands/getbb.md) 获取黑板变量的值。也可以用
+[writebbf](/commands/writebbf.md) 将黑板变量保存在磁盘文件中，然后使用
+[readbbf](/commands/readbbf.md) 命令重新将这些变量读入SAC中。
 
 引用黑板变量的值的方式为：“`%bbvname%`”，其中 `bbvname`
 为黑板变量的变量名。

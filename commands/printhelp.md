@@ -16,5 +16,5 @@ item
 
 ### 说明
 
-该命令与 [help](/commands/help.html) 命令的用法相同，其调用系统命令
+该命令与 [help](/commands/help.md) 命令的用法相同，其调用系统命令
 `lpr` 将文档传递给默认打印机。若 `lpr` 未设置默认打印机，则报错。

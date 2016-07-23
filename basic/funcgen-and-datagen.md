@@ -1,13 +1,12 @@
 ## 样本数据
 
 想要学习SAC，手头必须有SAC格式的数据，SAC提供了两个命令可以用于生成SAC
-格式数据，分别是 [funcgen](/commands/funcgen.html) 和
-[datagen](/commands/datagen.html)。
+格式数据，分别是 [funcgen](/commands/funcgen.md) 和
+[datagen](/commands/datagen.md)。
 
 ### funcgen
 
-[funcgen](/commands/funcgen.html)（简写为 `fg`）表示“function
-generator”，
+[funcgen](/commands/funcgen.md)（简写为 `fg`）表示“function generator”，
 即该命令可以生成一些特定的函数，比如脉冲、阶跃、正弦等等，还可以生成
 一个地震波形样本：
 
@@ -16,7 +15,7 @@ SAC> fg impulse         // 生成脉冲函数
 ```
 
 上面的命令生成了一个脉冲函数并存储在SAC的内存中，可以用命令
-[plot](/commands/plot.html)（写为 `p`）在图形界面上查看这个函数的样子：
+[plot](/commands/plot.md)（写为 `p`）在图形界面上查看这个函数的样子：
 
 ``` {.bash}
 SAC> p
@@ -34,17 +33,15 @@ SAC> fg seismogram      // 生成地震波形样本，简写为fg seis
 
 ### datagen
 
-[datagen](/commands/datagen.html)（简写为 `dg`）表示“data generator”。
+[datagen](/commands/datagen.md)（简写为 `dg`）表示“data generator”。
 顾名思义，就是用来生成数据的。
 
-下面的示例在内存中生成了CDV台站记录到的一个近震的三分量波形数据 [^1]，
-并用 [plot1](/commands/plot1.html)（简写 `p1`）将三个波形画在一张图上：
+下面的示例在内存中生成了CDV台站记录到的一个近震的三分量波形数据，
+并用 [plot1](/commands/plot1.md)（简写 `p1`）将三个波形画在一张图上：
 
 ``` {.bash}
 SAC> dg sub local cdv.?
 SAC> p1
 ```
 
-更多示例参考 [datagen](/commands/datagen.html) 命令的语法说明。
-
-[^1]: 101.4的软件包中没有自带波形数据，因而无法使用该命令。
+更多示例参考 [datagen](/commands/datagen.md) 命令的语法说明。

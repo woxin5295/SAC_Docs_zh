@@ -38,8 +38,8 @@ synchronize round off begin off
 所有文件共同的参考时刻，最后再计算每个文件中所有相对时间相对于新参考时刻
 的值。
 
-当数据文件具有不同的参考时刻时，对数据使用 [cut](/commands/cut.html) 或
-[xlim](/commands/xlim.html)
+当数据文件具有不同的参考时刻时，对数据使用 [cut](/commands/cut.md) 或
+[xlim](/commands/xlim.md)
 命令就会有些麻烦，因而可以使用该命令使得所有数据的参考时刻一致。
 
 如果使用了 `BEGIN` 选项，则会将所有文件的 `kzdate` 和 `kztime`

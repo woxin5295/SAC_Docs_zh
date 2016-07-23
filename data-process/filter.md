@@ -1,7 +1,7 @@
 ## 滤波
 
-相关命令：[bandpass](/commands/bandpass.html)、[lowpass](/commands/lowpass.html)、
-[highpass](/commands/highpass.html)、[bandrej](/commands/bandrej.html)
+相关命令：[bandpass](/commands/bandpass.md)、[lowpass](/commands/lowpass.md)、
+[highpass](/commands/highpass.md)、[bandrej](/commands/bandrej.md)
 
 几乎所有的数据分析都需要将数据限制在一定的频率范围内，这就需要对数据做
 各种不同方式的滤波。关于滤波的细节，可以参考滤波命令的相关说明，以及

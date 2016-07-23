@@ -28,7 +28,7 @@ nameref-https-//raw.githubusercontent.com/seisman/SAC\_Docs\_zh/master/call-in-s
 SEED文件的波形数据可能会因为多种原因而出现间断，导致同一个通道会解压出来
 多个SAC文件，因而需要将属于同一个通道的SAC数据合并起来。
 
--   此处使用了新版 [merge](/commands/merge.html)
+-   此处使用了新版 [merge](/commands/merge.md)
     命令的语法，要求SAC版本大于v101.6
 
 -   `merge` 命令还有更多选项可以控制数据合并的细节，见命令的语法介绍
@@ -86,7 +86,7 @@ nameref-https-//raw.githubusercontent.com/seisman/SAC\_Docs\_zh/master/call-in-s
 
 -   取三分量中的最大 `b` 和最小 `e` 值作为数据窗口，此 操作要求三分量的
     `kzdate` 和 `kztime` 必须相同，这一点 在添加事件信息时使用
-    [synchronize](/commands/synchronize.html) 已经实现
+    [synchronize](/commands/synchronize.md) 已经实现
 
 -   未检查分量的 `cmpinc` 和 `cmpaz` 是否符合要求。若不
     符合要求，SAC会报错且不会旋转，写到磁盘中的R和T分量实际上是原数据，
@@ -105,7 +105,7 @@ nameref-https-//raw.githubusercontent.com/seisman/SAC\_Docs\_zh/master/call-in-s
 -   原始数据中，不同台站的采样率不同，可能会影响到后期的数据处理，因而
     需要让所有数据使用统一的采样率；
 
-下面的Perl脚本中使用 [interpolate](/commands/interpolate.html)
+下面的Perl脚本中使用 [interpolate](/commands/interpolate.md)
 命令将所有数据重采样到相同
 的采样周期。用户可以在命令行中直接指定要使用的重采样后的采样周期，若命令行
 中的采样周期指定为0，则以大多数数据所使用的采样周期作为重采样后的采样周期。

@@ -84,7 +84,7 @@ beam b 90 v 9.0 ec 33 6.0 c 0. 0. 0. w BEAM
 
 ### 头段数据
 
-参见 [bbfk](/commands/bbfk.html) 命令。
+参见 [bbfk](/commands/bbfk.md) 命令。
 
 ### 错误消息
 

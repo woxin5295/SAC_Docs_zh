@@ -50,7 +50,7 @@ ticks on all
 ### 说明
 
 刻度轴可以画图形四边的一边或几边上，刻度间隔由
-[xdiv](/commands/xdiv.html) 命令控制。
+[xdiv](/commands/xdiv.md) 命令控制。
 
 ### 示例
 

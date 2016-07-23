@@ -3,8 +3,8 @@
 ### 概要
 
 控制二元文件操作
-[addf](/commands/addf.html)、[subf](/commands/subf.html)、
-[mulf](/commands/mulf.html)、[divf](/commands/divf.html) 中的错误
+[addf](/commands/addf.md)、[subf](/commands/subf.md)、
+[mulf](/commands/mulf.md)、[divf](/commands/divf.md) 中的错误
 
 ### 语法
 

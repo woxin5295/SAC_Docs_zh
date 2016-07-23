@@ -43,12 +43,12 @@ pickphase file
 
 `pickphase` 用于在命令行上覆盖参考文件。其可以用于在命令行提供指定
 的头段/震相/作者信息，或者将SAC从一个参考文件重定向到另一个。更多关于参考
-文件的信息，参见 [pickprefs](/commands/pickprefs.html) 以及
-[readcss](/commands/readcss.html)。
+文件的信息，参见 [pickprefs](/commands/pickprefs.md) 以及
+[readcss](/commands/readcss.md)。
 
 注意：如果当数据在数据缓冲区内而用户修改了参考文件，那么在SAC缓冲区中的
 震相拾取将可能被修改。（缓冲区的信息可以通过
-[listhdr](/commands/listhdr.html) 和 [chnhdr](/commands/chnhdr.html)
+[listhdr](/commands/listhdr.md) 和 [chnhdr](/commands/chnhdr.md)
 查看）。
 
 例：如果当一些含有某些 `pP` 或 `PKiKP` 震相的SAC文件通过

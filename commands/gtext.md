@@ -27,7 +27,7 @@ SIZE size
 
 :   改变缺省文本大小，可以取 `TINY`、`SMALL`、
     `MEDIUM`、`LARGE`，这些缺省文本尺寸的具体大小可以 参考
-    [tsize](/commands/tsize.html) 命令
+    [tsize](/commands/tsize.md) 命令
 
 SYSTEM system
 

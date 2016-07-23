@@ -25,7 +25,7 @@ mtw off
 
 ### 说明
 
-SAC中与测量有关的命令有 [markptp](/commands/markptp.html) 和
-[markvalue](/commands/markvalue.html)。
+SAC中与测量有关的命令有 [markptp](/commands/markptp.md) 和
+[markvalue](/commands/markvalue.md)。
 当不设置mtw时，测量命令会对整个文件进行操作；当设置了mtw时，测量命令仅mtw
 时间窗内的数据执行测量命令。

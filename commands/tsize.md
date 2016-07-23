@@ -32,8 +32,8 @@ tsize ratio 1.0 new
 
 ### 说明
 
-大多数的文本注释命令（[title](/commands/title.html)、[xlabel](/commands/xlabel.html)、
-[fileid](/commands/fileid.html)等）允许你改变要显示的文本的尺寸。
+大多数的文本注释命令（[title](/commands/title.md)、[xlabel](/commands/xlabel.md)、
+[fileid](/commands/fileid.md)等）允许你改变要显示的文本的尺寸。
 
 SAC提供了四个标准尺寸：`TINY`、`SMALL`、`MEDIUM` 和
 `LARGE`。每一个标准尺寸都有一个初始值，如下表所示：

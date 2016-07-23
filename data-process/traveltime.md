@@ -14,7 +14,7 @@
 ### 手动标记
 
 最直观的办法是根据SAC文件中的震源深度和震中距信息用某些程序计算出理论
-到时，然后用 [chnhdr](/commands/chnhdr.html)
+到时，然后用 [chnhdr](/commands/chnhdr.md)
 命令手动将到时信息写入到SAC头段中。
 
 ``` {.bash}
@@ -37,7 +37,7 @@ SAC> lh t0 kt0 t1 kt1
 
 ### traveltime命令
 
-[traveltime](/commands/traveltime.html)
+[traveltime](/commands/traveltime.md)
 是SAC提供的一个命令，用于计算iasp91或者ak135
 地球模型下的震相理论走时，并自动将震相到时信息保存到SAC头段变量中。
 

@@ -33,8 +33,8 @@ xvport 0.1 0.9
 命令将在定义的视口中绘图。默认值 `xvport 0.1 0.9` 在X方向上使用了
 视窗的80%，在图形的左右两边留下一些空间绘制坐标轴、标签和标题。
 
-当与 [beginframe](/commands/beginframe.html) 和
-[endframe](/commands/endframe.html) 命令一起使用时，
+当与 [beginframe](/commands/beginframe.md) 和
+[endframe](/commands/endframe.md) 命令一起使用时，
 可以让你能够在一个视窗内绘制若干不同的图形，构成复杂的组合图。
 
 ### 示例

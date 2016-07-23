@@ -26,7 +26,7 @@ filelist
 ### 说明
 
 SAC提供了一些样本地震数据以供用户学习时使用，该命令将读取一个或多个样本
-地震数据到内存中。事实上，该命令与 [read](/commands/read.html)
+地震数据到内存中。事实上，该命令与 [read](/commands/read.md)
 命令类似，只是该 命令是从特殊的数据目录（`$SACAUX/datagen`）中读取文件。
 
 该命令提供了三种子类型，分别是 `local`、`regional` 和
@@ -101,7 +101,7 @@ SAC> w cdv.e cdv.n cdv.z
 ```
 
 在写文件时，需要手动指定文件名列表，当文件很多时，就会变得很麻烦。可以
-利用 [write](/commands/write.html) 命令的语法简化这一命令：
+利用 [write](/commands/write.md) 命令的语法简化这一命令：
 
 ``` {.bash}
 SAC> dg sub local *

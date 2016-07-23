@@ -10,7 +10,7 @@ LINEFIT
 
 ### 说明
 
-此命令的底层实现与 [rmean](/commands/rmean.html) 命令是相同的。
+此命令的底层实现与 [rmean](/commands/rmean.md) 命令是相同的。
 
 对数据使用最小二乘拟合得到一条直线，并将拟合结果写到黑板变量中：
 

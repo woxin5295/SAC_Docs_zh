@@ -96,7 +96,7 @@ crscor( float   *data1,     // 数据1
 该子函数用于计算信号的均方根，其中计算公式为：
 $$RMS = \sqrt{\sum_{i=1}^N y_i^2}$$
 
-该公式与命令 [rms](/commands/rms.html)
+该公式与命令 [rms](/commands/rms.md)
 中的公式略有不同，严格来说，这里的定义是有
 问题的，因而对于该子程序计算出的结果，要除以根号N才是真正的均方根。
 

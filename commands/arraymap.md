@@ -41,6 +41,6 @@ arraymap array
 
 ### 限制
 
-在 [bbfk](/commands/bbfk.html) 中允许的最多台站数
+在 [bbfk](/commands/bbfk.md) 中允许的最多台站数
 
 [^1]: 位于 `$SACAUX/macros` 目录中

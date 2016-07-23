@@ -1,4 +1,4 @@
-## 脚本语言
+# 脚本中调用 SAC
 
 日常工作中有大量的数据需要处理，因而需要将数据处理尽可能地自动化以
 加快数据处理速度并减少人力支出。这就需要脚本来实现批处理。
@@ -10,3 +10,7 @@ SAC宏。
 
 脚本语言有很多，地震学领域经常使用的脚本语言包含Bash、Perl和Python。
 不推荐使用Bash，推荐使用Perl或Python中的任意一个。
+
+* [Bash中调用SAC](call-sac-in-bash.md)
+* [Perl中调用SAC](call-sac-in-perl.md)
+* [Python中调用SAC](call-sac-in-python.md)

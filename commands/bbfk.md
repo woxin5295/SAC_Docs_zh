@@ -15,7 +15,7 @@ text\] \[WR`ITE` \[ON|OFF fname\] \[S`SQ` n\]\]
 FILTER
 
 :   使用最近一次
-    [filterdesign](/commands/filterdesign.html)命令设计的带通滤波器
+    [filterdesign](/commands/filterdesign.md)命令设计的带通滤波器
 
 NORMALIZE
 

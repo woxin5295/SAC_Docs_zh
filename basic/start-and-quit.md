@@ -1,6 +1,6 @@
 ## 启动和退出
 
-在终端键入 `sac` 以启动SAC，显示如下版本号以及版权信息[^1]：
+在终端键入 `sac` 以启动SAC，显示如下版本号以及版权信息：
 
 ``` {.bash}
 $ sac
@@ -10,7 +10,7 @@ $ sac
 SAC>
 ```
 
-其中，“`SAC>`”是SAC程序特有的命令提示符。
+其中，`SAC>` 是SAC程序特有的命令提示符。
 
 退出SAC：
 
@@ -21,5 +21,3 @@ SAC> quit
 也可以使用 `done`、`exit` 命令退出SAC，但不推荐。
 
 一次完整的启动和退出称为一个SAC会话。
-
-[^1]: Livermore实验室由University of California于1952年创立，2007年改由 University of California、Bechtel National、BWX Technologies、Washington Group International共同组成的安全机构管理。

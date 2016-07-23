@@ -36,7 +36,7 @@ f001.sgf            // 生成sgf文件
 
 ### PS和PDF
 
-自101.5之后，SAC加入了 [saveimg](/commands/saveimg.html)
+自101.5之后，SAC加入了 [saveimg](/commands/saveimg.md)
 命令，可以将当前xwindow
 或sgf图形设备中的图像保存到其它ps或pdf格式的图像文件中，以获得更高质量
 的绘图效果。[^1]
