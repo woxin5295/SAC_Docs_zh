@@ -38,3 +38,5 @@
 *.pyg
 _minted-*/
 SAC_Docs.pdf
+
+_book
