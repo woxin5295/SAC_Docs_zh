@@ -31,4 +31,5 @@ pstext -R$R -J$J -N -K -O >> $PS << EOF
 EOF
 psxy -R$R -J$J -T -O >> $PS
 ps2raster -A -P -Tf az-baz.ps
+ps2raster -A -P -Tg az-baz.ps
 rm .gmt* az-baz.ps

@@ -8,3 +8,4 @@ $(FIGURE)/%.pdf: %.sh
 
 install:
 	-mv *.pdf $(FIGURE)/
+	-mv *.png $(FIGURE)/
