@@ -1,6 +1,14 @@
 {
     "plugins": [
         "include-codeblock",
-        "katex"
-    ]
+        "katex",
+        "editlink"
+    ],
+    "pluginsConfig": {
+        "editlink": {
+            "base": "https://github.com/seisman/SAC_Docs_zh/edit/gitbook/",
+            "label": "编辑此页面",
+            "multilingual": false
+        }
+    }
 }
