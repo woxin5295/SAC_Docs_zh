@@ -1,4 +1,4 @@
-## interpolate 
+## interpolate
 
 ### 概要
 
@@ -7,24 +7,19 @@
 ### 语法
 
 ``` {.bash}
-INTERP!OLATE! [D!ELTA! v|N!PTS! v] [B!EGIN! v]
+INTERPOLATE [DELTA v|NPTS v] [BEGIN v]
+```
+``` {.bash}
+INTERP [D v|N v] [B v]
 ```
 
 ### 输入
 
-DELTA v
-
-:   设置新采样率为 `v`。数据的时间跨度（E-B）保持不变， `npts`变化，`E`
+- `DELTA v`: 设置新采样率为 `v`。数据的时间跨度（E-B）保持不变， `npts`变化，`E`
     由于需要与 `b` 的间距为 `delta` 的整数倍，所以可能会有微调
-
-NPTS n
-
-:   强制设置插值后文件的数据点数为 `n`。时间宽度不变， `delta`
+- `NPTS n`: 强制设置插值后文件的数据点数为 `n`。时间宽度不变， `delta`
     发生变化。
-
-BEGIN v
-
-:   在 `v` 处开始插值，该值将作为插值文件的起始时间。 `BEGIN` 可以和
+- `BEGIN v`: 在 `v` 处开始插值，该值将作为插值文件的起始时间。 `BEGIN` 可以和
     `DELTA` 或 `NPTS` 选项一起使用。
 
 ### 说明
@@ -42,7 +37,7 @@ BEGIN v
 
 ### 示例
 
-假定filea是等间隔数据，采样间隔为 ，为了将转换到采样间隔为 ：
+假定filea是等间隔数据，采样间隔为0.025 s，为了将转换到采样间隔为 0.02 s：
 
 ``` {.bash}
 SAC> r filea
@@ -59,7 +54,7 @@ SAC> r fileb
 SAC> interp npts 4096
 ```
 
-假设filec是不等间隔数据，为了将其转换为采样率为 的等间隔数据：
+假设filec是不等间隔数据，为了将其转换为采样率为 0.01 s的等间隔数据：
 
 ``` {.bash}
 SAC> read filec

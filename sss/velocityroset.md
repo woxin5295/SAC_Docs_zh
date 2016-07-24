@@ -1,4 +1,4 @@
-## velocityroset {#sss:velocityroset}
+## velocityroset
 
 ### 概要
 
@@ -6,18 +6,20 @@
 
 ### 语法
 
-V`ELOCITY`R`OSET` \[ON|OFF\] \[L`OCATION` UL|UR|LL|LR\]
+``` {.bash}
+VELOCITYROSET [ON|OFF] [LOCATION UL|UR|LL|LR]
+```
+``` {.bash}
+VR [ON|OFF] [L UL|UR|LL|LR]
+```
 
 ### 输入
 
-ON|OFF
-
-:   打开/关闭速度roset绘制选项
-
-LOCATION UL|UR|LL|LR
-
-:   修改速度roset的放置位置。分别对应左上、右上、左下、右下角。
+- `ON|OFF`: 打开/关闭速度roset绘制选项
+- `LOCATION UL|UR|LL|LR`: 修改速度roset的放置位置。分别对应左上、右上、左下、右下角。
 
 ### 缺省值
 
+``` {.bash}
 velocityroset off location ll
+```

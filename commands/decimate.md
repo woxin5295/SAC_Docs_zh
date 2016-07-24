@@ -1,4 +1,4 @@
-## decimate 
+## decimate
 
 ### 概要
 
@@ -7,18 +7,16 @@
 ### 语法
 
 ``` {.bash}
-DEC!IMATE! [n] [F!ILTER! ON|OFF]
+DECIMATE [n] [FILTER ON|OFF]
+```
+``` {.bash}
+DEC [n] [F ON|OFF]
 ```
 
 ### 输入
 
-n
-
-:   设置减采样因子为n，即每n个点中取一个点，n取值范围为2到7
-
-FILTER ON|OFF
-
-:   打开/关闭抗混叠FIR滤波器
+- `n`: 设置减采样因子为n，即每n个点中取一个点，n取值范围为2到7
+- `FILTER ON|OFF`: 打开/关闭抗混叠FIR滤波器
 
 ### 缺省值
 

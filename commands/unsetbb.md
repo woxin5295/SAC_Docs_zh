@@ -1,4 +1,4 @@
-## unsetbb 
+## unsetbb
 
 ### 概要
 
@@ -12,13 +12,8 @@ UNSETBB ALL|variable ...
 
 ### 输入
 
-ALL
-
-:   删除已定义的全部黑板变量
-
-variable
-
-:   删除黑板变量 `variable`
+- `ALL`: 删除已定义的全部黑板变量
+- `variable`: 删除黑板变量 `variable`
 
 ### 示例
 

@@ -1,4 +1,4 @@
-## writehdr 
+## writehdr
 
 ### 概要
 
@@ -7,7 +7,10 @@
 ### 语法
 
 ``` {.bash}
-W!RITE!H!DR!
+WRITEHDR
+```
+``` {.bash}
+WH
 ```
 
 ### 说明

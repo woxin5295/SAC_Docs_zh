@@ -1,4 +1,4 @@
-## bandpass 
+## bandpass
 
 ### 概要
 
@@ -7,47 +7,24 @@
 ### 语法
 
 ``` {.bash}
-B!AND!P!ASS! [BU!TTER!|BE!SSEL!|C1|C2] [C!ORNERS! v1 v2] [N!POLES! n] [P!ASSES! n]
-    [T!RANBW! v] [A!TTEN! v]
+BANDPASS [BUTTER|BESSEL|C1|C2] [CORNERS v1 v2] [NPOLES n] [PASSES n]
+    [TRANBW v] [ATTEN v]
+```
+``` {.bash}
+BP [BU|BE|C1|C2] [C v1 v2] [N n] [P n] [T v] [A v]
 ```
 
 ### 输入
 
-BUTTER
-
-:   应用Butterworth滤波器
-
-BESSEL
-
-:   应用Bessel滤波器
-
-C1
-
-:   应用Chebyshev I型滤波器
-
-C2
-
-:   应用Chebyshev II型滤波器
-
-CORNERS v1 v2
-
-:   设定拐角频率分别为 `v1` 和 `v2`， 即频率通带为 `v1-v2`
-
-NPOLES n
-
-:   设置极数为 `n`，可以取1到10之间的整数
-
-PASSES n
-
-:   设置通道数为 `n`，可以取1或2
-
-TRANBW v
-
-:   设置Chebyshev转换带宽为v
-
-ATTEN v
-
-:   设置Chebyshev衰减因子为v
+- `BUTTER`: 应用Butterworth滤波器
+- `BESSEL`: 应用Bessel滤波器
+- `C1`: 应用Chebyshev I型滤波器
+- `C2`: 应用Chebyshev II型滤波器
+- `CORNERS v1 v2`: 设定拐角频率分别为 `v1` 和 `v2`， 即频率通带为 `v1-v2`
+- `NPOLES n`: 设置极数为 `n`，可以取1到10之间的整数
+- `PASSES n`: 设置通道数为 `n`，可以取1或2
+- `TRANBW v`: 设置Chebyshev转换带宽为v
+- `ATTEN v`: 设置Chebyshev衰减因子为v
 
 ### 缺省值
 
@@ -104,7 +81,7 @@ Chebyshev滤波器设计起来更复杂一点，除了截止频率和极点数�
 
 ### 示例
 
-应用一个四极Butterworth滤波器，拐角频率为 和 ：
+应用一个四极Butterworth滤波器，拐角频率为 2 Hz 和 5 Hz：
 
 ``` {.bash}
 SAC> bp n 4 c 2 5

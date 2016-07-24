@@ -1,4 +1,4 @@
-## plotspe {#spe:plotspe}
+## plotspe
 
 ### 概要
 
@@ -6,33 +6,26 @@
 
 ### 语法
 
-P`LOT`SPE \[P`OWER`|L`OG`|A`MPLITUDE`\] \[C`ONFIDENCE` \[ON|OFF\]\]
+``` {.bash}
+PLOTSPE [POWER|LOG|AMPLITUDE] [CONFIDENCE [ON|OFF]]
+```
+``` {.bash}
+PSPE [P|L|A] [C [ON|OFF]]
+```
 
 ### 输入
 
-POWER
-
-:   用线性插值绘制功率响应
-
-LOG
-
-:   用对数内插法绘制功率响应
-
-AMPLITUDE
-
-:   绘制振幅响应
-
-CONFIDENCE ON
-
-:   在绘图上包含置信区间
-
-CONFIDENCE OFF
-
-:   在绘图上不包含置信区间
+- `POWER`: 用线性插值绘制功率响应
+- `LOG`: 用对数内插法绘制功率响应
+- `AMPLITUDE`: 绘制振幅响应
+- `CONFIDENCE ON`: 在绘图上包含置信区间
+- `CONFIDENCE OFF`: 在绘图上不包含置信区间
 
 ### 缺省值
 
+``` {.bash}
 plotsp power confidence off
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## keepam 
+## keepam
 
 ### 概要
 
@@ -7,8 +7,12 @@
 ### 语法
 
 ``` {.bash}
-!KEEP!AM
+KEEPAM
 ```
+``` {.bash}
+AM
+```
+
 
 ### 说明
 

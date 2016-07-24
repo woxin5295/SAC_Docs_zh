@@ -1,4 +1,4 @@
-## yvport 
+## yvport
 
 ### 概要
 
@@ -7,18 +7,16 @@
 ### 语法
 
 ``` {.bash}
-YVP!ORT! yvmin yvmax
+YVPORT yvmin yvmax
+```
+``` {.bash}
+YVP yvmin yvmax
 ```
 
 ### 输入
 
-yvmin
-
-:   Y轴视口的最小值，范围为 `0.0` 到 `yvmax`
-
-yvmax
-
-:   Y轴视口的最大值，范围为 `yvmin` 到 `1.0`
+- `yvmin`: Y轴视口的最小值，范围为 `0.0` 到 `yvmax`
+- `yvmax`: Y轴视口的最大值，范围为 `yvmin` 到 `1.0`
 
 ### 缺省值
 

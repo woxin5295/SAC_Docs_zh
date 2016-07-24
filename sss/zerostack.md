@@ -1,4 +1,4 @@
-## zerostack {#sss:zerostack}
+## zerostack
 
 ### 概要
 
@@ -6,7 +6,12 @@
 
 ### 语法
 
-Z`ERO`S`TACK`
+``` {.bash}
+ZEROSTACK
+```
+``` {.bash}
+ZS
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## markvalue 
+## markvalue
 
 ### 概要
 
@@ -7,22 +7,17 @@
 ### 语法
 
 ``` {.bash}
-MARKV!ALUE! [GE|LE v] [TO marker]
+MARKVALUE [GE|LE v] [TO marker]
+```
+``` {.bash}
+MARKV [GE|LE v] [TO marker]
 ```
 
 ### 输入
 
-GE v
-
-:   搜索并标记第一个大于或等于 `v` 的数据点
-
-LE v
-
-:   搜索并标记第一个小于或等于 `v` 的数据点
-
-TO marker
-
-:   用于保存数据点的时刻的时间标记头段，`marker` 可以取 `Tn`（n=0–9）
+- `GE v`: 搜索并标记第一个大于或等于 `v` 的数据点
+- `LE v`: 搜索并标记第一个小于或等于 `v` 的数据点
+- `TO marker`: 用于保存数据点的时刻的时间标记头段，`marker` 可以取 `Tn`（n=0–9）
 
 ### 缺省值
 

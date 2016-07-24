@@ -1,4 +1,4 @@
-## correlate 
+## correlate
 
 ### 概要
 
@@ -7,47 +7,24 @@
 ### 语法
 
 ``` {.bash}
-COR!RELATE! [M!ASTER! name|n] [N!UMBER! n] [L!ENGTH! ON|OFF|v] [NO!RMALIZED!]
-    [T!YPE! R!ECTANGLE!|HAM!MING!|HAN!NING!|C!OSINE!|T!RIANGLE!]
+CORRELATE [MASTER name|n] [NUMBER n] [LENGTH ON|OFF|v] [NORMALIZED]
+    [TYPE RECTANGLE|HAMMING|HANNING|COSINE|TRIANGLE]
+```
+``` {.bash}
+CORR [M name|n] [N n] [L ON|OFF|v] [NO] [T R|HAM|HAN|C|T]
 ```
 
 ### 输入
 
-MASTER name|n
-
-:   通过文件名或文件号指定主文件，所有文件将与此文件做相关
-
-NUMBER n
-
-:   设置相关窗的个数
-
-LENGTH ON|OFF
-
-:   打开/关闭固定窗长选项开关
-
-LENGTH v
-
-:   打开固定窗长选项开关，并将窗长度设置为v秒
-
-NORMALIZED
-
-:   对相关结果进行归一化
-
-TYPE RECTANGLE
-
-:   给每个窗应用矩形函数，其等价于不对窗加函数
-
-TYPE HAMMING|HANNING
-
-:   对每个窗应用Hamming/Hanning函数
-
-TYPE COSINE
-
-:   对每个窗的前后10%的数据点应用余弦函数
-
-TYPE TRIANGLE
-
-:   对每个窗应用三角函数
+- `MASTER name|n`: 通过文件名或文件号指定主文件，所有文件将与此文件做相关
+- `NUMBER n`: 设置相关窗的个数
+- `LENGTH ON|OFF`: 打开/关闭固定窗长选项开关
+- `LENGTH v`: 打开固定窗长选项开关，并将窗长度设置为v秒
+- `NORMALIZED`: 对相关结果进行归一化
+- `TYPE RECTANGLE`: 给每个窗应用矩形函数，其等价于不对窗加函数
+- `TYPE HAMMING|HANNING`: 对每个窗应用Hamming/Hanning函数
+- `TYPE COSINE`: 对每个窗的前后10%的数据点应用余弦函数
+- `TYPE TRIANGLE`: 对每个窗应用三角函数
 
 ### 缺省值
 
@@ -75,7 +52,7 @@ $$Cor(t) = \int_{-\infty} ^\infty f^*(\tau)g(t+\tau)d\tau$$
 当窗长度（`LENGTH` 选项）以及窗数目（`NUMBER` 选项）超过
 文件中的数据点数时，会自动计算窗之间的重叠。缺省情况下，此窗特性是关闭的。
 
-使用归一化选项，会对相关函数做归一化，最终得到的结果位于$-1$到$1$之间，由此
+使用归一化选项，会对相关函数做归一化，最终得到的结果位于 -1 到 1之间，由此
 可以得到常用的互相关系数。
 
 ### 示例

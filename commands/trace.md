@@ -1,4 +1,4 @@
-## trace 
+## trace
 
 ### 概要
 
@@ -12,13 +12,8 @@ TRACE [ON|OFF] name [name ...]
 
 ### 输入
 
-ON|OFF
-
-:   打开/关闭变量追踪选项
-
-name
-
-:   要追踪的黑板变量或/和头段变量名。对于头段变量，其格式为
+- `ON|OFF`: 打开/关闭变量追踪选项
+- `name`: 要追踪的黑板变量或/和头段变量名。对于头段变量，其格式为
     `filename,hdrname`，其中 `filename` 是要追踪的SAC文件名
     或文件号，`hdrname` 是SAC头段变量名
 

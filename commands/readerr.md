@@ -1,4 +1,4 @@
-## readerr 
+## readerr
 
 ### 概要
 
@@ -7,43 +7,23 @@
 ### 语法
 
 ``` {.bash}
-R!EAD!ERR [B!ADFILE! F!ATAL!|W!ARNING!|I!GNORE!] [N!OFILES! F!ATAL!|W!ARNING!|I!GNORE!]
-          [M!EMORY! S!AVE!|D!ELETE!]
+READERR [BADFILE FATAL|WARNING|IGNORE] [NOFILES FATAL|WARNING|IGNORE]
+          [MEMORY SAVE|DELETE]
+```
+``` {.bash}
+RERR [B F|W|I] [N F|W|I] [M S|D]
 ```
 
 ### 输入
 
-BADFILE
-
-:   当文件不可读或不存在时出现的错误
-
-NOFILES
-
-:   文件列表中没有文件可读时出现的错误
-
-FATAL
-
-:   设置错误条件为fatal，发送错误消息并停止执行命令
-
-WARNING
-
-:   发送警告消息，但继续执行命令
-
-IGNORE
-
-:   忽略错误，继续执行命令
-
-MEMORY
-
-:   如果无文件可读则对内存中原有的数据进行处理
-
-DELETE
-
-:   内存中的原数据将被删除
-
-SAVE
-
-:   内存中的原数据将保留在内存中
+- `BADFILE`: 当文件不可读或不存在时出现的错误
+- `NOFILES`: 文件列表中没有文件可读时出现的错误
+- `FATAL`: 设置错误条件为fatal，发送错误消息并停止执行命令
+- `WARNING`: 发送警告消息，但继续执行命令
+- `IGNORE`: 忽略错误，继续执行命令
+- `MEMORY`: 如果无文件可读则对内存中原有的数据进行处理
+- `DELETE`: 内存中的原数据将被删除
+- `SAVE`: 内存中的原数据将保留在内存中
 
 ### 缺省值
 

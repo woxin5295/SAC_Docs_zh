@@ -1,4 +1,4 @@
-## evaluate 
+## evaluate
 
 ### 概要
 
@@ -7,7 +7,10 @@
 ### 语法
 
 ``` {.bash}
-EVAL!UATE! [TO TERM|name] [v] op v [op v ...]
+EVALUATE [TO TERM|name] [v] op v [op v ...]
+```
+``` {.bash}
+EVAL [TO TERM|name] [v] op v [op v ...]
 ```
 
 其中 `op` 可以取下面中的一个：
@@ -22,21 +25,10 @@ SIN|ASIN|COS|ACOS|TAN|ATAN|EQ|NE|LE|GE|LT|GT
 
 ### 输入
 
-TO TERM
-
-:   结果写入终端
-
-TO name
-
-:   结果写入黑板变量name
-
-v
-
-:   浮点数或整数。SAC中所有的运算都是浮点运算，整数会首先转换为浮点型
-
-op
-
-:   算术或逻辑操作符
+- `TO TERM`: 结果写入终端
+- `TO name`: 结果写入黑板变量name
+- `v`: 浮点数或整数。SAC中所有的运算都是浮点运算，整数会首先转换为浮点型
+- `op`: 算术或逻辑操作符
 
 ### 缺省值
 

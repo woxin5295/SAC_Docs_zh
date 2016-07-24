@@ -1,4 +1,4 @@
-## deltacheck {#sss:deltacheck}
+## deltacheck
 
 ### 概要
 
@@ -6,29 +6,22 @@
 
 ### 语法
 
-DELTACHECK ON|OFF|R`OUNDOFF`|v
+``` {.bash}
+DELTACHECK ON|OFF|ROUNDOFF|v
+```
 
 ### 输入
 
-ON
-
-:   打开采样率检测选项
-
-OFF
-
-:   关闭采样率检测选项
-
-ROUNDOFF
-
-:   打开采样率检测选项，并强制采样率符合当前机器的roundoff因子
-
-v
-
-:   打开采样率检测选项，并强制采样率允许存在v的偏差
+- `ON`: 打开采样率检测选项
+- `OFF`: 关闭采样率检测选项
+- `ROUNDOFF`: 打开采样率检测选项，并强制采样率符合当前机器的roundoff因子
+- `v`: 打开采样率检测选项，并强制采样率允许存在v的偏差
 
 ### 缺省值
 
+``` {.bash}
 deltacheck roundoff
+```
 
 ### 说明
 

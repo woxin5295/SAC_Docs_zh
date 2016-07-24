@@ -1,4 +1,4 @@
-## saveimg 
+## saveimg
 
 ### 概要
 
@@ -7,18 +7,16 @@
 ### 语法
 
 ``` {.bash}
-SAVE!IMG! filename.format
+SAVEIMG filename.format
+```
+``` {.bash}
+SAVE filename.format
 ```
 
 ### 输入
 
-filename
-
-:   要保存的图像的文件名
-
-format
-
-:   图像文件格式，支持PS、PDF、PNG和XPM
+- `filename`: 要保存的图像的文件名
+- `format`: 图像文件格式，支持PS、PDF、PNG和XPM
 
 ### 说明
 

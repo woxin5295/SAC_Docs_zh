@@ -1,4 +1,4 @@
-## writesp 
+## writesp
 
 ### 概要
 
@@ -7,30 +7,19 @@
 ### 语法
 
 ``` {.bash}
-W!RITE!SP [ASIS|RLIM|AMPH|RL|IM|AM|PH] [OVER|filelist]
+WRITESP [ASIS|RLIM|AMPH|RL|IM|AM|PH] [OVER|filelist]
+```
+``` {.bash}
+WSP [ASIS|RLIM|AMPH|RL|IM|AM|PH] [OVER|filelist]
 ```
 
 ### 输入
 
-ASIS
-
-:   按照谱文件当前格式写入
-
-RLIM
-
-:   写入实部和虚部分量
-
-AMPH
-
-:   写入振幅和相位分量
-
-RL|IM|AM|PH
-
-:   只写入实部/虚拟/振幅/相位分量
-
-filelist
-
-:   SAC二进制数据文件列表，这个列表可以包含简单文件名和绝对/相对路径名
+- `ASIS`: 按照谱文件当前格式写入
+- `RLIM`: 写入实部和虚部分量
+- `AMPH`: 写入振幅和相位分量
+- `RL|IM|AM|PH`: 只写入实部/虚拟/振幅/相位分量
+- `filelist`: SAC二进制数据文件列表，这个列表可以包含简单文件名和绝对/相对路径名
 
 ### 缺省值
 

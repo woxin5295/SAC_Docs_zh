@@ -1,4 +1,4 @@
-## writespe {#spe:writespe}
+## writespe
 
 ### 概要
 
@@ -6,17 +6,22 @@
 
 ### 语法
 
-W`RITE`SPE! \[file\]
+``` {.bash}
+WRITESPE [file]
+```
+``` {.bash}
+WSPE [file]
+```
 
 ### 输入
 
-file
-
-:   要写入的SAC文件名
+- `file`: 要写入的SAC文件名
 
 ### 缺省值
 
+``` {.bash}
 writespe spe
+```
 
 ### 说明
 

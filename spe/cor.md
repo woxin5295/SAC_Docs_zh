@@ -1,4 +1,4 @@
-## cor {#spe:cor}
+## cor
 
 ### 概要
 
@@ -6,51 +6,31 @@
 
 ### 语法
 
-COR \[N`UMBER` n|ON|OFF\] \[L`ENGTH` v\] \[P`REWHITEN` ON|OFF|n\]
-\[S`TOCASTIC`|TR`ANSIENT`\] \[T`YPE`
-HAM`MING`|HAN`NING`|C`OSINE`|R`ECTANGLE`|T`RIANGLE`\]
+``` {.bash}
+COR [NUMBER n|ON|OFF] [LENGTH v] [PREWHITEN ON|OFF|n] [STOCASTIC|TRANSIENT]
+    [TYPE HAMMING|HANNING|COSINE|RECTANGLE|TRIANGLE]
+```
+``` {.bash}
+COR [N n|ON|OFF] [L v] [P ON|OFF|n] [S|TR] [T HAM|HAN|C|R|T]
+```
 
 ### 输入
 
-NUMBER n
-
-:   设定窗口数为n
-
-NUMBER ON
-
-:   设定窗口数为先前值
-
-NUMBER OFF
-
-:   根据数据长度和窗长计算窗口数。使用该选项时没有数据重叠
-
-LENGTH v
-
-:   设置窗长为v秒
-
-TYPE type
-
-:   设置窗类型
-
-PREWHITEN ON|OFF
-
-:   打开/关闭预白化选项
-
-PREWHITEN n
-
-:   打开预白化选项，并设置系数的个数为n
-
-STOCHASTIC
-
-:   设置相关定标，假定数据是随机的
-
-TRANSIENT
-
-:   设置相关定标，假定数据是瞬态信号
+- `NUMBER n`: 设定窗口数为n
+- `NUMBER ON`: 设定窗口数为先前值
+- `NUMBER OFF`: 根据数据长度和窗长计算窗口数。使用该选项时没有数据重叠
+- `LENGTH v`: 设置窗长为v秒
+- `TYPE type`: 设置窗类型
+- `PREWHITEN ON|OFF`: 打开/关闭预白化选项
+- `PREWHITEN n`: 打开预白化选项，并设置系数的个数为n
+- `STOCHASTIC`: 设置相关定标，假定数据是随机的
+- `TRANSIENT`: 设置相关定标，假定数据是瞬态信号
 
 ### 缺省值
 
+``` {.bash}
 cor number off type hamming prewhiten off
+```
 
 ### 说明
 
@@ -83,8 +63,10 @@ PDS估计的时候这一点尤为明显。经由相关窗口的FFT的旁瓣功�
 数据进行预白化改变了原始信号，如果用户使用了预白化，退出子程序并且想要
 在别的操作中再次使用原始的信号，则必须重新读入原始信号到SAC。
 
-这种相关函数用于频谱的计算，nameref-spe-pds、 nameref-spe-plotcor
-命令绘制相关函数并且可以使用 nameref-spe-writecor
+这种相关函数用于频谱的计算，[cor](/spe/cor.md) 必须在执行
+[pds](/spe/pds.md)、 [mlm](/spe/mlm.md)、[mem](/spe/mem.md)
+之前执行，用户可以执行 [plotcor](/spe/plotcor.md)
+命令绘制相关函数并且可以使用 [writecor](/spe/writecor.md)
 命令将其作为SAC文件进行 保存。
 
 ### 头段变量改变

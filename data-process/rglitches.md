@@ -9,6 +9,6 @@
 毛刺在模拟地震记录中很常见，现在的数字地震记录中则很少见到，因而实
 际上很少需要执行这一步操作。
 
-nameref-fig-deglitches 中直观地看到。
+`rglitches` 的效果可以从下图中直观地看到。
 
-![地震波形去毛刺。上图为包含glitches的地震信号，下图为去除glitches后的地震信号。]
+![地震波形去毛刺。上图为包含glitches的地震信号，下图为去除glitches后的地震信号。](/figures/rglicthes.png)

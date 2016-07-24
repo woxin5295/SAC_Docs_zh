@@ -1,15 +1,13 @@
-## 事件信息 {#sec:event-info}
+## 事件信息
 
 相关头段：`evla`、`evlo`、`evdp`、`mag`、
 `o`、`nzyear`、`nzjday`、`nzhour`、 `nzmin`、`nzsec`、`nzmsec`
-
-相关脚本：、
 
 一般来说，从SEED连续波形中解压得到的SAC数据中是没有事件信息的。这就需要
 用户从地震目录中获取事件的发震时刻、经度、纬度、深度和震级信息，并将这些
 信息写入到SAC文件的头段中。SAC提供了用于可以修改头段变量的命令
 [chnhdr](/commands/chnhdr.md)，以及将修改后的头段变量写到磁盘文件的命令
-[writehdr](/commands/writehdr.md)[^1]。
+[writehdr](/commands/writehdr.md)。
 
 ### 经纬度、深度与震级
 
@@ -29,7 +27,7 @@ SAC> wh                                     // 将修改后的头段写入文件
 需要用到 [chnhdr](/commands/chnhdr.md) 的两个特殊用法。
 
 先看看如何修改**一个**SAC文件的发震时刻，假设发震时刻为1987年06月22日
-11时10分10.363秒： \[code:origin-time\]
+11时10分10.363秒：
 
 ``` {.bash}
 SAC> r ./cdv.z
@@ -63,7 +61,7 @@ SAC> wh                          // 写回磁盘
 上面的做法需要执行5个命令才能实现，而且需要人工查看 `o` 的值，
 因而无法用于处理大量数据。下面就对这一例子做进一步简化，这其中需要使用
 SAC提供的“在命令中引用头段变量的值”的功能。具体的语法以及用法在
-“nameref-chap-sac-programming”一章中会介绍。
+[SAC编程](/macros) 一章中会介绍。
 
 ``` {.bash}
 SAC> r cdv.z
@@ -115,6 +113,3 @@ SAC> wh
 的作用是使内存中所有的数据拥有相同的参考时刻，
 在此命令的基础上，所有数据的头段变量 `o` 将拥有相同的值，所以
 直接引用第一个头段变量的 `o` 值就不再是一件危险的事情了。
-
-[^1]: 也可以使用 `w over` 将修改写回 磁盘文件。关于 `wh` 和 `w over`
-    的区别，参考 nameref-sec-wh-and-wover 一节。

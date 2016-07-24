@@ -1,4 +1,4 @@
-## systemcommand 
+## systemcommand
 
 ### 概要
 
@@ -7,18 +7,16 @@
 ### 语法
 
 ``` {.bash}
-S!YSTEM!C!OMMAND! command [options]
+SYSTEMCOMMAND command [options]
+```
+``` {.bash}
+SC command [options]
 ```
 
 ### 输入
 
-command
-
-:   系统命令名
-
-options
-
-:   命令需要的选项
+- `command`: 系统命令名
+- `options`: 命令需要的选项
 
 ### 说明
 

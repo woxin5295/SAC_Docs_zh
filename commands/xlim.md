@@ -12,22 +12,10 @@ XLIM [ON|OFF|pdw|SIGNAL]
 
 ### 输入
 
-pdw
-
-:   打开X轴范围选项并设置范围为新的“partial data window”， 参考
-    nameref-subsec-pdw
-
-SIGNAL
-
-:   等同于输入 `A -1 F +1`，即初至前1秒到事件结束的后1秒
-
-ON
-
-:   打开x轴范围选项，但不改变X轴范围值
-
-OFF
-
-:   关闭x轴范围选项，即根据数据的自变量范围决定X轴范围
+- `pdw`: 打开X轴范围选项并设置范围为新的“partial data window”， 参考 [pdw](/data-process/cut-data.md)
+- `SIGNAL`: 等同于输入 `A -1 F +1`，即初至前1秒到事件结束的后1秒
+- `ON`: 打开x轴范围选项，但不改变X轴范围值
+- `OFF`: 关闭x轴范围选项，即根据数据的自变量范围决定X轴范围
 
 ### 缺省值
 

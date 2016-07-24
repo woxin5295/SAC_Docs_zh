@@ -1,4 +1,4 @@
-## fir 
+## fir
 
 ### 概要
 
@@ -12,17 +12,9 @@ FIR [REC|FFT] file
 
 ### 输入
 
-FFT
-
-:   通过FFT变换方法应用FIR滤波器
-
-REC
-
-:   递归应用FIR滤波器
-
-file
-
-:   包含FIR滤波器的文件名
+- `FFT`: 通过FFT变换方法应用FIR滤波器
+- `REC`: 递归应用FIR滤波器
+- `file`: 包含FIR滤波器的文件名
 
 ### 缺省值
 

@@ -102,7 +102,7 @@
   * [修改最大允许的文件数目](tricks-and-traps/max-allowed-files.md)
   * [SAC与脚本的运行速度](tricks-and-traps/running-speed.md)
 
-* [SAC基本命令](commands/func_commands.md)
+* [SAC基本命令](commands/README.md)
   * [about](commands/about.md)
   * [abs](commands/abs.md)
   * [add](commands/add.md)
@@ -300,7 +300,7 @@
   * [zlines](commands/zlines.md)
   * [zticks](commands/zticks.md)
 
-* [SSS](sss/README.md)
+* [信号迭加](sss/README.md)
   * [sss](sss/sss.md)
   * [addstack](sss/addstack.md)
   * [changestack](sss/changestack.md)
@@ -322,7 +322,7 @@
   * [writestack](sss/writestack.md)
   * [zerostack](sss/zerostack.md)
 
-* [SPE](spe/README.md)
+* [谱估计](spe/README.md)
   * [spe](spe/spe.md)
   * [cor](spe/cor.md)
   * [mem](spe/mem.md)

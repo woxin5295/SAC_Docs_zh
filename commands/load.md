@@ -1,4 +1,4 @@
-## load 
+## load
 
 ### 概要
 
@@ -12,13 +12,8 @@ LOAD comname [ABBREV abbrevname]
 
 ### 输入
 
-comname
-
-:   从一个共享目标文件中载入的一个外部函数名
-
-ABBREV abbrevname
-
-:   命令的简写
+- `comname`: 从一个共享目标文件中载入的一个外部函数名
+- `ABBREV abbrevname`: 命令的简写
 
 ### 说明
 

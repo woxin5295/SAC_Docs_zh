@@ -1,4 +1,4 @@
-## addf 
+## addf
 
 ### 概要
 
@@ -7,20 +7,18 @@
 ### 语法
 
 ``` {.bash}
-ADDF [N!EWHDR! [ON|OFF]] filelist
+ADDF [NEWHDR [ON|OFF]] filelist
+```
+``` {.bash}
+ADDF [N [ON|OFF]] filelist
 ```
 
 ### 输入
 
-NEWHDR ON|OFF
-
-:   指定新生成的文件使用哪个文件的头段。`OFF`
+- `NEWHDR ON|OFF`: 指定新生成的文件使用哪个文件的头段。`OFF`
     表示使用内存中原文件的头段区，`ON` 表示使用filelist中文件的
     头段区。缺省值为 `OFF`
-
-filelist
-
-:   SAC二进制文件列表
+- `filelist`: SAC二进制文件列表
 
 ### 说明
 
@@ -32,11 +30,8 @@ filelist
 要相加的两个文件必须满足如下条件才能执行加法操作：
 
 -   为等间隔时间序列文件
-
 -   有相同的采样间隔 `delta`
-
 -   有相同的数据点数 `npts`
-
 -   文件开始时间有相同的绝对时刻
 
 若两个待相加的文件的时刻不完全匹配，则会给出警告，但相加操作会继续执行。若采样间隔或数据

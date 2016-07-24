@@ -1,4 +1,4 @@
-## installmacro 
+## installmacro
 
 ### 概要
 
@@ -12,9 +12,7 @@ INSTALLMACRO name [name ...]
 
 ### 输入
 
-name
-
-:   SAC宏文件名
+- `name`: SAC宏文件名
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## line 
+## line
 
 ### 概要
 
@@ -7,55 +7,28 @@
 ### 语法
 
 ``` {.bash}
-LINE [ON|OFF|S!OLID!|D!OTTED!|n] [FILL ON|OFF|pos_color/neg_color]
-    [I!NCREMENT! [ON|OFF]] [L!IST! STANDARD|nlist]
+LINE [ON|OFF|SOLID|DOTTED|n] [FILL ON|OFF|pos_color/neg_color]
+    [INCREMENT [ON|OFF]] [LIST STANDARD|nlist]
 ```
+``` {.bash}
+LINE [ON|OFF|S|D|n] [FILL ON|OFF|pos_color/neg_color]
+    [I [ON|OFF]] [L STANDARD|nlist]
+```
+
 
 ### 输入
 
-ON
-
-:   打开线型选项，不改变线型
-
-OFF
-
-:   关闭线型选项
-
-SOLID
-
-:   改变线型为实线型，并打开线型开关
-
-DOTTED
-
-:   改变线型为虚线型，并打开线型开关
-
-n
-
-:   设置线型为n并绘制线条。若n取值为0则表示不绘制该线条
-
-FILL ON|OFF
-
-:   打开/关闭颜色填充
-
-FILL pos\_color/neg\_color
-
-:   对每个数据的正值和负值部分涂色
-
-INCREMENT ON
-
-:   每个数据被绘出之后，按照线型表中的次序改变为另一个线型
-
-INCREMENT OFF
-
-:   不改变线型
-
-LIST nlist
-
-:   改变线型列表
-
-LIST STANDARD
-
-:   设置为标准线型列表
+- `ON`: 打开线型选项，不改变线型
+- `OFF`: 关闭线型选项
+- `SOLID`: 改变线型为实线型，并打开线型开关
+- `DOTTED`: 改变线型为虚线型，并打开线型开关
+- `n`: 设置线型为n并绘制线条。若n取值为0则表示不绘制该线条
+- `FILL ON|OFF`: 打开/关闭颜色填充
+- `FILL pos\_color/neg\_color`: 对每个数据的正值和负值部分涂色
+- `INCREMENT ON`: 每个数据被绘出之后，按照线型表中的次序改变为另一个线型
+- `INCREMENT OFF`: 不改变线型
+- `LIST nlist`: 改变线型列表
+- `LIST STANDARD`: 设置为标准线型列表
 
 ### 缺省值
 

@@ -1,4 +1,4 @@
-## convert 
+## convert
 
 ### 概要
 
@@ -9,24 +9,17 @@
 ``` {.bash}
 CONV!ERT! [FROM] [format] infile [TO [format] outfile]|[OVER [format]]
 ```
+``` {.bash}
+CONV [FROM] [format] infile [TO [format] outfile]|[OVER [format]]
+```
+
 
 ### 输入
 
-infile
-
-:   输入文件名
-
-outfile
-
-:   输出文件名
-
-OVER
-
-:   覆盖输入文件
-
-format
-
-:   可以取 `SAC` 或 `ALPHA` ，分别表示二进制格式 和字母数字格式的SAC文件
+- `infile`: 输入文件名
+- `outfile`: 输出文件名
+- `OVER`: 覆盖输入文件
+- `format`: 可以取 `SAC` 或 `ALPHA` ，分别表示二进制格式 和字母数字格式的SAC文件
 
 ### 缺省值
 

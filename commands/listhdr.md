@@ -1,4 +1,4 @@
-## listhdr 
+## listhdr
 
 ### 概要
 
@@ -7,47 +7,25 @@
 ### 语法
 
 ``` {.bash}
-L!IST!H!DR! [D!EFAULT!|P!ICKS!|SP!ECIAL!] [FILES ALL|NONE|list] [COLUMNS 1|2]
+LISTHDR [DEFAULT|PICKS|SPECIAL] [FILES ALL|NONE|list] [COLUMNS 1|2]
     [INCLUSIVE ON|OFF] [hdrlist]
 ```
+``` {.bash}
+LH [D|P|SP] [FILES ALL|NONE|list] [COLUMNS 1|2] [INCLUSIVE ON|OFF] [hdrlist]
+```
+
 
 ### 输入
 
-DEFAULT
-
-:   使用默认的头段变量列表，即列出所有已定义的头段变量
-
-PICKS
-
-:   使用picks头段列表，即列出与到时拾取相关的头段变量
-
-SPECIAL
-
-:   使用用户自定义的特殊头段变量列表
-
-FILES ALL
-
-:   列出内存中所有文件的头段
-
-FILES NONE
-
-:   不列出头段，为将来的命令设置默认值
-
-FILES list
-
-:   列出部分文件的头段，`list`是要列出的文件的文件号
-
-COLUMNS 1|2
-
-:   输出格式为每行一/两列
-
-INCLUSIVE ON|OFF
-
-:   `ON` 表示列出未定义的头段变量的值， `OFF` 则不列出
-
-hdrlist
-
-:   指定头段变量列表
+- `DEFAULT`: 使用默认的头段变量列表，即列出所有已定义的头段变量
+- `PICKS`: 使用picks头段列表，即列出与到时拾取相关的头段变量
+- `SPECIAL`: 使用用户自定义的特殊头段变量列表
+- `FILES ALL`: 列出内存中所有文件的头段
+- `FILES NONE`: 不列出头段，为将来的命令设置默认值
+- `FILES list`: 列出部分文件的头段，`list`是要列出的文件的文件号
+- `COLUMNS 1|2`: 输出格式为每行一/两列
+- `INCLUSIVE ON|OFF`: `ON` 表示列出未定义的头段变量的值， `OFF` 则不列出
+- `hdrlist`: 指定头段变量列表
 
 ### 缺省值
 

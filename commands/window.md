@@ -1,4 +1,4 @@
-## window 
+## window
 
 ### 概要
 
@@ -7,28 +7,20 @@
 ### 语法
 
 ``` {.bash}
-WIN!DOW! n [X!SIZE! xwmin xwmax] [Y!SIZE! ywmin ywmax] [ASPECT [value|ON|OFF]]
+WINDOW n [XSIZE xwmin xwmax] [YSIZE ywmin ywmax] [ASPECT [value|ON|OFF]]
+```
+``` {.bash}
+WIN n [X xwmin xwmax] [Y ywmin ywmax] [ASPECT [value|ON|OFF]]
 ```
 
 ### 输入
 
-n
-
-:   要设置属性的图形窗口号，n取值1到10
-
-XSIZE xwmin xwmax
-
-:   设置图形窗口的水平位置。
+- `n`: 要设置属性的图形窗口号，n取值1到10
+- `XSIZE xwmin xwmax`: 设置图形窗口的水平位置。
     其中xwmin和xwmax分别是窗口左/右边界位置，其可以取值为0.0到1.0。
-
-YSIEZ ywmin ywmax
-
-:   设置图形窗口的垂直位置。
+- `YSIEZ ywmin ywmax`: 设置图形窗口的垂直位置。
     其中ywmin和ywmax分别是窗口左/右边界位置，其可以取值为0.0到1.0。
-
-ASPECT value|ON|OFF
-
-:   设置宽纵比为value。若打开ASPECT选项，则自动计算xwmax，
+- `ASPECT value|ON|OFF`: 设置宽纵比为value。若打开ASPECT选项，则自动计算xwmax，
     使得xsize与ysize的比值为value，若value则未设定，则使用系统默认值。若打开了ASPECT
     选项，但是却没有指定xsize选项，则APSECT选项被关闭，并且使用默认的xwmin和xwmax值。
 
@@ -36,15 +28,13 @@ ASPECT value|ON|OFF
 
 下面列出前5个绘图窗口位置的缺省值：
 
-   n   xwmin   xwmax   ywmin   ywmax
-  --- ------- ------- ------- -------
-   1   0.05    0.65    0.45    0.95
-   2   0.07    0.67    0.43    0.93
-   3   0.09    0.69    0.41    0.91
-   4   0.11    0.71    0.39    0.89
-   5   0.13    0.73    0.37    0.87
-
-  : SAC标准窗口
+ n | xwmin | xwmax | ywmin | ywmax
+---|-------|-------|-------|-------
+ 1 | 0.05  | 0.65  | 0.45  | 0.95
+ 2 | 0.07  | 0.67  | 0.43  | 0.93
+ 3 | 0.09  | 0.69  | 0.41  | 0.91
+ 4 | 0.11  | 0.71  | 0.39  | 0.89
+ 5 | 0.13  | 0.73  | 0.37  | 0.87
 
 缺省情况下ASPECT选项是打开的，其值为11.0/8.5=1.294，因而xwmax默认不使用。
 

@@ -1,4 +1,4 @@
-## pickauthor 
+## pickauthor
 
 ### 概要
 
@@ -8,28 +8,26 @@
 ### 语法
 
 ``` {.bash}
-PICKA!UTHOR! author1 [author2 author3 ...]
-PICKA!UTHOR! FILE [filename]
-PICKA!UTHOR! PHASE [filename]
+PICKAUTHOR author1 [author2 author3 ...]
+PICKAUTHOR FILE [filename]
+PICKAUTHOR PHASE [filename]
+```
+``` {.bash}
+PICKA author1 [author2 author3 ...]
+PICKA FILE [filename]
+PICKA PHASE [filename]
 ```
 
 ### 输入
 
-authorlist
-
-:   SAC使用输入创建作者列表
-
-FILE
-
-:   如果使用了 `FILE` 选项，SAC将从参考文件中读取作者列表。
+- `authorlist`: SAC使用输入创建作者列表
+- `FILE`: 如果使用了 `FILE` 选项，SAC将从参考文件中读取作者列表。
     如果参考文件的文件名在命令行上给出，则SAC将读取这个指定的文件，否则
     SAC将根据上一次执行 [pickauthor](/commands/pickauthor.md)
     读取最近输入的文件名。 如果未给出文件名，则SAC使用
     `$SACAUX/csspickprefs`
 
-PHASE
-
-:   与 `FILE` 选项相似，其另一个功能是允许SAC读取指定的 头段变量信息
+- `PHASE`: 与 `FILE` 选项相似，其另一个功能是允许SAC读取指定的 头段变量信息
 
 ### 缺省值
 

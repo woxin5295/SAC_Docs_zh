@@ -1,4 +1,4 @@
-## wiener 
+## wiener
 
 ### 概要
 
@@ -7,35 +7,21 @@
 ### 语法
 
 ``` {.bash}
-W!IE!N!E!R [W!INDOW! pdw] [N!COEFF! n] [MU OFF|ON|v] [EPS!ILON! OFF|ON|e]
+WIENER [WINDOW pdw] [NCOEFF n] [MU OFF|ON|v] [EPSILON OFF|ON|e]
+```
+``` {.bash}
+WN [W pdw] [N n] [MU OFF|ON|v] [EPS OFF|ON|e]
 ```
 
 ### 输入
 
-NCOEFF n
-
-:   设置滤波器系数为 `n` 个
-
-MU off|on|v
-
-:   设置自适应步长参数
-
-MU Off
-
-:   设置自适应步长参数为0
-
-MU ON
-
-:   设置自适应步长为1.95/Rho(0)，其中Rho(0)是 `pdw` 中
+- `NCOEFF n`: 设置滤波器系数为 `n` 个
+- `MU off|on|v`: 设置自适应步长参数
+- `MU Off`: 设置自适应步长参数为0
+- `MU ON`: 设置自适应步长为1.95/Rho(0)，其中Rho(0)是 `pdw` 中
     延迟为0时的自相关系数
-
-MU v
-
-:   设置自适应步长为v
-
-EPSILON ON|OFF|e
-
-:   设置岭回归（ridge regression）参数为。 若为
+- `MU v`: 设置自适应步长为v
+- `EPSILON ON|OFF|e`: 设置岭回归（ridge regression）参数为。 若为
     `OFF`，则SAC将依次设置epsilon值为0.0、$10^{-5}$、$10^{-4}$、
     $10^{-3}$、$10^{-2}$，直到滤波器稳定为止。若epsilon=0不稳定，则SAC会给出警告
     信息，若所有值均不稳定，则SAC会给出错误信息。

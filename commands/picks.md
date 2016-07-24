@@ -1,4 +1,4 @@
-## picks 
+## picks
 
 ### 概要
 
@@ -7,39 +7,23 @@
 ### 语法
 
 ``` {.bash}
-PICKS [ON|OFF] [pick V!ERTICAL!|H!ORIZONTAL!|C!ROSS!] [W!IDTH! v] [H!EIGHT! v]
+PICKS [ON|OFF] [pick VERTICAL|HORIZONTAL|CROSS] [WIDTH v] [HEIGHT v]
 ```
+``` {.bash}
+PICKS [ON|OFF] [pick V|H|C] [W v] [H v]
+```
+
 
 ### 输入
 
-ON|OFF
-
-:   打开/关闭时间标记的显示
-
-pick
-
-:   SAC中与时间标记有关的头段变量名，可以取 `O`、`A`、
+- `ON|OFF`: 打开/关闭时间标记的显示
+- `pick`: SAC中与时间标记有关的头段变量名，可以取 `O`、`A`、
     `F`、`Tn`（n=0–9）
-
-VERTICAL
-
-:   在时间标记处绘制垂直线，标记名位于垂直线的右下方
-
-HORIZONTAL
-
-:   在最接近时间标记的数据点处绘制水平线，标记名位于线上或线下
-
-CROSS
-
-:   在时间标记处绘制垂直线，在最近的数据点处绘制水平线
-
-WIDTH v
-
-:   设置水平线的宽度为 `v`，其中宽度值为占图形宽度的比例
-
-HEIGHT v
-
-:   设置垂直线的高度为 `v`，其中高度值为占图形高度的比例
+- `VERTICAL`: 在时间标记处绘制垂直线，标记名位于垂直线的右下方
+- `HORIZONTAL`: 在最接近时间标记的数据点处绘制水平线，标记名位于线上或线下
+- `CROSS`: 在时间标记处绘制垂直线，在最近的数据点处绘制水平线
+- `WIDTH v`: 设置水平线的宽度为 `v`，其中宽度值为占图形宽度的比例
+- `HEIGHT v`: 设置垂直线的高度为 `v`，其中高度值为占图形高度的比例
 
 ### 缺省值
 
@@ -69,5 +53,3 @@ SAC> picks t4 c t5 c t6 c w 0.3 h 0.1
 ### BUGS
 
 -   `height` 选项对 `VERTICAL` 垂直线无效（v101.6a）
-
-

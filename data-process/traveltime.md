@@ -58,7 +58,7 @@ SAC> lh t3 kt3 t4 kt4
 
 ### `taup_setsac`命令
 
-nameref-http-//www.seis.sc.edu/taup/<span>taup</span>
+[taup](http://www.seis.sc.edu/taup/)
 软件提供的用于计算震相理论到时的独立于SAC的外部命令。
 
 ``` {.console}

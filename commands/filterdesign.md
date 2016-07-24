@@ -1,4 +1,4 @@
-## filterdesign 
+## filterdesign
 
 ### 概要
 
@@ -7,22 +7,17 @@
 ### 语法
 
 ``` {.bash}
-F!ILTER!D!ESIGN! [FILE [prefix]] [filteroptions] [delta]
+FILTERDESIGN [FILE [prefix]] [filteroptions] [delta]
+```
+``` {.bash}
+FD [FILE [prefix]] [filteroptions] [delta]
 ```
 
 ### 输入
 
-FILE prefix
-
-:   生成的三个SAC文件的前缀
-
-filteroptions
-
-:   与SAC中其他的滤波命令相同，包括滤波器类型
-
-delta
-
-:   数据的采样间隔。
+- `FILE prefix`: 生成的三个SAC文件的前缀
+- `filteroptions`: 与SAC中其他的滤波命令相同，包括滤波器类型
+- `delta`: 数据的采样间隔。
 
 ### 缺省值
 
@@ -48,31 +43,21 @@ delta
 在这三个SAC文件中，用户自定义头段变量 `USERn`、`KUSERn` 设置如下：
 
 -   user0：表示pass code。1代表LP；2代表HP；3代表BP；4代表BR；
-
 -   user1：type code。1代表BU，2代表BE，3代表C1，4代表C2；
-
 -   user2：number of poles
-
 -   user3：number of passes
-
 -   user4：tranbw
-
 -   user5：attenuation
-
 -   user6：delta
-
 -   user7：first corner
-
 -   user8：second corner if present, or -12345 if not
-
 -   kuser0：pass (lowpass, highpass, bandpass, or bandrej)
-
 -   kuser1：type (Butter, Bessel, C1, or C2 )
 
 ### 示例
 
-下面的例子展示了如何使用 `filterdesign` 命令产生一个高通，拐角 频率为
-，六极、双通滤波器的数字和模拟响应曲线，数据采样间隔为 ：
+下面的例子展示了如何使用 `filterdesign` 命令产生一个高通，拐角 频率为 2 Hz，
+六极、双通滤波器的数字和模拟响应曲线，数据采样间隔为 0.025 s：
 
 ``` {.bash}
 SAC> fd hp c 2 n 6 p 2 delta .025

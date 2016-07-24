@@ -1,4 +1,4 @@
-## 等值线图 {#sec:contour}
+## 等值线图
 
 SAC中 [spectrogram](/commands/spectrogram.md)
 等命令可以生成IXYZ数据（即3D数据），
@@ -27,7 +27,7 @@ SAC> title 'Katmai topography from survey data [inc = 25 km]'
 SAC> contour
 ```
 
-![contour绘制等值线I](contour1){width="90.00000%"}
+![contour绘制等值线I](/figures/contour1.png)
 
 下面的例子中，使用同样的文件，但是显示选项不同。每四条等值线有一个整数
 标签。每条等值线之间都有一个指向向下的箭头。所有等值线为实线型：
@@ -42,4 +42,4 @@ SAC> title 'Katmai topography from survey data [labels and ticks]'
 SAC> contour
 ```
 
-![contour绘制等值线图II](contour2){width="90.00000%"}
+![contour绘制等值线图II](/figures/contour2.png)

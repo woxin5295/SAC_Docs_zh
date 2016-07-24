@@ -1,4 +1,4 @@
-## gtext 
+## gtext
 
 ### 概要
 
@@ -7,37 +7,22 @@
 ### 语法
 
 ``` {.bash}
-GT!EXT! [S!OFTWARE!|H!ARDWARE!] [F!ONT! n] [SIZE size] [SYS!TEM! system] [N!AME! name]
+GTEXT [SOFTWARE|HARDWARE] [FONT n] [SIZE size] [SYSTEM system] [NAME name]
 ```
+``` {.bash}
+GT [S|H] [F n] [SIZE size] [SYS system] [N name]
+```
+
 
 ### 输入
 
-SOFTWARE
-
-:   绘图中使用软件文本
-
-HARDWARE
-
-:   绘图中使用硬件文本
-
-FONT n
-
-:   设置软件文本字体为 `n`，`n` 取值为1到8
-
-SIZE size
-
-:   改变缺省文本大小，可以取 `TINY`、`SMALL`、
-    `MEDIUM`、`LARGE`，这些缺省文本尺寸的具体大小可以 参考
+- `SOFTWARE`: 绘图中使用软件文本
+- `HARDWARE`: 绘图中使用硬件文本
+- `FONT n`: 设置软件文本字体为 `n`，`n` 取值为1到8
+- `SIZE size`: 改变缺省文本大小，可以取 `TINY`、`SMALL`、`MEDIUM`、`LARGE`，这些缺省文本尺寸的具体大小可以 参考
     [tsize](/commands/tsize.md) 命令
-
-SYSTEM system
-
-:   修改字体子系统，可以取值为 `SOFTWARE`、 `CORE`、`XFT`
-
-NAME name
-
-:   修改 `CORE` 或 `XFT` 子系统的默认字体名，
-    可以取Helvetica、Times-Roman、Courier、ZapfDingbats
+- `SYSTEM system`: 修改字体子系统，可以取值为 `SOFTWARE`、 `CORE`、`XFT`
+- `NAME name`: 修改 `CORE` 或 `XFT` 子系统的默认字体名，可以取Helvetica、Times-Roman、Courier、ZapfDingbats
 
 ### 缺省值
 

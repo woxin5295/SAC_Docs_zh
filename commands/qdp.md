@@ -1,4 +1,4 @@
-## qdp 
+## qdp
 
 ### 概要
 
@@ -12,29 +12,12 @@ QDP [ON|OFF|n] [TERM ON|OFF|n] [SGF ON|OFF|n]
 
 ### 输入
 
-ON|OFF
-
-:   打开/关闭终端和SGF设备的QDP选项
-
-n
-
-:   打开终端和SGF设备的QDP选项，并设定要绘制的点数为n
-
-TERM ON|OFF
-
-:   打开/关闭终端qdp绘图选项
-
-TERM n
-
-:   打开终端的QDP选项，并设定要绘制的数据点数为n
-
-SGF ON|OFF
-
-:   打开/关闭SGF设备的qdp绘图选项
-
-SGF n
-
-:   打开SGF设备的QDP选项，并设定绘制的数据点数为n
+- `ON|OFF`: 打开/关闭终端和SGF设备的QDP选项
+- `n`: 打开终端和SGF设备的QDP选项，并设定要绘制的点数为n
+- `TERM ON|OFF`: 打开/关闭终端qdp绘图选项
+- `TERM n`: 打开终端的QDP选项，并设定要绘制的数据点数为n
+- `SGF ON|OFF`: 打开/关闭SGF设备的qdp绘图选项
+- `SGF n`: 打开SGF设备的QDP选项，并设定绘制的数据点数为n
 
 ### 缺省值
 

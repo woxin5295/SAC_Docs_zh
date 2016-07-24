@@ -4,15 +4,21 @@
 
 #### `nvhdr`\*
 
-SAC头段版本号。`nvhdr`[^1]是SAC中很重要但是不太常用的头段变量。目前版本号为6，
+SAC头段版本号。`nvhdr`（星号表示该头段变量在SAC中必须有定义值，下同。）是SAC中很重要但是不太常用的头段变量。目前版本号为6，
 旧版本的SAC文件（`nvhdr<6`）在读入时头段区会自动更新。
 
 #### `nzyear, nzjday, nzhour, nzmin, nzsec, nzmsec`
 
-分别表示“年”、“一年的第几天”[^2][^3]、 “时”、“分”、“秒”、“毫秒”[^4]。
+分别表示“年”、“一年的第几天”、 “时”、“分”、“秒”、“毫秒”。
 这六个头段变量构成了SAC中唯一的绝对时刻，SAC中的其它时刻都被转换为相对
 于该时刻的相对时间（单位为秒）。关于SAC中的绝对时间和相对时间的概念，
-参考“nameref-sec-sac-time”一节。
+参考 [SAC中的参考时间](/fileformat/sac-time.md) 一节。
+
+说明：
+
+1. 使用jday而不是“month+day” 可以少用一个头段变量
+2. 1月1日对应的 `nzjday` 是1而不是0。
+3. 1 s = 1000 ms
 
 根据这六个头段变量还可以推导出其它一些辅助型头段变量：
 
@@ -41,7 +47,8 @@ SAC> lh kzdate kztime
 
 等效参考时刻。SAC的参考时刻是可以任意指定的，但一般选取某个特定的时刻
 （比如文件起始时刻、发震时刻等等）作为参考时刻。其可以取如下枚举值
-[^5]：
+（枚举型在C源码中使用 `#define` 宏来定义的，比如
+`#define IO 11`，所有可取的枚举值都以字母I开头。）：
 
 -   `IUNKN`：未知
 -   `IB`：以文件开始时刻为参考时间
@@ -50,8 +57,7 @@ SAC> lh kzdate kztime
 -   `IA`：以初动到时为参考时间
 -   `ITn`：以用户自定义的时间 `Tn` 为参考时间（n可取0–9）
 
-若 `iztype=IO`，则表示数据以发震时刻作为参考时刻，此时头段变量 `o`
-的值应为0。
+若 `iztype=IO`，则表示数据以发震时刻作为参考时刻，此时头段变量 `o` 的值应为0。
 
 #### `iftype`\*
 
@@ -70,9 +76,7 @@ SAC文件类型，其决定了头段区之后有几个子数据区。可以取�
 -   `IUNKN`：未知类型
 -   `IDISP`：位移量，单位为
 -   `IVEL`：速度量，单位为
-
--   `IVOLTS`：速度量，单位为 [^6]
-
+-   `IVOLTS`：速度量，单位为
 -   `IACC`：加速度量：单位为
 
 ### 数据相关变量
@@ -127,8 +131,8 @@ SAC> lh depmax
 
 因变量比例因子，即真实物理场被乘以该比例因子而得到现有数据。
 
-假设真实物理场的Y值大概在$10^{-20}$量级，由于数据量级太小处理起来可能
-不太方便。此时可以将数据乘以$10^{20}$变成合适的量级，并修改
+假设真实物理场的Y值大概在 $$10^{-20}$$ 量级，由于数据量级太小处理起来可能
+不太方便。此时可以将数据乘以 $$10^{20}$$ 变成合适的量级，并修改
 `scale=1.0e20`，这样就可以知道自己对数据人为放大了多少倍。
 
 101.5之前的版本中，在使用 [transfer](/commands/transfer.md)
@@ -146,23 +150,19 @@ SAC> lh depmax
 
 #### `iqual`
 
-iqual[^7]标识数据质量，可取如下值：
+标识数据质量，可取如下值：
 
 -   `IGOOD`：高质量数据
-
 -   `IGLCH`：数据中有毛刺（glitches）
-
 -   `IDROP`：数据有丢失（dropouts）
-
 -   `ILOWSN`：低信噪比数据
-
 -   `IOTHER`：其它
 
 #### `isynth`
 
 合成数地震图标识。
 
--   `IRLDTA`：真实数据
+-  `IRLDTA`：真实数据
 
 ### 事件相关变量
 
@@ -177,18 +177,15 @@ iqual[^7]标识数据质量，可取如下值：
 
 #### `ievreg`
 
-事件地理区域[^8]。
+事件地理区域。
 
 #### `ievtyp`
 
 事件类型，这里仅列出部分常见的枚举值：
 
 -   `IUNKN`：未知事件
-
 -   `INUCL`：核事件
-
 -   `IEQ`：地震
-
 -   `IOTHER`：其它
 
 #### `mag`
@@ -200,24 +197,16 @@ iqual[^7]标识数据质量，可取如下值：
 震级信息来源，可以取如下枚举值：
 
 -   `INEIC`：<http://earthquake.usgs.gov/earthquakes/search/>
-
 -   `IPDE`：<http://earthquake.usgs.gov/data/pde.php>
-
 -   `IISC`：<http://www.isc.ac.uk/iscbulletin/search/catalogue/>
-
 -   `IREB`：人工检查过的事件目录
-    nameref-http-//earthquake.usgs.gov<span>USGS</span>
-    nameref-http-//seismo.berkeley.edu/<span>UC Berkeley</span>
-    nameref-http-//www.seismolab.caltech.edu<span>California Institute
-    of Technology</span> nameref-https-//www.llnl.gov/<span>Lawrence
-    Livermore National Laboratory</span>
-
+-   `IUSGS`： [USGS](http://earthquake.usgs.gov)
+-   `IBRK`： [UC Berkeley](http://seismo.berkeley.edu/)
+-   `ICALTECH`：[California Institute of Technology](http://www.seismolab.caltech.edu)
+-   `ILLNL`：[Lawrence Livermore National Laboratory](https://www.llnl.gov/)
 -   `IEVLOC`：Event Location
-
 -   `IJSOP`：Joint Seismic Observation Program
-
 -   `IUSER`：The individual using SAC2000
-
 -   `IUNKNOWN`：未知
 
 #### `imagtyp`
@@ -225,45 +214,33 @@ iqual[^7]标识数据质量，可取如下值：
 震级类型，取如下枚举值：
 
 -   `IMB`：体波震级
-
 -   `IMS`：面波震级
-
 -   `IML`：区域震级
-
 -   `IMW`：矩震级
-
 -   `IMD`：持续时间震级
-
 -   `IMX`：用户自定义震级
 
 #### `gcarc, dist, az, baz`
 
 -   `gcarc`：全称Great Circle Arc，即震中到台站的大圆弧的长度，
     单位为度；
-
 -   `dist`：震中到台站的距离，单位为 ；
-
 -   `az`：方位角，震中到台站的连线与地理北向的夹角；
-
 -   `baz`：反方位角，台站到震中的连线与地理北向的夹角。
 
-![震中距、方位角、反方位角示意图。](az-baz){width="8cm"}
+![震中距、方位角、反方位角示意图。](/figures/az-baz.png)
 
 震中距、方位角和反方位角的计算涉及到球面三角的知识，具体公式及其推导
 可以参考相关代码及书籍。此处列出部分仅供参考：
 
 -   <http://www.eas.slu.edu/People/RBHerrmann/Courses/EASA462/>
-
 -   <http://www.seis.sc.edu/software/distaz/>
-
 -   SAC源码 `src/ucf/distaz.c`
-    nameref-http-//www.eas.slu.edu/eqc/eqccps.html<span>CPS330</span>
-    源码 `VOLI/src/udelaz.c`
+-   [CPS330](http://www.eas.slu.edu/eqc/eqccps.html) 源码 `VOLI/src/udelaz.c`
 
 #### `o, ko`
 
-`o` 为事件的发生时刻相对于参考时刻的秒数。`ko`是绘图时 时间变量 `o`
-的标识符。
+`o` 为事件的发生时刻相对于参考时刻的秒数。`ko`是绘图时 时间变量 `o` 的标识符。
 
 #### `khole`
 
@@ -295,34 +272,24 @@ iqual[^7]标识数据质量，可取如下值：
 一个台站至少需要三个正交的通道/分量才能完整地记录地面运动物理量。
 `cmpaz` 和 `cmpinc` 指定了单个通道记录的方向矢量。
 
-图 nameref-fig-cmpaz-cmpinc 给出了SAC所使用的NEU坐标系，需要注意的是这是
+下图给出了SAC所使用的NEU坐标系，需要注意的是这是
 一个左手坐标系。图中蓝色箭头为通道所记录的方向矢量，若地面运动与该方向
 一致，则为正，否则为负。其中，头段变量 `cmpaz` 表征通道的方位角，
-其定义为从N向开始顺时针旋转的角度，即图中的角度$\phi$；`cmpinc`
-表征通道的入射角，定义为相对于U方向向下旋转的度数，即图中的角度$\theta$。
+其定义为从N向开始顺时针旋转的角度，即图中的角度 $$\phi$$；`cmpinc`
+表征通道的入射角，定义为相对于U方向向下旋转的度数，即图中的角度 $$\theta$$。
 
-\[scale=5,tdplot\_main\_coords\] (O) at (0,0,0); (0,0,0) – (1,0,0)
-node\[anchor=south west\]<span>$E$</span>; (0,0,0) – (0,1,0)
-node\[anchor=south\]<span>$N$</span>; (0,0,0) – (0,0,1)
-node\[anchor=north east\]<span>$U$</span>;
-
-\(O) – (P); (O) – (Pxy); (P) – (Pxy);
-
-<span>anchor=south west</span><span>$\theta$</span>
+![NEU坐标系](/figures/NEU.png)
 
 根据定义，地震仪标准通道的 `cmpinc` 和 `cmpaz` 值如下表：
 
-   方向   `cmpaz`   `cmpinc`
-  ------ --------- ----------
-    N        0         90
-    E       90         90
-    U        0         0
-
-  : 标准地震通道的 `cmpaz` 和 `cpminc`<span
-  data-label="table:neu-cmpaz-cmpinc"></span>
+方向 | `cmpaz`   |`cmpinc`
+----|------------|----------
+N   |     0      |  90
+E   |    90      |  90
+U   |     0      |  0
 
 对于非标准方向的地震通道来说，很容易根据 `cmpinc` 和 `cmpaz`
-的值，将其旋转到NEU坐标系或者RTZ坐标系，这些将在“nameref-sec-traces-rotating”
+的值，将其旋转到NEU坐标系或者RTZ坐标系，这些将在 [分量旋转](/data-process/rotate.md)
 一节中说到。
 
 `kcmpnm` 用于存储分量名称。SEED格式规定通道名的三个字符中的最后
@@ -335,8 +302,7 @@ node\[anchor=north east\]<span>$U$</span>;
 
 #### `lpspol`
 
-如图 nameref-fig-cmpaz-cmpinc 所示，在左手坐标系下，若三通道都是正极性
-则为真，否则为假。
+在左手坐标系下，若三通道都是正极性则为真，否则为假。
 
 ### 震相相关变量
 
@@ -400,22 +366,3 @@ node\[anchor=north east\]<span>$U$</span>;
 #### `kdatrd`
 
 数据被读入计算机的日期（一般很少使用）。
-
-[^1]: 星号表示该头段变量在SAC中必须 有定义值，下同。
-
-[^2]: 使用jday而不是“month+day” 可以少用一个头段变量。
-
-[^3]: 1月1日对应的 `nzjday` 是1而不是0。
-
-[^4]: =
-
-[^5]: 枚举型在C源码中使用 `#define` 宏来定义的，比如
-    `#define IO 11`，所有可取的枚举值都以字母I开头。
-
-[^6]: 不解
-
-[^7]: 标识仅表示SAC程序内部未使用该头段变量，即变量有值
-    或者无值、有何值，对于程序的运行不会产生任何影响，但用户可以在自己的程序
-    中自由使用这些头段变量。下同。
-
-[^8]: Flinn-Engdahl Regions:<http://en.wikipedia.org/wiki/Flinn-Engdahl_regions>

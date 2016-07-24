@@ -1,4 +1,4 @@
-## sgf 
+## sgf
 
 ### 概要
 
@@ -7,46 +7,26 @@
 ### 语法
 
 ``` {.bash}
-SGF [P!REFIX! text] [N!UMBER! n] [D!IRECTORY! CURRENT|pathname]
-    [S!IZE! N!ORMAL!|F!IXED! v|S!CALED! v] [O!VERWRITE! ON|OFF]
+SGF [PREFIX text] [NUMBER n] [DIRECTORY CURRENT|pathname]
+    [SIZE NORMAL|FIXED v|SCALED v] [OVERWRITE ON|OFF]
+```
+``` {.bash}
+SGF [P text] [N n] [D CURRENT|pathname] [S N|F v|S v] [O ON|OFF]
 ```
 
 ### 输入
 
-PREFIX text
-
-:   设置SGF的文件名前缀为 `text`（最多24字符长）
-
-NUMBER n
-
-:   设置下一个SGF的编号为n。若n为0，则SAC搜索SGF文件
+- `PREFIX text`:   设置SGF的文件名前缀为 `text`（最多24字符长）
+- `NUMBER n`:   设置下一个SGF的编号为n。若n为0，则SAC搜索SGF文件
     目录下的SGF文件最大编号，并将其值加1
-
-DIRECTORY CURRENT
-
-:   将SGF文件放在当前目录
-
-DIRECTORY pathname
-
-:   将SGF放在指定目录下
-
-SIZE NORMAL
-
-:   产生一个常规大小绘图，常规图形有一个10\*7.5英寸的
+- `DIRECTORY CURRENT`:   将SGF文件放在当前目录
+- `DIRECTORY pathname`:   将SGF放在指定目录下
+- `SIZE NORMAL`:   产生一个常规大小绘图，常规图形有一个10\*7.5英寸的
     viewspace（最大绘图区域）。viewport（viewspace中除轴和标签之外的、
     绘图区）的默认值为8\*5英寸
-
-SIZE FIXED v
-
-:   产生一个在X方向viewport为v英寸长的图形
-
-SIZE SCALED v
-
-:   产生一个视口在X方向上为v乘以X坐标极限值的图形
-
-OVERWRITE ON|OFF
-
-:   当打开时，文件号不递增，每个新文件将擦除先前的 文件
+- `SIZE FIXED v`:   产生一个在X方向viewport为v英寸长的图形
+- `SIZE SCALED v`:   产生一个视口在X方向上为v乘以X坐标极限值的图形
+- `OVERWRITE ON|OFF`:   当打开时，文件号不递增，每个新文件将擦除先前的 文件
 
 ### 缺省值
 
@@ -60,11 +40,8 @@ sgf prefix f number 1 directory current size normal
 组成，分别为：
 
 -   `pathname` 目录路径名，默认为当前目录
-
 -   `prefix` 前缀，默认值为 `f`
-
 -   `number` 三位数的frame编号，默认值为 `001`
-
 -   `.sgf` 用于表示SAC图形文件的后缀
 
 因而SGF的第一个文件名为 `f001.sgf`。每次新建一个frame时，frame

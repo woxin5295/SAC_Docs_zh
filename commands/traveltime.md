@@ -7,34 +7,24 @@
 ### 语法
 
 ``` {.bash}
-TRAVELTIME [M!ODEL! model] [PICKS n] [PHASE phaselist] [VERBOSE|QUIET] [M|KM]
+TRAVELTIME [MODEL model] [PICKS n] [PHASE phaselist] [VERBOSE|QUIET] [M|KM]
 ```
+``` {.bash}
+TRAVELTIME [M model] [PICKS n] [PHASE phaselist] [VERBOSE|QUIET] [M|KM]
+```
+
 
 ### 输入
 
-MODEL
-
-:   预定义的速度模型，可以取 `iasp91` 或 `ak135`， 缺省值为 `为iasp91`
-
-PICKS
-
-:   `number`的取值为0到9，表明将第一个震相的到时存储到对应的头段 变量
+- `MODEL`: 预定义的速度模型，可以取 `iasp91` 或 `ak135`， 缺省值为 `为iasp91`
+- `PICKS`: `number`的取值为0到9，表明将第一个震相的到时存储到对应的头段 变量
     `Tn` 中，其余震相依次写入到后面的头段变量 `Tn` 中；若未指定
     `PICKS`选项，则只计算震相到时但不写入头段中
-
-PHASE
-
-:   要计算/标记的震相列表，若使用了 `PICKS n` 选项，则震相到时
+- `PHASE`: 要计算/标记的震相列表，若使用了 `PICKS n` 选项，则震相到时
     信息将被写入头段 `Tn` 和 `KTn` 中
-
-VERBOSE|QUIET
-
-:   若使用 `VERBOSE`，则会在终端输出震相走时及其相对于
+- `VERBOSE|QUIET`: 若使用 `VERBOSE`，则会在终端输出震相走时及其相对于
     文件参考时刻的秒数；若使用 `QUIET`，则不在屏幕上显示震相走时信息
-
-M|KM
-
-:   头段变量 `evdp` 的单位为 或者
+- `M|KM`: 头段变量 `evdp` 的单位为 或者
 
 ### 缺省值
 

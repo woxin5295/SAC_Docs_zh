@@ -1,4 +1,4 @@
-## plotrecordsection {#sss:plotrecordsection}
+## plotrecordsection
 
 ### 概要
 
@@ -6,70 +6,42 @@
 
 ### 语法
 
-P`LOT`R`ECORD`S`ECTION` \[L`ABLES` ON|OFF|headerfield\] \[O`RIGIN`
-D`EFAULT`|R`EVERSED`\] \[R`EFERENCELINE` ON|OFF\] \[S`IZE` v\]
-\[W`EIGHT` ON|OFF\] \[P`OLARITY` ON|OFF\] \[C`URSOR` ON|OFF\]
-\[RED`UCED` ON|OFF|P`HASE` phasename|V`ELOCITY` velocity\] \[A`SPECT`
-ON|OFF\] \[ORIE`NT` P`ORTRAIT`|L`ANDSCAPE`\] \[T`TIME`
-ON|OFF|D`EFAULT`|TEXT\] \[X`LABEL` ON|OFF|D`EFAULT`|TEXT\] \[Y`LABEL`
-ON|OFF|D`EFAULT`|TEXT\]
+``` {.bash}
+PLOTRECORDSECTION [LABLES ON|OFF|headerfield] [ORIGIN DEFAULT|REVERSED]
+    [REFERENCELINE ON|OFF] [SIZE v] [WEIGHT ON|OFF] [POLARITY ON|OFF]
+    [CURSOR ON|OFF] [REDUCED ON|OFF|PHASE phasename|VELOCITY velocity]
+    [ASPECT ON|OFF] [ORIENT PORTRAIT|LANDSCAPE] [TTIME ON|OFF|DEFAULT|TEXT]
+    [XLABEL ON|OFF|DEFAULT|TEXT] [YLABEL ON|OFF|DEFAULT|TEXT]
+```
+``` {.bash}
+PRS [L ON|OFF|headerfield] [O D|R] [R ON|OFF] [S v] [W ON|OFF] [P ON|OFF]
+    [C ON|OFF] [RED ON|OFF|P phasename|V velocity] [A ON|OFF]
+    [ORIE P|L] [T ON|OFF|D|TEXT] [X ON|OFF|D|TEXT] [Y ON|OFF|D|TEXT]
+```
 
 ### 输入
 
-LABELS ON|OFF
-
-:   打开/关闭标签选项。若打开，则每个文件都用头段变量进行标签
-
-LABELS headerfield
-
-:   打开标签选项，病设置头段变量名
-
-ORIGIN DEFAULT|REVERSED
-
-:   在Portrait模式中，距离沿着Y轴，默认情况下距离原点位于左上角。在landscape模式下，距离沿着X轴，默认情况下原点位于左下角。
-
-REFERENCELINE ON|OFF
-
-:   开启/关闭参考线选项。若打开，则每个文件在距离属性值对应的地方绘制一条垂直虚线
-
-SIZE v
-
-:   ?
-
-WEIGHT ON|OFF
-
-:   打开/关闭权重选项
-
-POLARITY ON|OFF
-
-:   打开/关闭极性选项
-
-CURSOR ON|OFF
-
-:   
-
-REDUCED ON|OFF|VELOCITY vel|PHASE phase
-
-:   reduced走时曲线。可以指定reduce速度或者一个参考震相
-
-ORIENT PORTRAIT|LANDSCAPE
-
-:   portrait模式中，水平轴为时间，纵轴为震中距；landscape模式下，水平轴为震中距，垂直轴为时间
-    nameref-sss-traveltime 命令计算走时曲线
-
-XLABEL ON|OFF|DEFAULT|TEXT
-
-:   打开/关闭/设置X轴标签
-
-YLABEL ON|OFF|DEFAULT|TEXT
-
-:   打开/关闭/设置Y轴标签
+- `LABELS ON|OFF`: 打开/关闭标签选项。若打开，则每个文件都用头段变量进行标签
+- `LABELS headerfield`: 打开标签选项，病设置头段变量名
+- `ORIGIN DEFAULT|REVERSED`: 在Portrait模式中，距离沿着Y轴，默认情况下距离原点位于左上角。在landscape模式下，距离沿着X轴，默认情况下原点位于左下角。
+- `REFERENCELINE ON|OFF`: 开启/关闭参考线选项。若打开，则每个文件在距离属性值对应的地方绘制一条垂直虚线
+- `SIZE v`: ?
+- `WEIGHT ON|OFF`: 打开/关闭权重选项
+- `POLARITY ON|OFF`: 打开/关闭极性选项
+- `CURSOR ON|OFF`:
+- `REDUCED ON|OFF|VELOCITY vel|PHASE phase`: reduced走时曲线。可以指定reduce速度或者一个参考震相
+- `ORIENT PORTRAIT|LANDSCAPE`: portrait模式中，水平轴为时间，纵轴为震中距；landscape模式下，水平轴为震中距，垂直轴为时间
+- `TTIME ON|OFF|DEFAULT|TEXT`: 绘制走时曲线。需要首先用 [traveltime](/sss/traveltime.md)
+    命令计算走时曲线
+- `XLABEL ON|OFF|DEFAULT|TEXT`: 打开/关闭/设置X轴标签
+- `YLABEL ON|OFF|DEFAULT|TEXT`: 打开/关闭/设置Y轴标签
 
 ### 缺省值
 
-plotrecordsection labels filename origin default referenceline on size
-0.1 weight on polarity on orient portrait reduced off cursor off ttime
-off
+``` {.bash}
+plotrecordsection labels filename origin default referenceline on size 0.1
+    weight on polarity on orient portrait reduced off cursor off ttime off
+```
 
 ### 说明
 
@@ -77,11 +49,17 @@ off
 在landscape模式下则交换XY轴。每个文件的零振幅将会画在距离轴上对应的震中距处。
 
 为了能够正确绘图，迭加列表中的所有文件必须定义震中距属性，该属性可以来自于文件
-头段，也可以在 nameref-sss-changestack 等命令的DISTANCE选项中定义。
+头段，也可以在
+[globalstack](/sss/globalstack.md)、[addstack](/sss/addstack.md)、[changestack](/sss/changestack.md)
+等命令的DISTANCE选项中定义。
 
-nameref-sss-timewindow 命令可以控制要显示的数据窗。 nameref-sss-timeaxis
-命令控制横纵轴的尺寸。 nameref-sss-velocitymodel
-定义了速度模型，用于计算动态延迟。 nameref-sss-velocityroset
+[distancewindow](/sss/distancewindow.md) 和
+[timewindow](/sss/timewindow.md) 命令可以控制要显示的数据窗。
+[distanceaxis](/sss/distanceaxis.md) 和
+[timeaxis](/sss/timeaxis.md) 命令控制横纵轴的尺寸。
+[velocitymodel](/sss/velocitymodel.md)
+定义了速度模型，用于计算动态延迟。
+[velocityroset](/sss/velocityroset.md)
 命令用于控制速度rosette的显示效果。
 
 ### 光标模式

@@ -7,27 +7,20 @@
 ### 语法
 
 ``` {.bash}
-TRANS!FER! [FROM type [options]] [TO type [options]] [FREQ!LIMITS! f1 f2 f3 f4]
-    [PREWH!ITENING! ON|OFF|n]
+TRANSFER [FROM type [options]] [TO type [options]] [FREQLIMITS f1 f2 f3 f4]
+    [PREWHITENING ON|OFF|n]
 ```
+``` {.bash}
+TRANS [FROM type [options]] [TO type [options]] [FREQ f1 f2 f3 f4] [PREWH ON|OFF|n]
+```
+
 
 ### 输入
 
-FROM type
-
-:   要去除的仪器响应类型
-
-TO type
-
-:   要加入的仪器响应类型
-
-FREQLIMITS f1 f2 f3 f4
-
-:   压制大于 `f4` 以及低于 `f1`的频段
-
-PREWHITENING ON|OFF|n
-
-:   预白化处理
+- `FROM type`: 要去除的仪器响应类型
+- `TO type`: 要加入的仪器响应类型
+- `FREQLIMITS f1 f2 f3 f4`: 压制大于 `f4` 以及低于 `f1`的频段
+- `PREWHITENING ON|OFF|n`: 预白化处理
 
 ### 缺省值
 
@@ -44,32 +37,16 @@ trans from none to none
 指定了要加入到波形数据中的仪器响应。去仪器响应即反卷积，加仪器响应即卷积，
 二者分别通过谱域的除法和乘法完成。
 
-`type` 为仪器类型，可以是SAC预定义的标准仪器类型（见附录中表
-nameref-table-instrument-type），还可以是如下几种特殊的“仪器类型”：
+`type` 为仪器类型，可以是SAC预定义的标准仪器类型（见附录
+[仪器响应文件](/appendix/resp/resp-file.md) 中的表），
+还可以是如下几种特殊的“仪器类型”：
 
-none
-
-:   表示“位移”
-
-vel
-
-:   表示“速度”
-
-acc
-
-:   表示“加速度”
-
-evalresp
-
-:   表示使用RESP仪器响应文件
-
-polezero
-
-:   表示使用SAC PZ仪器响应文件
-
-fap
-
-:   表示使用fap仪器响应文件
+- `none`: 表示“位移”
+- `vel`: 表示“速度”
+- `acc`: 表示“加速度”
+- `evalresp`: 表示使用RESP仪器响应文件
+- `polezero`: 表示使用SAC PZ仪器响应文件
+- `fap`: 表示使用fap仪器响应文件
 
 `tranfser` 命令的默认值是“`transfer from none to none`”，
 即默认的输入和输出“仪器类型”都是位移。因而当不指定 `FROM type` 或
@@ -78,10 +55,8 @@ fap
 -   若输出的仪器类型为 `NONE`，即表示从波形中去除仪器响应得到
     位移，此时SAC头段中的IDEP设置为 `IDISP`，单位为 ， 若输出类型为
     `VEL` 或 `ACC`，同理；
-
 -   若输出的仪器类型不是 `NONE`、`VEL` 或 `ACC`， 则内存中的波形会卷积上
     `TO type` 所指定的仪器响应；
-
 -   若不指定 `FROM` 选项，则假定原始波形数据是位移，且不会去除
     仪器响应；通常用于给理论地震图添加仪器响应；
 
@@ -107,13 +82,9 @@ fap
 
 -   `f4` 应小于Nyquist采样率。比如若数据的采样周期为 ，
     则Nyquist采样率为 ，因而 `f4` 应小于
-
 -   `f3` 不能与 `f4` 太接近
-
 -   `f2` 与 `f3` 之间应尽可能宽，然后再根据具体需求进行滤波
-
 -   `f1` 和 `f2` 不能太接近；
-
 -   `f1` 的选取由具体需求决定，可以尝试不同的值并查看去仪器响应
     之后的效果来决定
 
@@ -189,7 +160,8 @@ SAC> trans from none to WWSP    // 简写为trans to WWSP
 `locid`，然后会在当前目录下
 寻找文件名为“`RESP.<NET>.<STA>.<LOCID>.<CHN>`”的RESP文件
 （比如“RESP.IU.COLA..BHZ”），并检测RESP文件中给出的台站信息是否与数据
-中的台站信息匹配[^1]。
+中的台站信息匹配（即要求RESP文件名以及RESP文件中的台站信息都与
+数据头段中的台站信息匹配）。
 
 ``` {.bash}
 SAC> r 2006.253.14.30.24.0000.TA.N11A..LHZ.Q.SAC
@@ -223,7 +195,7 @@ SAC> trans from evalresp STATION COLA to none freq 0.01 0.02 5 10
 ```
 
 使用 `STATION` 选项覆盖了波形数据中的台站名，此时，对每一个波形数据，
-`transfer` 命令都会去使用 `RESP.IU.COLA..BHZ`[^2]。
+`transfer` 命令都会去使用 `RESP.IU.COLA..BHZ`。
 
 下面的命令会将三分量数据去仪器响应，并卷积上BHZ分量的仪器响应：
 
@@ -321,8 +293,3 @@ SAC> taper
 SAC> trans from fap s fap.n11a.lhz_0.006-0.2 to none freq 0.004 0.006 0.1 0.2
 SAC> mul 1.0e9
 ```
-
-[^1]: 即，要求RESP文件名以及RESP文件中的台站信息都与
-    数据头段中的台站信息匹配
-
-[^2]: 这里 假定所有台站的LOCID都是未定义的

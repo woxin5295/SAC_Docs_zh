@@ -1,4 +1,4 @@
-## printhelp 
+## printhelp
 
 ### 概要
 
@@ -7,14 +7,15 @@
 ### 语法
 
 ``` {.bash}
-P!RINT!H!ELP! [item ...]
+PRINTHELP [item ...]
+```
+``` {.bash}
+PH [item ...]
 ```
 
 ### 输入
 
-item
-
-:   命令、模块、子程序、特性的全称或简称
+- `item`: 命令、模块、子程序、特性的全称或简称
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## endframe 
+## endframe
 
 ### 概要
 
@@ -7,7 +7,10 @@
 ### 语法
 
 ``` {.bash}
-E!ND!F!RAME!
+ENDFRAME
+```
+``` {.bash}
+EF
 ```
 
 ### 说明

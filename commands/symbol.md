@@ -1,4 +1,4 @@
-## symbol 
+## symbol
 
 ### 概要
 
@@ -7,47 +7,24 @@
 ### 语法
 
 ``` {.bash}
-SYM!BOL! [ON|OFF|n] [SIZE v] [SPACING v] [INCRE!MENT! ON|OFF] [LIST STANDARD|nlist]
+SYMBOL [ON|OFF|n] [SIZE v] [SPACING v] [INCRE!MENT! ON|OFF] [LIST STANDARD|nlist]
+```
+``` {.bash}
+SYM [ON|OFF|n] [SIZE v] [SPACING v] [INCRE!MENT! ON|OFF] [LIST STANDARD|nlist]
 ```
 
 ### 输入
 
-ON
-
-:   打开符号绘图开关，不改变符号号
-
-OFF
-
-:   关闭符号绘图开关
-
-n
-
-:   打开符号绘图开关。将符号号设置为n。目前有16个不同的符号，符号0意味着关闭符号开关
-
-SIZE v
-
-:   设置符号尺寸为v。值为0.01意味着占据整个绘图尺寸的1%
-
-SPACING v
-
-:   设置符号间隔为v。这是绘图时符号间的最小间隔；如果你想每个数据点
+- `ON`: 打开符号绘图开关，不改变符号号
+- `OFF`: 关闭符号绘图开关
+- `n`: 打开符号绘图开关。将符号号设置为n。目前有16个不同的符号，符号0意味着关闭符号开关
+- `SIZE v`: 设置符号尺寸为v。值为0.01意味着占据整个绘图尺寸的1%
+- `SPACING v`: 设置符号间隔为v。这是绘图时符号间的最小间隔；如果你想每个数据点
     都有符号，则设其值为0，对注释行使用0.2到0.4
-
-INCREMENT ON
-
-:   对每个数据文件操作完成后按符号列表递增为下一个符号
-
-INCREMENT OFF
-
-:   关闭上述 `INCREMENT` 选项
-
-LIST nlist
-
-:   改变符号表的内容。输入符号号码表。设置表中的第一个符号码，并打开符号绘图开关
-
-LIST STANDARD
-
-:   改变到标准符号表。设置表中的第一个符号表，并打开符号绘制选项。
+- `INCREMENT ON`: 对每个数据文件操作完成后按符号列表递增为下一个符号
+- `INCREMENT OFF`: 关闭上述 `INCREMENT` 选项
+- `LIST nlist`: 改变符号表的内容。输入符号号码表。设置表中的第一个符号码，并打开符号绘图开关
+- `LIST STANDARD`: 改变到标准符号表。设置表中的第一个符号表，并打开符号绘制选项。
 
 ### 缺省值
 

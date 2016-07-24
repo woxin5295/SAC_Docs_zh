@@ -1,4 +1,4 @@
-## cutim 
+## cutim
 
 ### 概要
 
@@ -12,7 +12,7 @@ CUTIM pdw [pdw ... ]
 
 ### 输入
 
-nameref-subsec-pdw
+- `pdw`: 要截取的时间窗。参考 [数据截窗](/data-process/cut-data.md} 中对 `pdw` 的介绍。
 
 ### 缺省值
 
@@ -69,5 +69,3 @@ p1
 ### BUGS
 
 -   执行该命令会错误地删除内存中的全部波形数据（v101.6a）
-
-

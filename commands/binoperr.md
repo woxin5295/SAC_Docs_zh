@@ -1,4 +1,4 @@
-## binoperr 
+## binoperr
 
 ### 概要
 
@@ -8,32 +8,21 @@
 ### 语法
 
 ``` {.bash}
-BINOPERR [N!PTS! F!ATAL!|W!ARNING!|I!GNORE!] [D!ELTA! F!ATAL!|W!ARNING!|I!GNORE!]
+BINOPERR [NPTS FATAL|WARNING|IGNORE] [DELTA FATAL|WARNING|IGNORE]
+```
+``` {.bash}
+BINOPERR [N F|W|I] [D F|W|I]
 ```
 
 该命令可以简写为 `boec`
 
 ### 输入
 
-NPTS
-
-:   修改数据点数不相等的错误条件
-
-DELTA
-
-:   修改采样周期不相等的错误条件
-
-FATAL
-
-:   设置错误条件为“致命”
-
-WARNING
-
-:   设置错误条件为“警告”
-
-IGNORE
-
-:   设置错误条件为“忽略”
+- `NPTS`: 修改数据点数不相等的错误条件
+- `DELTA`: 修改采样周期不相等的错误条件
+- `FATAL`: 设置错误条件为“致命”
+- `WARNING`: 设置错误条件为“警告”
+- `IGNORE`: 设置错误条件为“忽略”
 
 ### 缺省值
 
@@ -50,10 +39,8 @@ binoperr npts fatal delta fatal
 -   若设置错误条件为 `fatal`，则SAC在遇到错误时将停止执行
     当前命令，忽略当前行的其它其余命令，输出错误信息到终端并将控制权
     交还给用户
-
 -   若设置错误条件为 `warning`，则遇到错误时会发送一个警告消息，
     程序内部尽可能纠正错误并继续执行
-
 -   若设置错误条件为 `ignore`，则SAC会自动纠正错误并继续执行
     而不输出任何警告消息
 

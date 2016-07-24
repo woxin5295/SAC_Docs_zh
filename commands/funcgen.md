@@ -1,4 +1,4 @@
-## funcgen 
+## funcgen
 
 ### 概要
 
@@ -7,80 +7,47 @@
 ### 语法
 
 ``` {.bash}
-F!UNC!G!EN! [type] [D!ELTA! v] [N!PTS! n] [BE!GIN! v]
+FUNCGEN [type] [DELTA v] [NPTS n] [BEGIN v]
+```
+``` {.bash}
+FG [type] [D v] [N n] [BE v]
 ```
 
 其中 `type` 是下面中的一个：
 
 ``` {.bash}
-IMP!ULSE! | ST!EP! | B!OXCAR! | T!RIANGLE! | SINE [v1 v2] | L!INE! [v1 v2] |
-Q!UADRATIC! [v1 v2 v3] | CUBIC [v1 v2 v3 v4] | SEIS!MOGRAM! |
-R!ANDOM! [v1 v2] | IMPSTRIN  [n1 n2 ... nN]
+IMPULSE | STEP | BOXCAR | TRIANGLE | SINE [v1 v2] | LINE [v1 v2] |
+QUADRATIC [v1 v2 v3] | CUBIC [v1 v2 v3 v4] | SEISMOGRAM |
+RANDOM [v1 v2] | IMPSTRIN  [n1 n2 ... nN]
 ```
+``` {.bash}
+IMP | ST | B | T | SINE [v1 v2] | L [v1 v2] | Q [v1 v2 v3] | CUBIC [v1 v2 v3 v4] |
+SEIS | R [v1 v2] | IMPSTRIN  [n1 n2 ... nN]
+```
+
 
 ### 输入
 
-IMPULSE
-
-:   位于时间序列中点的脉冲函数
-
-IMPSTRIN n1 n2 ... nN
-
-:   在指定的一系列数据点处产生脉冲函数
-
-STEP
-
-:   阶跃函数。数据的前半段为0，后半段为1
-
-BOXCAR
-
-:   矩形函数。数据的前、后三分之一值为0，中间三分之一值为1
-
-TRIANGLE
-
-:   三角函数。数据的第一个四分之一值为0，第二个四分之一的
+- `IMPULSE`: 位于时间序列中点的脉冲函数
+- `IMPSTRIN n1 n2 ... nN`: 在指定的一系列数据点处产生脉冲函数
+- `STEP`: 阶跃函数。数据的前半段为0，后半段为1
+- `BOXCAR`: 矩形函数。数据的前、后三分之一值为0，中间三分之一值为1
+- `TRIANGLE`: 三角函数。数据的第一个四分之一值为0，第二个四分之一的
     值从0线性增加到1，第三个四分之一的值从1线性减少到0，最后四分之一值为0
-
-SINE v1 v2
-
-:   正弦函数。`v1` 表示频率，单位为 ； `v2`
+- `SINE v1 v2`: 正弦函数。`v1` 表示频率，单位为 ； `v2`
     是以度为单位的相位角。正弦函数的振幅为1，
-    注意在相位参数中有一个$2\pi$因子：$F = 1.0 \sin (2\pi (v_1t+v_2))$
-
-LINE v1 v2
-
-:   线性函数。斜率为 `v1`，截距为 `v2`， 即$ v_1 t + v_2 $
-
-QUADRATIC v1 v2 v3
-
-:   二次函数 $v_1 t^{2} + v_2 t + v_3 $
-
-CUBIC v1 v2 v3 v4
-
-:   三次函数 $ v_1 t^{3} + v_2 t^2 + v_3t + v_4 $
-
-SEISMOGRAM
-
-:   地震样本数据。此样本数据有1000个数据点。`DELTA`、 `NPTS` 和 `BEGIN`
+    注意在相位参数中有一个 $$2\pi$$ 因子： $$F = 1.0 \sin (2\pi (v_1t+v_2))$$
+- `LINE v1 v2`: 线性函数。斜率为 `v1`，截距为 `v2`， 即 $$v_1 t + v_2$$
+- `QUADRATIC v1 v2 v3`: 二次函数 $$v_1 t^{2} + v_2 t + v_3$$
+- `CUBIC v1 v2 v3 v4`: 三次函数 $$v_1 t^{3} + v_2 t^2 + v_3t + v_4$$
+- `SEISMOGRAM`: 地震样本数据。此样本数据有1000个数据点。`DELTA`、 `NPTS` 和 `BEGIN`
     选项对该样本数据无效
-
-RANDOM v1 v2
-
-:   生成随机序列（高斯白噪声）。`v1` 是要生成的 随机序列文件的数目，`v2`
+- `RANDOM v1 v2`: 生成随机序列（高斯白噪声）。`v1` 是要生成的 随机序列文件的数目，`v2`
     是用于产生第一个随机数的“种子”， 该种子值保存在 `USER0`
     中，因而如果需要你可以在稍后生成一个 完全相同的随机序列
-
-DELTA v
-
-:   设置采样周期为 `v`，储存在头段 `delta` 中
-
-NPTS n
-
-:   设置函数的数据点数为 `n`，储存在头段 `npts` 中
-
-BEGIN v
-
-:   设置起始时间为 `v`，储存在头段 `b` 中
+- `DELTA v`: 设置采样周期为 `v`，储存在头段 `delta` 中
+- `NPTS n`: 设置函数的数据点数为 `n`，储存在头段 `npts` 中
+- `BEGIN v`: 设置起始时间为 `v`，储存在头段 `b` 中
 
 ### 缺省值
 

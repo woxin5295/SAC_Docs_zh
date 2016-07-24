@@ -6,11 +6,8 @@
 SAC提供了如下几类内联函数：
 
 -   算术运算符；
-
 -   常规算术运算函数；
-
 -   字符串操作函数；
-
 -   其他函数；
 
 所有的内联函数的共同形式是：“`(func)`”，其中 `func` 为
@@ -55,34 +52,32 @@ SAC> setbb var1 ( ( 4 + 7 ) / 3 )   // 支持空格
 ### 常规算术运算函数
 
 SAC提供了20个常规算术运算函数，其基本形式为“`(func arg1 arg2 ...)`”。
-具体函数如表 nameref-table-regular-arithmetic-functions 所示。
+具体函数如下表所示。
 
-  命令         语法                        功能
-  ------------ --------------------------- ---------------------
-  add          ( add v1 v2 ... vn )        v1+v2+...+vn
-  subtract     ( subtract v1 v2 ... vn )   v1-v2-...-vn
-  multiply     ( multiply v1 v2 ... vn )   v1\*v2\*...\*vn
-  divide       ( divide v1 v2 ... vn )     v1/v2/.../vn
-  absolute     ( absolute v )              取绝对值
-  abs          ( abs v )                   取绝对值
-  power        ( power v )                 取10的v次方
-  alog10       ( alog10 v)                 以10为底取v的对数
-  alog         ( alog v)                   取v的自然对数
-  exp          ( exp v)                    取e的v次方
-  sqrt         ( sqrt v)                   求v的平方根
-  pi           ( pi )                      返回pi值
-  sine         ( sine v )                  正弦(v为弧度，下同)
-  cosine       ( cosine v )                余弦
-  tangent      ( tangent v )               正切
-  arcsine      ( arcsine v )               反正弦
-  arccosine    ( arccosine v )             反余弦
-  arctangent   ( arctangent v )            反正切
-  integer      ( integer v )               取整
-  maximum      ( maximum v1 v2 ... vn )    求最大值
-  minimum      ( minimum v1 v2 ... vn )    求最小值
+  命令      |   语法                    |    功能
+------------|---------------------------|---------------------
+  add       |   ( add v1 v2 ... vn )      |  v1+v2+...+vn
+  subtract  |   ( subtract v1 v2 ... vn ) |  v1-v2-...-vn
+  multiply  |   ( multiply v1 v2 ... vn ) |  v1\*v2\*...\*vn
+  divide    |   ( divide v1 v2 ... vn )   |  v1/v2/.../vn
+  absolute  |   ( absolute v )            |  取绝对值
+  abs       |   ( abs v )                 |  取绝对值
+  power     |   ( power v )               |  取10的v次方
+  alog10    |   ( alog10 v)               |  以10为底取v的对数
+  alog      |   ( alog v)                 |  取v的自然对数
+  exp       |   ( exp v)                  |  取e的v次方
+  sqrt      |   ( sqrt v)                 |  求v的平方根
+  pi        |   ( pi )                    |  返回pi值
+  sine      |   ( sine v )                |  正弦(v为弧度，下同)
+  cosine    |   ( cosine v )              |  余弦
+  tangent   |   ( tangent v )             |  正切
+  arcsine   |   ( arcsine v )             |  反正弦
+  arccosine |   ( arccosine v )           |  反余弦
+  arctangent|   ( arctangent v )          |  反正切
+  integer   |   ( integer v )             |  取整
+  maximum   |   ( maximum v1 v2 ... vn )  |  求最大值
+  minimum   |   ( minimum v1 v2 ... vn )  |  求最小值
 
-  : 常规算数运算函数<span
-  data-label="table:regular-arithmetic-functions"></span>
 
 演示如下：
 
@@ -139,21 +134,17 @@ SAC> div ( max (abs %vmax%) (abs %vmin%) )      // 嵌套
 
 ### 字符串操作函数
 
-SAC提供了若干个函数用于字符串的处理，如表
-nameref-table-string-operation-functions 所示：
+SAC提供了若干个函数用于字符串的处理，如下表所示：
 
-  命令          语法(简写形式)          功能
-  ------------- ----------------------- ------------------------------
-  change        ( cha s1 s2 s3 )        在s3中用s1代替s2
-  substring     ( substring n1 n2 s )   取s中第n1到第n2个字符
-  delete        ( del s1 s2 )           从s2中删去s1
-  concatenate   ( conc s1 s2 ... sn )   将多个字符串拼接起来
-  before        ( bef s1 s2)            得到s2中位于s1前的部分字符串
-  after         ( aft s1 s2 )           得到s2中位于s1后的部分字符串
-  reply         ( rep s1 )              发送信息s1到终端并得到回应
-
-  : 字符串操作函数<span
-  data-label="table:string-operation-functions"></span>
+  命令         | 语法(简写形式)         | 功能
+--------------|------------------------|------------------------------
+  change      |  ( cha s1 s2 s3 )      |  在s3中用s1代替s2
+  substring   |  ( substring n1 n2 s ) |  取s中第n1到第n2个字符
+  delete      |  ( del s1 s2 )         |  从s2中删去s1
+  concatenate |  ( conc s1 s2 ... sn ) |  将多个字符串拼接起来
+  before      |  ( bef s1 s2)          |  得到s2中位于s1前的部分字符串
+  after       |  ( aft s1 s2 )         |  得到s2中位于s1后的部分字符串
+  reply       |  ( rep s1 )            |  发送信息s1到终端并得到回应
 
 下面的例子展示了部分函数的用法：
 
@@ -230,8 +221,7 @@ SAC> getbb bbday
 
 ### 其他函数
 
-这类函数目前只有一个：`gettime`，其语法为 “`(gettime max`min
-\[value\])|”。
+这类函数目前只有一个：`gettime`，其语法为 `(gettime max|min [value])`。
 
 `gettime` 函数用于返回数据中首先出现大于或小于value的时间相对于
 文件参考时刻的相对时间；若没有指定value，`max` 会返回文件中第一

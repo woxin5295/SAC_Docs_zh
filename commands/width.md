@@ -1,4 +1,4 @@
-## width 
+## width
 
 ### 概要
 
@@ -7,46 +7,26 @@
 ### 语法
 
 ``` {.bash}
-WIDTH [ON|OFF|width] [SK!ELETON! width] [I!NCREMENT! ON|OFF] [L!IST! S!TANDARD!|widthlist]
+WIDTH [ON|OFF|width] [SKELETON width] [INCREMENT ON|OFF] [LIST STANDARD|widthlist]
+```
+``` {.bash}
+WIDTH [ON|OFF|width] [SK width] [I ON|OFF] [L S|widthlist]
 ```
 
 其中 `width` 只能取整数
 
 ### 输入
 
-WIDTH width
-
-:   设置数据的线宽为 `width`
-
-WIDTH ON
-
-:   打开 `WIDTH` 选项但是不改变当前线宽值
-
-WIDTH OFF
-
-:   关闭 `WIDTH` 选项
-
-SKELETON width
-
-:   设置图形边框宽度为 `width`
-
-LIST STANDARD
-
-:   设置为标准线宽列表，设置数据宽度为标准列表中的 第一个宽度，并打开
+- `WIDTH width`: 设置数据的线宽为 `width`
+- `WIDTH ON`: 打开 `WIDTH` 选项但是不改变当前线宽值
+- `WIDTH OFF`: 关闭 `WIDTH` 选项
+- `SKELETON width`: 设置图形边框宽度为 `width`
+- `LIST STANDARD`: 设置为标准线宽列表，设置数据宽度为标准列表中的 第一个宽度，并打开
     `WIDTH` 选项
-
-LIST widthlist
-
-:   改变宽度列表的内容。输入宽度列表。设置数据宽度
+- `LIST widthlist`: 改变宽度列表的内容。输入宽度列表。设置数据宽度
     为列表中的第一个宽度，并打开 `WIDTH` 选项
-
-INCREMENT ON
-
-:   按照 `widthlist` 表中的次序，依次改变一个宽度值
-
-INCREMENT OFF
-
-:   关闭线宽递增功能
+- `INCREMENT ON`: 按照 `widthlist` 表中的次序，依次改变一个宽度值
+- `INCREMENT OFF`: 关闭线宽递增功能
 
 ### 缺省值
 

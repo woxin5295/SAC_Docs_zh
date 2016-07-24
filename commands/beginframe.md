@@ -1,4 +1,4 @@
-## beginframe 
+## beginframe
 
 ### 概要
 
@@ -7,7 +7,10 @@
 ### 语法
 
 ``` {.bash}
-B!EGIN!F!RAME!
+BEGINFRAME
+```
+``` {.bash}
+BF
 ```
 
 ### 说明
@@ -25,5 +28,5 @@ B!EGIN!F!RAME!
 [yvport](/commands/yvport.md) 定义
 每次绘图的viewport，可以很容易地绘制出复杂的组合图。
 
-关于如何绘制组合图以及这几个命令的使用，可以参考
-nameref-sec-composite-plots 一节。
+关于如何绘制组合图以及这几个命令的使用，可以参考 [组合图](/graphics/composite-plots.md)
+一节。

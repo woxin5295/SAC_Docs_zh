@@ -1,4 +1,4 @@
-## wait 
+## wait
 
 ### 概要
 
@@ -7,22 +7,17 @@
 ### 语法
 
 ``` {.bash}
-WAIT [T!EXT! ON|OFF] [P!LOTS! ON|OFF|E!VERY!]
+WAIT [TEXT ON|OFF] [PLOTS ON|OFF|EVERY]
+```
+``` {.bash}
+WAIT [T ON|OFF] [P ON|OFF|E]
 ```
 
 ### 输入
 
-TEXT ON|OFF
-
-:   打开/关闭文本等待选项
-
-PLOTS ON|OFF
-
-:   打开/关闭绘图等待选项
-
-PLOTS EVERY
-
-:   每个图形之间均等待
+- `TEXT ON|OFF`: 打开/关闭文本等待选项
+- `PLOTS ON|OFF`: 打开/关闭绘图等待选项
+- `PLOTS EVERY`: 每个图形之间均等待
 
 ### 缺省值
 

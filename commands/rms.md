@@ -1,4 +1,4 @@
-## rms 
+## rms
 
 ### 概要
 
@@ -12,13 +12,9 @@ RMS [NOISE ON|OFF|pdw] [TO USERn]
 
 ### 输入
 
-NOISE ON/OFF
-
-:   打开/关闭噪声校正选项 nameref-subsec-pdw
-
-TO USERn
-
-:   将计算结果保存到头段变量 `USERn` 中（n取0到9）
+- `NOISE ON/OFF`: 打开/关闭噪声校正选项
+- `NOISE pdw`: 打开噪声校正选项并设置噪声的测量时间窗
+- `TO USERn`: 将计算结果保存到头段变量 `USERn` 中（n取0到9）
 
 ### 缺省值
 
@@ -31,7 +27,8 @@ rms noise off to user0
 该命令用于计算当前测量时间窗（由 [mtw](/commands/mtw.md) 定义）内数据的
 均方根，并将计算结果保存到头段变量 `USERn` 中。
 
-均方根的定义为： $$RMS = \sqrt{\frac{1}{N} \sum_{i=1}^N y_i^2}$$
+均方根的定义为：
+$$RMS = \sqrt{\frac{1}{N} \sum_{i=1}^N y_i^2}$$
 
 `NOISE` 选项用于校正计算结果中噪声的贡献。其计算公式为：
 $$RMS_{corrected} = \sqrt{\frac{1}{N} \sum_{i=1}^N y_i^2 -

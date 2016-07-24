@@ -1,4 +1,4 @@
-## readtable 
+## readtable
 
 ### 概要
 
@@ -7,7 +7,11 @@
 ### 语法
 
 ``` {.bash}
-R!EAD!TAB!LE! [MORE] [DIR CURRENT|name] [FREE|FORMAT tex] [CONTENT text]
+READTAB!LE! [MORE] [DIR CURRENT|name] [FREE|FORMAT tex] [CONTENT text]
+    [HEADER number] [filelist]
+```
+``` {.bash}
+RTAB!LE! [MORE] [DIR CURRENT|name] [FREE|FORMAT tex] [CONTENT text]
     [HEADER number] [filelist]
 ```
 
@@ -15,38 +19,14 @@ R!EAD!TAB!LE! [MORE] [DIR CURRENT|name] [FREE|FORMAT tex] [CONTENT text]
 
 ### 输入
 
-MORE
-
-:   将新文件追加到内存中老文件之后。若忽略该选项，则新数据将
-    替代内存中的老数据
-
-DIR CURRENT
-
-:   从当前目录读取所有简单文件名。当前目录是你启动SAC的目录
-
-DIR name
-
-:   从目录name中读取全部简单文件，其可以为绝对/相对路径
-
-FREE
-
-:   用自由格式读取文件列表中的数据（以空格分隔）
-
-FORMAT text
-
-:   以固定格式读取文件列表中的数据。该选项目前不可用
-
-CONTENT text
-
-:   定义数据内容。`text` 的具体格式见说明及示例
-
-HEADER
-
-:   文件中要跳过的几个头段行
-
-filelist
-
-:   列数据文件
+- `MORE`: 将新文件追加到内存中老文件之后。若忽略该选项，则新数据将替代内存中的老数据
+- `DIR CURRENT`: 从当前目录读取所有简单文件名。当前目录是你启动SAC的目录
+- `DIR name`: 从目录name中读取全部简单文件，其可以为绝对/相对路径
+- `FREE`: 用自由格式读取文件列表中的数据（以空格分隔）
+- `FORMAT text`: 以固定格式读取文件列表中的数据。该选项目前不可用
+- `CONTENT text`: 定义数据内容。`text` 的具体格式见说明及示例
+- `HEADER`: 文件中要跳过的几个头段行
+- `filelist`: 列数据文件
 
 ### 缺省值
 
@@ -72,15 +52,10 @@ readtable free content y. dir current
 顺序与数据中每行的输入所代表的含义相对应。`content` 字段允许的字符如下:
 
 -   Y：下一个输入属于Y（因变量）数据集
-
 -   X：下一个输入属于X（自变量）数据集
-
 -   N：下一个输入属于数据集
-
 -   P：下一对输入使用X-Y数据集
-
 -   R：下一对输入使用Y-X数据集
-
 -   I：忽略这个输入
 
 还有一个重复计数器可以跟在上面的任何字符之后。这个重复计数器是一个1位或

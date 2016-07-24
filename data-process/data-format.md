@@ -2,9 +2,10 @@
 
 ### 数据格式
 
-通常，地震数据以SEED格式进行保存和传输。SEED[^1]即 Standard for the
-Exchange of Earthquake Data，其可以存储多台站多分量
-的波形数据以及台站元数据[^2]。SEED格式本质上是一个
+通常，地震数据以SEED格式进行保存和传输。[SEED](www.fdsn.org/seed_manual/SEEDManual_V2.4.pdf)
+即 Standard for the Exchange of Earthquake Data，其可以存储多台站多分量
+的波形数据以及台站元数据（台站元数据（Metadata）中包含了台站相关
+的全部信息，比如台站位置、分量信息、仪器响应等。）。SEED格式本质上是一个
 压缩格式，因而可以大大减少网络传输的数据量以及硬盘空间，同时又可以通过
 特定的软件将其中的波形数据解压成常见的地震数据格式，也可以将从台站元数据
 中提取出仪器响应信息。
@@ -20,8 +21,7 @@ miniSEED和dataless SEED，是因为若每个SEED文件中都包含台站元数�
 
 ### 格式转换
 
-IRIS提供了
-nameref-http-//ds.iris.edu/ds/nodes/dmc/forms/rdseed/<span>rdseed</span>
+IRIS提供了 [rdseed](http://ds.iris.edu/ds/nodes/dmc/forms/rdseed/)
 软件，用于提取SEED数据中的连续波形数据以及台站元数据，并可将连续波形数据
 保存为多种地震数据格式。
 
@@ -36,9 +36,3 @@ $ rdseed -Rdf file.seed
 ``` {.console}
 $ rdseed -pdf file.seed
 ```
-
-[^1]: SEED格式的详细
-    说明参考官方文档：[www.fdsn.org/seed\_manual/SEEDManual\_V2.4.pdf](www.fdsn.org/seed_manual/SEEDManual_V2.4.pdf)。
-
-[^2]: 台站元数据（Metadata）中包含了台站相关
-    的全部信息，比如台站位置、分量信息、仪器响应等。

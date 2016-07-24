@@ -1,4 +1,4 @@
-## mlm {#spe:mlm}
+## mlm
 
 ### 概要
 
@@ -6,21 +6,23 @@
 
 ### 语法
 
-MLM \[O`RDER` n\] \[N`UMBER` n\]
+``` {.bash}
+MLM [ORDER n] [NUMBER n]
+```
+``` {.bash}
+MLM [O n] [N n]
+```
 
 ### 输入
 
-ORDER n
-
-:   设置预测误差滤波器的时滞阶数为n
-
-NUMBER n
-
-:   设置用于谱估计的点数
+- `ORDER n`: 设置预测误差滤波器的时滞阶数为n
+- `NUMBER n`: 设置用于谱估计的点数
 
 ### 缺省值
 
+``` {.bash}
 mlm order 25
+```
 
 ### 说明
 

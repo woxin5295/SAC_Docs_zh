@@ -1,4 +1,4 @@
-## echo 
+## echo
 
 ### 概要
 
@@ -7,39 +7,21 @@
 ### 语法
 
 ``` {.bash}
-ECHO ON|OFF E!RRORS!|W!ARNINGS!|O!UTPUT!|C!OMMANDS!|M!ACROS!|P!ROCESS!
+ECHO ON|OFF ERRORS|WARNINGS|OUTPUT|COMMANDS|MACROS|PROCESS
+```
+``` {.bash}
+ECHO ON|OFF E|W|O|C|M|P
 ```
 
 ### 输入
 
-ON|OFF
-
-:   打开/关闭列出的项的回显选项
-
-ERRORS
-
-:   命令执行过程中生成的错误信息
-
-WARNINGS
-
-:   命令执行过程中生成的警告信息
-
-OUTPUT
-
-:   命令执行过程中生成的输出信息
-
-COMMANDS
-
-:   终端键入的原始命令
-
-MACROS
-
-:   宏文件中出现的原始命令
-
-PROCESSED
-
-:   经过处理后的终端命令或宏文件命令，包括宏参数、黑板
-    变量、头段变量、内联函数的计算和代入
+- `ON|OFF`: 打开/关闭列出的项的回显选项
+- `ERRORS`: 命令执行过程中生成的错误信息
+- `WARNINGS`: 命令执行过程中生成的警告信息
+- `OUTPUT`: 命令执行过程中生成的输出信息
+- `COMMANDS`: 终端键入的原始命令
+- `MACROS`: 宏文件中出现的原始命令
+- `PROCESSED`: 经过处理后的终端命令或宏文件命令，包括宏参数、黑板变量、头段变量、内联函数的计算和代入
 
 ### 缺省值
 

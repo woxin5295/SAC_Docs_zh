@@ -1,4 +1,4 @@
-## begindevices 
+## begindevices
 
 ### 概要
 
@@ -7,18 +7,16 @@
 ### 语法
 
 ``` {.bash}
-B!EGIN!D!EVICES! S!GF!|X!WINDOWS!
+BEGINDEVICES SGF|XWINDOWS
+```
+``` {.bash}
+BD S|X
 ```
 
 ### 输入
 
-SGF
-
-:   SAC图像文件设备
-
-XWINDOWS
-
-:   X Window 窗口显示系统
+- `SGF`: SAC图像文件设备
+- `XWINDOWS`: X Window 窗口显示系统
 
 ### 说明
 
@@ -26,4 +24,5 @@ XWINDOWS
 再次执行 `begindevices` 启动其它图像设备或
 [enddevices](/commands/enddevices.md) 结束该图像设备为止。
 
-SAC默认使用 nameref-sec-save-image” 一节的示例。
+SAC默认使用 `xwindows` 图像设备。具体用法见 [图像保存](/graphics/save-image.md)
+一节的示例。

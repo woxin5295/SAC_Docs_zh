@@ -1,4 +1,4 @@
-## beginwindow 
+## beginwindow
 
 ### 概要
 
@@ -7,14 +7,15 @@
 ### 语法
 
 ``` {.bash}
-B!EGIN!W!INDOW! n
+BEGINWINDOW n
+```
+``` {.bash}
+BW n
 ```
 
 ### 输入
 
-n
-
-:   要启用的绘图窗口的编号，目前n的取值为1到10
+- `n`: 要启用的绘图窗口的编号，目前n的取值为1到10
 
 ### 缺省值
 

@@ -1,4 +1,4 @@
-## marktimes 
+## marktimes
 
 ### 概要
 
@@ -7,48 +7,24 @@
 ### 语法
 
 ``` {.bash}
-MARKT!IMES! [T!O! marker] [D!ISTANCE! H!EADER!|v] [O!RIGIN! H!EADER!|v|GMT time]
-    [V!ELOCITIES! v ... ]
+MARKTIMES [TO marker] [DISTANCE HEADER|v] [ORIGIN HEADER|v|GMT time] [VELOCITIES v ... ]
+```
+``` {.bash}
+MARKT [T marker] [D H|v] [O H|v|GMT time] [V v ... ]
 ```
 
 ### 输入
 
-TO marker
-
-:   定义头段中用于储存结果的第一个时间标记。对下一个的速度
+- `TO marker`: 定义头段中用于储存结果的第一个时间标记。对下一个的速度
     使用下一个时间
-
-marker
-
-:   `T0|T1|T2|T3|T4|T5|T6|T7|T8|T9`
-
-DISTANCE HEADER
-
-:   使用头段中的 `dist` 代表距离用于走时计算
-
-DISTANCE v
-
-:   使用 `v` 作为走时计算中的距离
-
-ORIGIN HEADER
-
-:   使用头段中的参考时间（`O`）用于走时计算
-
-ORIGIN v
-
-:   使用相对参考时间偏移 `v` 秒用于走时计算
-
-ORIGIN GMT time
-
-:   使用GMT时间作为参考时间
-
-time
-
-:   GMT时间包含六个整数：年、儒略日、时、分、秒、毫秒
-
-VELOCITIES v ...
-
-:   设置用于走时计算的速度集，最多可以输入10个速度
+- `marker`: `T0|T1|T2|T3|T4|T5|T6|T7|T8|T9`
+- `DISTANCE HEADER`: 使用头段中的 `dist` 代表距离用于走时计算
+- `DISTANCE v`: 使用 `v` 作为走时计算中的距离
+- `ORIGIN HEADER`: 使用头段中的参考时间（`O`）用于走时计算
+- `ORIGIN v`: 使用相对参考时间偏移 `v` 秒用于走时计算
+- `ORIGIN GMT time`: 使用GMT时间作为参考时间
+- `time`: GMT时间包含六个整数：年、儒略日、时、分、秒、毫秒
+- `VELOCITIES v ...`: 设置用于走时计算的速度集，最多可以输入10个速度
 
 ### 缺省值
 

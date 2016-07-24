@@ -1,4 +1,4 @@
-## ydiv 
+## ydiv
 
 ### 概要
 
@@ -7,7 +7,10 @@
 ### 语法
 
 ``` {.bash}
-YDIV [NI!CE!|I!NCREMENT! v|NU!MBER! n] [P!OWER! ON|OFF]
+YDIV [NICE|INCREMENT v|NUMBER n] [POWER ON|OFF]
+```
+``` {.bash}
+YDIV [NI|I v|NU n] [P ON|OFF]
 ```
 
 ### 说明

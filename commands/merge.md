@@ -1,4 +1,4 @@
-## merge 
+## merge
 
 ### 概要
 
@@ -7,29 +7,21 @@
 ### 语法
 
 ``` {.bash}
-MERGE [V!ERBOSE!] [G!AP! Z!ERO!|I!NTERP!] [O!VERLAP! C!OMPARE!|A!VERAGE!] [filelist]
+MERGE [VERBOSE] [GAP ZERO|INTERP] [OVERLAP COMPARE|AVERAGE] [filelist]
+```
+``` {.bash}
+MERGE [V] [G Z|I] [O C|A] [filelist]
 ```
 
 ### 输入
 
-VERBOSE
-
-:   合并数据时在终端显示合并的细节
-
-GAP ZERO|INTERP
-
-:   如何处理数据间断。`ZERO` 表示将数据间断 处补零值；`INTERP`
+- `VERBOSE`: 合并数据时在终端显示合并的细节
+- `GAP ZERO|INTERP`: 如何处理数据间断。`ZERO` 表示将数据间断 处补零值；`INTERP`
     表示对数据间断处进行线性插值
-
-OVERLAP COMPARE|AVERAGE
-
-:   如何处理数据重叠。`COMPARE` 表示
+- `OVERLAP COMPARE|AVERAGE`: 如何处理数据重叠。`COMPARE` 表示
     对重叠的时间段内的数据进行比较，若不匹配则退出；`AVERAGE` 表
     示对重叠时间段内的数据进行平均
-
-filelist
-
-:   SAC二进制数据文件列表
+- `filelist`: SAC二进制数据文件列表
 
 ### 说明
 
@@ -106,5 +98,3 @@ npts、depmin、depmax、depmen、e
 ### BUGS
 
 -   `filelist` 不支持通配符（v101.6a）
-
-

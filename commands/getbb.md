@@ -1,4 +1,4 @@
-## getbb 
+## getbb
 
 ### 概要
 
@@ -7,43 +7,20 @@
 ### 语法
 
 ``` {.bash}
-GETBB [TO TERM!INAL!|filename] [NAMES ON|OFF] [NEWLINE ON|OFF]
+GETBB [TO TERMINAL|filename] [NAMES ON|OFF] [NEWLINE ON|OFF]
     ALL|variable [variable ...]
 ```
 
 ### 输入
 
-TO TERMINAL
-
-:   打印值到终端
-
-TO filename
-
-:   将值追加到文件filename后
-
-NAMES ON
-
-:   输出格式为“黑板变量名=黑板变量值”
-
-NAMES OFF
-
-:   只打印黑板变量值
-
-NEWLINE ON
-
-:   打印每个黑板变量后换行
-
-NEWLINE OFF
-
-:   打印黑板变量后不换行
-
-ALL
-
-:   打印当前定义的全部黑板变量
-
-variable
-
-:   打印列表指定的黑板变量
+- `TO TERMINAL`: 打印值到终端
+- `TO filename`: 将值追加到文件filename后
+- `NAMES ON`: 输出格式为“黑板变量名=黑板变量值”
+- `NAMES OFF`: 只打印黑板变量值
+- `NEWLINE ON`: 打印每个黑板变量后换行
+- `NEWLINE OFF`: 打印黑板变量后不换行
+- `ALL`: 打印当前定义的全部黑板变量
+- `variable`: 打印列表指定的黑板变量
 
 ### 缺省值
 

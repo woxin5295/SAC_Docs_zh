@@ -1,4 +1,4 @@
-## image 
+## image
 
 ### 概要
 
@@ -12,14 +12,8 @@ IMAGE [COLOR|GREY] [BINARY|FULL]
 
 ### 输入
 
-COLOR|GREY
-
-:   绘制彩图或者灰度图
-
-BINARY|FULL
-
-:   绘图时所有正值是一个颜色，所有负值是另一种颜色，
-    或者根据数据值不同变换颜色
+- `COLOR|GREY`: 绘制彩图或者灰度图
+- `BINARY|FULL`: 绘图时所有正值是一个颜色，所有负值是另一种颜色，或者根据数据值不同变换颜色
 
 ### 缺省值
 
@@ -47,7 +41,7 @@ SAC> r contourdata
 SAC> image
 ```
 
-![image示意图](image){width="90.00000%"}
+![image示意图](/figures/image.png)
 
 ### 头段变量
 

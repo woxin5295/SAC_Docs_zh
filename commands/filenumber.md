@@ -1,4 +1,4 @@
-## filenumber 
+## filenumber
 
 ### 概要
 
@@ -7,8 +7,12 @@
 ### 语法
 
 ``` {.bash}
-F!ILE!N!UMBER! [ON|OFF]
+FILENUMBER [ON|OFF]
 ```
+``` {.bash}
+FN [ON|OFF]
+```
+
 
 ### 缺省值
 

@@ -1,4 +1,4 @@
-## border 
+## border
 
 ### 概要
 
@@ -12,9 +12,7 @@ BORDER [ON|OFF]
 
 ### 输入
 
-ON|OFF
-
-:   绘制/不绘制图形四周的边框
+- `ON|OFF`: 绘制/不绘制图形四周的边框
 
 ### 缺省值
 
@@ -24,4 +22,4 @@ border off
 
 ### 说明
 
-参考 “nameref-sec-plot-appearance” 一节。
+参考 [图像外观](/graphics/plot-appearance.md) 一节。

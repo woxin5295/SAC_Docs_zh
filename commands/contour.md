@@ -1,4 +1,4 @@
-## contour 
+## contour
 
 ### 概要
 
@@ -7,19 +7,17 @@
 ### 语法
 
 ``` {.bash}
-CONT!OUR! [A!SPECT! ON|OFF]
+CONTOUR [ASPECT ON|OFF]
+```
+``` {.bash}
+CONT [A ON|OFF]
 ```
 
 ### 输入
 
-ASPECT ON
-
-:   打开视图比开关。当这个开关打开时，等值线图的视口将会
+- `ASPECT ON`: 打开视图比开关。当这个开关打开时，等值线图的视口将会
     调整保持数据中Y与X的比值
-
-ASPECT OFF
-
-:   关闭视图比开关，这时将使用整个视口
+- `ASPECT OFF`: 关闭视图比开关，这时将使用整个视口
 
 ### 缺省值
 
@@ -35,13 +33,9 @@ contour aspect off
 `IXYZ`）。有些命令可以控制数据显示的方式：
 
 -   [zlevels](/commands/zlevels.md) 控制等值线的数目以及间隔
-
 -   [zlines](/commands/zlines.md) 控制等值线的线型
-
 -   [zlabels](/commands/zlabels.md) 控制等值线标签
-
 -   [zticks](/commands/zticks.md) 控制方向标记
-
 -   [zcolors](/commands/zcolors.md) 控制等值线颜色
 
 根据 `contour` 选项的不同，有两种不同的绘制等值线算法。一种快速
@@ -51,7 +45,7 @@ contour aspect off
 
 ### 示例
 
-参见“nameref-sec-contour”一节。
+参见 [等值线图](/graphics/plot-contour.md) 一节。
 
 ### 头段变量改变
 

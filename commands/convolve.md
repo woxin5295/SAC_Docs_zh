@@ -1,4 +1,4 @@
-## convolve 
+## convolve
 
 ### 概要
 
@@ -7,36 +7,21 @@
 ### 语法
 
 ``` {.bash}
-CONVO!LVE! [M!ASTER! name|n] [N!UMBER! n] [L!ENGTH! ON|OFF|v]
-    [T!YPE! R!ECTANGLE!|HAM!MING!|HAN!NING!|C!OSINE!|T!RIANGLE!]
+CONVOLVE [MASTER name|n] [NUMBER n] [LENGTH ON|OFF|v]
+    [TYPE RECTANGLE|HAMMING|HANNING|COSINE|TRIANGLE]
+```
+``` {.bash}
+CONVO [M name|n] [N n] [L ON|OFF|v] [T R|HAM|HAN|C|T]
 ```
 
 ### 输入
 
-MASTER name|n
-
-:   通过文件名或文件号指定某文件为主文件，内存中的
-    所有文件将与主文件进行卷积
-
-NUMBER n
-
-:   设置卷积窗的数目
-
-LENGTH ON
-
-:   打开/关闭固定窗长选项开关
-
-LENGTH v
-
-:   打开固定窗长选项开关，并设置窗长度为 `v` 秒
-
-TYPE RECTANGLE
-
-:   对每个窗应用一个矩形函数，这等价于不对窗加上函数
-
-TYPE HAMMING|HANNING|COSINE|TRIANGlE
-
-:   对每个窗应用XX函数
+- `MASTER name|n`: 通过文件名或文件号指定某文件为主文件，内存中的所有文件将与主文件进行卷积
+- `NUMBER n`: 设置卷积窗的数目
+- `LENGTH ON`: 打开/关闭固定窗长选项开关
+- `LENGTH v`: 打开固定窗长选项开关，并设置窗长度为 `v` 秒
+- `TYPE RECTANGLE`: 对每个窗应用一个矩形函数，这等价于不对窗加上函数
+- `TYPE HAMMING|HANNING|COSINE|TRIANGlE`: 对每个窗应用XX函数
 
 ### 缺省值
 

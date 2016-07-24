@@ -1,4 +1,4 @@
-## mathop 
+## mathop
 
 ### 概要
 
@@ -12,13 +12,8 @@ MATHOP NORMAL|MATH|FORTRAN|NONE|OLD
 
 ### 输入
 
-NORMAL|MATH|FORTRAN
-
-:   使用正常的数学操作符优先级
-
-NONE|OLD
-
-:   不使用操作符优先级
+- `NORMAL|MATH|FORTRAN`: 使用正常的数学操作符优先级
+- `NONE|OLD`: 不使用操作符优先级
 
 ### 缺省值
 

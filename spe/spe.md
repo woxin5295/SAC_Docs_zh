@@ -5,17 +5,9 @@
 SPE，全称为Spectrum Estimation Subprocess，在SAC中键入 `spe` 命令即可
 进入谱估计子程序。该子程序主要用于处理稳态随机过程，包含了如下三种谱估计方法：
 
-PDS
-
-:   能量密度谱
-
-MLM
-
-:   最大似然方法
-
-MEM
-
-:   最大熵方法
+- PDS: 能量密度谱
+- MLM: 最大似然方法
+- MEM: 最大熵方法
 
 这三种方法都是间接法，因为它们都用了采样相关函数而不是数据本身来估计谱内容。
 
@@ -23,13 +15,16 @@ MEM
 
 SPE子程序中包含了一些专门的命令，同时也可以使用SAC的部分命令。这里只列出SPE专属的命令。
 
-nameref-spe-cor 计算互相关函数 nameref-spe-mem 用最大熵方法计算谱估计
-nameref-spe-mlm 用最大似然法计算谱估计 nameref-spe-pds
-用能量密度谱方法计算谱估计 nameref-spe-plotcor 绘制相关函数
-nameref-spe-plotpe 绘制RMS预测误差函数 nameref-spe-plotspe 绘制谱估计
-nameref-spe-readcor 读取相关函数 nameref-spe-writecor
-将相关函数以SAC文件格式写入磁盘 nameref-spe-writespe
-将谱估计以SAC文件格式写入磁盘
+-   [cor](/spe/cor.md) 计算互相关函数
+-   [mem](/spe/mem.md) 用最大熵方法计算谱估计
+-   [mlm](/spe/mlm.md) 用最大似然法计算谱估计
+-   [pds](/spe/pds.md) 用能量密度谱方法计算谱估计
+-   [plotcor](/spe/plotcor.md) 绘制相关函数
+-   [plotpe](/spe/plotpe.md) 绘制RMS预测误差函数
+-   [plotspe](/spe/plotspe.md) 绘制谱估计
+-   [readcor](/spe/readcor.md) 读取相关函数
+-   [writecor](/spe/writecor.md) 将相关函数以SAC文件格式写入磁盘
+-   [writespe](/spe/writespe.md) 将谱估计以SAC文件格式写入磁盘
 
 ### 理论
 
@@ -88,20 +83,22 @@ SPE在运行期间生成并保存了大量的辅助函数(例如：相关函数�
 
 ### 相关
 
-可以使用 nameref-spe-writecor 命令
-可以激昂相关函数作为SAC的数据文件保存起来，还可以用 nameref-spe-readcor
-命令
+可以使用 [cor](/spe/cor.md) 命令计算相关函数，用
+[writecor](/spe/writecor.md) 命令
+可以激昂相关函数作为SAC的数据文件保存起来，还可以用
+[readcor](/spe/readcor.md) 命令
 再将它们读回SPE中去，这比每次都重复计算相关函数要更为简单。在数据文件
-很长的时候尤为如此。此时用户也可以使用 nameref-spe-plotcor 命令来看一下
-相关函数。如果用户准备使用MEM方法的话，还可以使用 nameref-spe-plotpe
-命令 来看一下预测误差函数。
+很长的时候尤为如此。此时用户也可以使用 [plotcor](/spe/plotcor.md)
+命令来看一下 相关函数。如果用户准备使用MEM方法的话，还可以使用
+[plotpe](/spe/plotpe.md) 命令 来看一下预测误差函数。
 
 ### 估计
 
-用户可以使用 nameref-spe-mem 命令来
-选择三种频谱估计中的任何一种。每一种方法都有自己的选项，你可以 使用
-nameref-spe-plotspe 命令来检验谱分析结果。有几种确定比例的选项可以使用。
-同样的你也可以使用 nameref-spe-writespe 命令将谱估计的结果作为SAC的数据
+用户可以使用 [pds](/spe/pds.md)、[mlm](/spe/mlm.md)、[mem](/spe/mem.md)
+命令来 选择三种频谱估计中的任何一种。每一种方法都有自己的选项，你可以
+使用 [plotspe](/spe/plotspe.md)
+命令来检验谱分析结果。有几种确定比例的选项可以使用。 同样的你也可以使用
+[writespe](/spe/writespe.md) 命令将谱估计的结果作为SAC的数据
 文件保存起来。
 
 ### 终止

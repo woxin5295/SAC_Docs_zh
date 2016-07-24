@@ -1,4 +1,4 @@
-## pds {#spe:pds}
+## pds
 
 ### 概要
 
@@ -6,40 +6,36 @@
 
 ### 语法
 
-PDS \[S`ECONDS` v|L`AGS` n\] \[N`UMBER` n\] \[T`YPE`
-HAM`MING`|HAN`NING`|C`OSINE`|R`ECTANGLE`|T`RIANGLE`\]
+``` {.bash}
+PDS [SECONDS v|LAGS n] [NUMBER n] [TYPE HAMMING|HANNING|COSINE|RECTANGLE|TRIANGLE]
+```
+``` {.bash}
+PDS [S v|L n] [N n] [T HAM|HAN|C|R|T]
+```
 
 ### 输入
 
-SECONDS v
-
-:   设置窗长为v秒
-
-LAGS n
-
-:   设置窗长为n？
-
-NUMBER n
-
-:   设置谱估计使用的数据点数
-
-TYPE type
-
-:   设置要使用的窗类型
+- `SECONDS v`: 设置窗长为v秒
+- `LAGS n`: 设置窗长为n？
+- `NUMBER n`: 设置谱估计使用的数据点数
+- `TYPE type`: 设置要使用的窗类型
 
 ### 缺省值
 
+``` {.bash}
 pds type hamming
+```
 
 ### 说明
 
 该命令实现了传统的谱估计方法。样本相关函数首先进行相关窗截窗，生成的函数
-再使用FFT获得谱估计。正如在 nameref-spe-cor 命令文档中提到的，在估计偏差
+再使用FFT获得谱估计。正如在 [cor](/spe/cor.md)
+命令文档中提到的，在估计偏差
 (即丧失分辨率)与估计方差之间存在tradeoff。随着窗长增加，频率域分辨率
 增加，进而偏差减少；然而，样本相关函数在大延迟时值较大，谱估计的方差
 也会增加，这是由于在大延迟时用于估计的数据点数变少了。
 
-相关窗类型的选取与 nameref-spe-cor 文档中描述的数据窗有不同的效果。
+相关窗类型的选取与 [cor](/spe/cor.md) 文档中描述的数据窗有不同的效果。
 这是两种不同类型的偏差之间的选择。
 
 该谱估计方法用相关窗的Fourier变换来逼近真实谱的卷积。窗变换由两个特性控制，

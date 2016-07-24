@@ -1,4 +1,4 @@
-## 图像格式转换 {#sec:format-conversion}
+## 图像格式转换
 
 SAC中的图像可以保存为SGF、PS和PDF格式，有些时候会需要将其转换为其他
 图像格式，比如JPG或PNG。
@@ -9,10 +9,8 @@ SAC中的图像可以保存为SGF、PS和PDF格式，有些时候会需要将其
 `convert` 命令的选项众多，这里只说其中几个常用的选项：
 
 -   `-trim` ：切边，即将图像周围多余的白边切除；
-
 -   `-density` *width*`x`*height*：设置图像精度，一般情况下，
     设置width为300即可，height可以不指定。
-
 -   `-rotate` *degree*：图像旋转的角度；
 
 下面给出一个简单的例子：

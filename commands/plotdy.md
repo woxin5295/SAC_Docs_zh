@@ -1,4 +1,4 @@
-## plotdy 
+## plotdy
 
 ### 概要
 
@@ -12,17 +12,9 @@ PLOTDY [ASPECT ON|OFF] name|number [name|number]
 
 ### 输入
 
-ASPECT ON|OFF
-
-:   ON表示保持3/4的纵横比。OFF允许纵横比随着窗口维度的 变换而变换
-
-name
-
-:   数据文件列表中数据名
-
-number
-
-:   数据文件列表中的数据号
+- `ASPECT ON|OFF`: ON表示保持3/4的纵横比。OFF允许纵横比随着窗口维度的 变换而变换
+- `name`: 数据文件列表中数据名
+- `number`: 数据文件列表中的数据号
 
 ### 说明
 

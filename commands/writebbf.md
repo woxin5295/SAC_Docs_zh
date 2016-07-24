@@ -1,4 +1,4 @@
-## writebbf 
+## writebbf
 
 ### 概要
 
@@ -7,14 +7,15 @@
 ### 语法
 
 ``` {.bash}
-W!RITE!BBF [file]
+WRITEBBF [file]
+```
+``` {.bash}
+WBBF [file]
 ```
 
 ### 输入
 
-file
-
-:   黑板变量文件的文件名
+- `file`: 黑板变量文件的文件名
 
 ### 缺省值
 

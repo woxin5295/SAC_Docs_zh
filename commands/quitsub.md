@@ -1,4 +1,4 @@
-## quitsub 
+## quitsub
 
 ### 概要
 
@@ -7,8 +7,12 @@
 ### 语法
 
 ``` {.bash}
-Q!UIT!S!UB!
+QUITSUB
 ```
+``` {.bash}
+QS
+```
+
 
 ### 说明
 
@@ -17,7 +21,4 @@ Q!UIT!S!UB!
 目前SAC提供了两个子程序：
 
 -   Spectral Estimation Subproess 谱估计子程序（SPE）
-
 -   Signal Stacking Subprocess 信号迭加子程序（SSS）
-
-

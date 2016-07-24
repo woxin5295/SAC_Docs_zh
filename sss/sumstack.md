@@ -1,4 +1,4 @@
-## sumstack {#sss:sumstack}
+## sumstack
 
 ### 概要
 
@@ -6,20 +6,23 @@
 
 ### 语法
 
-S`UM`S`TACK` \[N`ORMALIZATION` ON|OFF\]
+``` {.bash}
+SUMSTACK [NORMALIZATION ON|OFF]
+```
+``` {.bash}
+SS [N ON|OFF]
+```
 
 ### 输入
 
-NORMALIZATION ON|OFF
-
-:   打开/关闭归一化选项。若该选项打开，则对于迭加结果中
+- `NORMALIZATION ON|OFF`: 打开/关闭归一化选项。若该选项打开，则对于迭加结果中
     的每个数据点除以所有文件的权重因子的和。
 
 ### 缺省值
 
 该命令用于将迭加文件列表中的文件进行迭加。在该命令执行之前必须通过
-nameref-sss-timewindow
+[timewindow](/sss/timewindow.md)
 命令设置迭加时间窗。每个数据会根据其静/动时间延迟做相应的时移。对于不迭加时间窗内的数据直接按零值处理。每个文件可以给定权重以及极性。
 
 在迭加之后，会自动生成迭加结果的绘图。迭加结果可以通过
-nameref-sss-writestack 命令保存到磁盘中。
+[writestack](/sss/writestack.md) 命令保存到磁盘中。

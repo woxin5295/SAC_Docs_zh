@@ -1,4 +1,4 @@
-## incrementstack {#sss:incrementstack}
+## incrementstack
 
 ### 概要
 
@@ -6,7 +6,12 @@
 
 ### 语法
 
-I`NCREMENT`S`TACK`
+``` {.bash}
+INCREMENTSTACK
+```
+``` {.bash}
+IS
+```
 
 ### 缺省值
 

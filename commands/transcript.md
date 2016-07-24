@@ -1,4 +1,4 @@
-## transcript 
+## transcript
 
 ### 概要
 
@@ -8,73 +8,33 @@
 
 ``` {.bash}
 TRANSCRIPT [OPEN|CREATE|CLOSE|CHANGE|WRITE|HISTORY] [FILE filename]
-    [CONTENTS ALL|E!RRORS!|W!ARNINGS!|O!UTPUT!|C!OMMANDS!|M!ACROS!|P!ROCESSED!]
+    [CONTENTS ALL|ERRORS|WARNINGS|OUTPUT|COMMANDS|MACROS|PROCESSED]
     [MESSAGE text]
 ```
+``` {.bash}
+TRANSCRIPT [OPEN|CREATE|CLOSE|CHANGE|WRITE|HISTORY] [FILE filename]
+    [CONTENTS ALL|E|W|O|C|M|P] [MESSAGE text]
+```
+
 
 ### 输入
 
-OPEN
-
-:   打开副本文件，若文件已存在，则将输出追加到文件的尾部，相当于重定向符号
-    `>>`
-
-CREATE
-
-:   创建一个新的副本文件，相当于重定向符号 `>`
-
-CLOSE
-
-:   关闭一个已打开的副本文件
-
-CHANGE
-
-:   修改一个已打开的副本文件的内容
-
-WRITE
-
-:   将信息写入副本文件，不改变其状态或内容
-
-HISTORY
-
-:   将命令行历史保存到文件
-
-FILE filename
-
-:   定义副本文件的名字
-
-MESSAGE text
-
-:   向副本文件中写入文本。这个信息可以用于指定正在进行的
+- `OPEN`: 打开副本文件，若文件已存在，则将输出追加到文件的尾部，相当于重定向符号 `>>`
+- `CREATE`: 创建一个新的副本文件，相当于重定向符号 `>`
+- `CLOSE`: 关闭一个已打开的副本文件
+- `CHANGE`: 修改一个已打开的副本文件的内容
+- `WRITE`: 将信息写入副本文件，不改变其状态或内容
+- `HISTORY`: 将命令行历史保存到文件
+- `FILE filename`: 定义副本文件的名字
+- `MESSAGE text`: 向副本文件中写入文本。这个信息可以用于指定正在进行的
     进程或指定正在处理的不同事件，在两次执行这个命令的过程中这个信息不保存
-
-CONTENTS ALL
-
-:   定义副本文件的内容为全部输入输出的信息
-
-CONTENTS ERRORS
-
-:   定义副本内容为执行命令时产生的错误消息
-
-CONTENTS WARNINGS
-
-:   定义副本内容为执行命令时产生的警告消息
-
-CONTENTS OUTPUT
-
-:   定义副本内容为执行命令时的输出消息
-
-CONTENTS COMMANDS
-
-:   定义副本内容为终端输入的原始命令
-
-CONTENTS MACROS
-
-:   定义副本内容为宏文件中出现的原始命令
-
-CONTENTS PROCESSED
-
-:   定义副本内容为经终端或宏处理之后的命令
+- `CONTENTS ALL`: 定义副本文件的内容为全部输入输出的信息
+- `CONTENTS ERRORS`: 定义副本内容为执行命令时产生的错误消息
+- `CONTENTS WARNINGS`: 定义副本内容为执行命令时产生的警告消息
+- `CONTENTS OUTPUT`: 定义副本内容为执行命令时的输出消息
+- `CONTENTS COMMANDS`: 定义副本内容为终端输入的原始命令
+- `CONTENTS MACROS`: 定义副本内容为宏文件中出现的原始命令
+- `CONTENTS PROCESSED`: 定义副本内容为经终端或宏处理之后的命令
 
 ### 缺省值
 

@@ -1,4 +1,4 @@
-## enddevices 
+## enddevices
 
 ### 概要
 
@@ -7,22 +7,17 @@
 ### 语法
 
 ``` {.bash}
-E!ND!D!EVICES! [ALL|S!GF!|X!WINDOWS!]
+ENDDEVICES [ALL|SGF|XWINDOWS]
+```
+``` {.bash}
+ED [ALL|S|X]
 ```
 
 ### 输入
 
-ALL
-
-:   关闭所有图像设备
-
-SGF
-
-:   SAC图形文件设备
-
-XWINDOWS
-
-:   X Window 图像窗口系统
+- `ALL`: 关闭所有图像设备
+- `SGF`: SAC图形文件设备
+- `XWINDOWS`: X Window 图像窗口系统
 
 ### 说明
 

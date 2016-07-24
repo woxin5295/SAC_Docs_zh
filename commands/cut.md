@@ -1,4 +1,4 @@
-## cut 
+## cut
 
 ### 概要
 
@@ -12,17 +12,10 @@ CUT [ON|OFF|pdw|SIGNAL]
 
 ### 输入
 
-ON
-
-:   打开截窗选项但不改变 `pdw`
-
-OFF
-
-:   关闭截窗选项
-
-SIGNAL
-
-:   等效于设置 `pdw` 为 `A -1 F 1`，即 `a` 前一秒到 `f` 后一秒的数据窗
+- `ON`: 打开截窗选项但不改变 `pdw`
+- `OFF`: 关闭截窗选项
+- `pdw`: 设置部分时间窗，见 [数据截窗](/data-process/cut-data.md) 中 pdw 的介绍
+- `SIGNAL`: 等效于设置 `pdw` 为 `A -1 F 1`，即 `a` 前一秒到 `f` 后一秒的数据窗
 
 ### 缺省值
 

@@ -1,4 +1,4 @@
-## spectrogram 
+## spectrogram
 
 ### 概要
 
@@ -7,49 +7,23 @@
 ### 语法
 
 ``` {.bash}
-SP!ECTRO!G!RAM! [WINDOW v] [SLICE v] [ORDER n] [CBAR ON|OFF]
+SPECTROGRAM [WINDOW v] [SLICE v] [ORDER n] [CBAR ON|OFF]
     [SQRT|NLOG|LOG10|NOSCALING] [YMIN v] [YMAX v] [METHOD PDS|MEM|MLM]
     [COLOR|GRAY]
 ```
 
 ### 输入
 
-WINDOW v
-
-:   设置滑动数据窗的长度为v秒，决定了FFT的尺寸
-
-SLICE v
-
-:   设置数据滑动间隔为v秒，对每个滑动间隔将产生一个频谱图线
-
-ORDER n
-
-:   指定用于计算谱估计的自相关中的点数
-
-CBAR ON|OFF
-
-:   打开/关闭参考颜色条
-
-SQRT|NLOG|LOG10|NOSCALING
-
-:   指定振幅的自然对数、以10为底的对数或平方根
-
-YMIN v
-
-:   指定绘图的最小频率
-
-YMAX v
-
-:   指定绘图最大频率
-
-METHOD PDS|MEM|MLM
-
-:   指定使用的谱估计方法，`PDS` 代表功率 密度谱估计，`MLM`
+- `WINDOW v`: 设置滑动数据窗的长度为v秒，决定了FFT的尺寸
+- `SLICE v`: 设置数据滑动间隔为v秒，对每个滑动间隔将产生一个频谱图线
+- `ORDER n`: 指定用于计算谱估计的自相关中的点数
+- `CBAR ON|OFF`: 打开/关闭参考颜色条
+- `SQRT|NLOG|LOG10|NOSCALING`: 指定振幅的自然对数、以10为底的对数或平方根
+- `YMIN v`: 指定绘图的最小频率
+- `YMAX v`: 指定绘图最大频率
+- `METHOD PDS|MEM|MLM`: 指定使用的谱估计方法，`PDS` 代表功率 密度谱估计，`MLM`
     代表最大似然，`MEM` 代表最大熵谱估计。
-
-COLOR|GRAY
-
-:   指定是彩色图还是灰度图
+- `COLOR|GRAY`: 指定是彩色图还是灰度图
 
 ### 缺省值
 

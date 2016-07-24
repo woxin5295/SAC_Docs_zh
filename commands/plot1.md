@@ -1,4 +1,4 @@
-## plot1 
+## plot1
 
 ### 概要
 
@@ -7,26 +7,19 @@
 ### 语法
 
 ``` {.bash}
-P!LOT!1 [A!BSOLUTE!|R!ELATIVE!] [P!ERPLOT! ON|OFF|n]
+PLOT1 [ABSOLUTE|RELATIVE] [PERPLOT ON|OFF|n]
 ```
+``` {.bash}
+P1 [A|R] [P ON|OFF|n]
+```
+
 
 ### 输入
 
-ABSOLUTE|RELATIVE
-
-:   绝对/相对绘图模式
-
-PERPLOT n
-
-:   每张图上绘制 `n` 个文件
-
-PERPLOT ON
-
-:   每张图绘制 `n` 个文件，使用 `n` 的旧值
-
-PERPLOT OFF
-
-:   所有文件绘制在一张图上
+- `ABSOLUTE|RELATIVE`: 绝对/相对绘图模式
+- `PERPLOT n`: 每张图上绘制 `n` 个文件
+- `PERPLOT ON`: 每张图绘制 `n` 个文件，使用 `n` 的旧值
+- `PERPLOT OFF`: 所有文件绘制在一张图上
 
 ### 缺省值
 

@@ -1,4 +1,4 @@
-## floor 
+## floor
 
 ### 概要
 
@@ -12,17 +12,9 @@ FLOOR [ON|OFF|v]
 
 ### 输入
 
-ON
-
-:   打开floor选项开关但不改变其值
-
-OFF
-
-:   关闭floor选项开关
-
-v
-
-:   打开floor选项开关并改变阈值
+- `ON`: 打开floor选项开关但不改变其值
+- `OFF`: 关闭floor选项开关
+- `v`: 打开floor选项开关并改变阈值
 
 ### 缺省值
 

@@ -1,4 +1,4 @@
-## erase 
+## erase
 
 ### 概要
 
@@ -7,7 +7,10 @@
 ### 语法
 
 ``` {.bash}
-ERA!SE!
+ERASE
+```
+``` {.bash}
+ERA
 ```
 
 ### 说明

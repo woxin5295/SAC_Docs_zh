@@ -1,4 +1,4 @@
-## plotc 
+## plotc
 
 ### 概要
 
@@ -7,30 +7,19 @@
 ### 语法
 
 ``` {.bash}
-P!LOT!C [R!EPLAY!|C!REATE!] [F!ILE!|M!ACRO! filename] [B!ORDER! ON|OFF]
+PLOTC [REPLAY|CREATE] [FILE|MACRO filename] [BORDER ON|OFF]
+```
+``` {.bash}
+PC [R|C] [F|M filename] [B ON|OFF]
 ```
 
 ### 输入
 
-REPLAY
-
-:   重新显示或绘制一个已经存在的文件或宏，关于文件和宏的区别见下
-
-CREATE
-
-:   创建一个新的文件或宏
-
-FILE filename
-
-:   重新显示或创建一个文件。如果省略文件名则使用上一个文件
-
-MACRO filename
-
-:   重新显示或创建一个宏
-
-BORDER ON|OFF
-
-:   打开/关闭图形的边界
+- `REPLAY`: 重新显示或绘制一个已经存在的文件或宏，关于文件和宏的区别见下
+- `CREATE`: 创建一个新的文件或宏
+- `FILE filename`: 重新显示或创建一个文件。如果省略文件名则使用上一个文件
+- `MACRO filename`: 重新显示或创建一个宏
+- `BORDER ON|OFF`: 打开/关闭图形的边界
 
 ### 缺省值
 
@@ -120,7 +109,6 @@ SAC> endframe
 
 1.  只有当设置正方形视窗（`vspace 1.0`）时绘制的圆形和扇形
     才是正确的，否则只能产生一个椭圆，其纵横比等于视窗的纵横比。
-
 2.  除文本之外的所有操作码都按比例适应图形窗口。
 
 文本尺寸并不是当前标度的。当你生成一个图像并想要将文本放在一个矩形或圆中
@@ -132,35 +120,29 @@ SAC> endframe
 [beginwindow](/commands/beginwindow.md) 或
 [begindevices](/commands/begindevices.md) 之前）
 
-  字符   含义
-  ------ --------------------------------------------------------------------------------------------------------------------
-  A      绘制一条到ORIGIN到CURSOR的箭头
-  B      在绘图区周围绘制边界的tick标记
-  C      绘制一个圆心在ORIGIN，且经过CURSOR的圆
-  D      从replay文件中删除最后一个动作选项
-  G      设置ORIGIN，并将其全局化
-  L      绘制一条从ORIGIN到CURSOR的线
-  M      在CURSOR处插入一个宏文件(输入宏文件名，比例因子和旋转角。 若没有指定，则使用上一次的值，默认是OUT，1.0，0)
-  O      设置ORIGIN为CURSOR
-  N      绘制一个中心在ORIGIN，一个顶点位于CURSOR的n边形
-  Q      退出PLOTC
-  R      绘制对脚位于ORIGIN和CURSOR的长方形
-  S      绘制一个圆心位于ORIGIN的扇形(用光标的移动来 指定扇形的角度，键入S来绘制一个小于180度的扇形，或者键入C绘制它的补集)
-  T      在CURSOR处放置一行文本，文本以回车键结束
-  U      在CURSOR处放置多行文本，文本以空白行结束
-
-  : plotc命令表
+  字符 | 含义
+-------------------------------------------------------------------------------------------------------
+  A   |   绘制一条到ORIGIN到CURSOR的箭头
+  B   |   在绘图区周围绘制边界的tick标记
+  C   |   绘制一个圆心在ORIGIN，且经过CURSOR的圆
+  D   |   从replay文件中删除最后一个动作选项
+  G   |   设置ORIGIN，并将其全局化
+  L   |   绘制一条从ORIGIN到CURSOR的线
+  M   |   在CURSOR处插入一个宏文件(输入宏文件名，比例因子和旋转角。 若没有指定，则使用上一次的值，默认是OUT，1.0，0)
+  O   |   设置ORIGIN为CURSOR
+  N   |   绘制一个中心在ORIGIN，一个顶点位于CURSOR的n边形
+  Q   |   退出PLOTC
+  R   |   绘制对脚位于ORIGIN和CURSOR的长方形
+  S   |   绘制一个圆心位于ORIGIN的扇形(用光标的移动来 指定扇形的角度，键入S来绘制一个小于180度的扇形，或者键入C绘制它的补集)
+  T   |   在CURSOR处放置一行文本，文本以回车键结束
+  U   |   在CURSOR处放置多行文本，文本以空白行结束
 
 ### 关于PLOTC命令表的说明
 
 -   `CURSOR` 表示当前光标位置
-
 -   `ORIGIN` 一般为上次光标的位置
-
 -   `G` 选项强制ORIGIN固定
-
 -   `O` 选项再次允许ORIGIN移动
-
 -   `Q` 选项不自动拷贝至文件，但是可以通过文本编辑器直接加入
 
 如果SAC在replay模式没有在文件中看到Q选项，则其在显示文件内容之后回到光标

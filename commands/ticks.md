@@ -1,4 +1,4 @@
-## ticks 
+## ticks
 
 ### 概要
 
@@ -7,42 +7,22 @@
 ### 语法
 
 ``` {.bash}
-TICKS [ON|OFF|ONLY] [A!LL!] [T!OP!] [B!OTTOM!] [R!IGHT!] [L!EFT!]
+TICKS [ON|OFF|ONLY] [ALL] [TOP] [BOTTOM] [RIGHT] [LEFT]
+```
+``` {.bash}
+TICKS [ON|OFF|ONLY] [A] [T] [B] [R] [L]
 ```
 
 ### 输入
 
-ON
-
-:   在指定的边上显示刻度，其他不变
-
-OFF
-
-:   在指定的边上不显示刻度，其他不变
-
-ONLY
-
-:   仅在指定的边上显示刻度，其他关闭
-
-ALL
-
-:   所有四条边
-
-TOP
-
-:   X轴的上边
-
-BOTTOM
-
-:   X轴的下边
-
-RIGHT
-
-:   Y轴的右边
-
-LEFT
-
-:   Y轴的左边
+- `ON`: 在指定的边上显示刻度，其他不变
+- `OFF`: 在指定的边上不显示刻度，其他不变
+- `ONLY`: 仅在指定的边上显示刻度，其他关闭
+- `ALL`: 所有四条边
+- `TOP`: X轴的上边
+- `BOTTOM`: X轴的下边
+- `RIGHT`: Y轴的右边
+- `LEFT`: Y轴的左边
 
 ### 缺省值
 

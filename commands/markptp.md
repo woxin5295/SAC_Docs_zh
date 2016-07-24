@@ -1,4 +1,4 @@
-## markptp 
+## markptp
 
 ### 概要
 
@@ -7,18 +7,16 @@
 ### 语法
 
 ``` {.bash}
-MARKP!TP! [L!ENGTH! v] [T!O! marker]
+MARKPTP [LENGTH v] [TO marker]
+```
+``` {.bash}
+MARKP [L v] [T marker]
 ```
 
 ### 输入
 
-LENGTH v
-
-:   设置滑动窗的长度为 `v` 秒
-
-TO marker
-
-:   指定某个时间标记头段用于保存最小值的所对应的时刻；
+- `LENGTH v`: 设置滑动窗的长度为 `v` 秒
+- `TO marker`: 指定某个时间标记头段用于保存最小值的所对应的时刻；
     最大值所对应的时刻保存在下一个时间标记头段中。时间标记头段marker
     可以取 `Tn`（n=0–9）。
 

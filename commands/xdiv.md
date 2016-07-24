@@ -1,4 +1,4 @@
-## xdiv 
+## xdiv
 
 ### 概要
 
@@ -7,30 +7,19 @@
 ### 语法
 
 ``` {.bash}
-XDIV [NI!CE!|I!NCREMENT! v|NU!MBER! n] [P!OWER! ON|OFF]
+XDIV [NICE|INCREMENT v|NUMBER n] [POWER ON|OFF]
+```
+``` {.bash}
+XDIV [NI|I v|NU n] [P ON|OFF]
 ```
 
 ### 输入
 
-NICE
-
-:   由SAC自动选择合适的刻度间隔
-
-INCREMENT v
-
-:   设置刻度间隔增量为v
-
-NUMBER n
-
-:   设置刻度的总数目数为n
-
-POWER ON
-
-:   打开幂指数选项，SAC以幂指数形式给出刻度值
-
-POWER OFF
-
-:   关闭幂选项
+- `NICE`: 由SAC自动选择合适的刻度间隔
+- `INCREMENT v`: 设置刻度间隔增量为v
+- `NUMBER n`: 设置刻度的总数目数为n
+- `POWER ON`: 打开幂指数选项，SAC以幂指数形式给出刻度值
+- `POWER OFF`: 关闭幂选项
 
 ### 缺省值
 

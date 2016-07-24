@@ -1,4 +1,4 @@
-## production 
+## production
 
 ### 概要
 
@@ -7,14 +7,15 @@
 ### 语法
 
 ``` {.bash}
-PROD!UCTION! ON|OFF
+PRODUCTION ON|OFF
+```
+``` {.bash}
+PROD ON|OFF
 ```
 
 ### 输入
 
-ON|OFF
-
-:   打开/关闭生产模式
+- `ON|OFF`: 打开/关闭生产模式
 
 ### 缺省值
 

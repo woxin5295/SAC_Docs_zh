@@ -1,4 +1,4 @@
-## stretch 
+## stretch
 
 ### 概要
 
@@ -7,18 +7,17 @@
 ### 语法
 
 ``` {.bash}
-STRETCH n [F!ILTER! ON|OFF]
+STRETCH n [FILTER ON|OFF]
+```
+``` {.bash}
+STRETCH n [F ON|OFF]
 ```
 
 ### 输入
 
-n
+- `n`: 设置增采样因子，取值为2到7
 
-:   设置增采样因子，取值为2到7
-
-FILTER ON|OFF
-
-:   打开/关闭插值FIR滤波器选项
+- `FILTER ON|OFF`: 打开/关闭插值FIR滤波器选项
 
 ### 缺省值
 

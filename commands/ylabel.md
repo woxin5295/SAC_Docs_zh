@@ -1,4 +1,4 @@
-## ylabel 
+## ylabel
 
 ### 概要
 
@@ -7,8 +7,11 @@
 ### 语法
 
 ``` {.bash}
-YLAB!E!L [ON|OFF|text] [L!OCATION! T!OP!|B!OTTOM!|R!IGHT!|L!EFT!]
-    [S!IZE! T!INY!|S!MALL!|M!EDIUM!|L!ARGE!]
+YLABEL [ON|OFF|text] [LOCATION TOP|BOTTOM|RIGHT|LEFT]
+    [SIZE TINY|SMALL|MEDIUM|LARGE]
+```
+``` {.bash}
+YLABL [ON|OFF|text] [L T|B|R|L] [S T|S|M|L]
 ```
 
 ### 说明

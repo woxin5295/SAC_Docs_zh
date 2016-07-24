@@ -1,4 +1,4 @@
-## plotxy 
+## plotxy
 
 ### 概要
 
@@ -7,18 +7,16 @@
 ### 语法
 
 ``` {.bash}
-P!LOT!XY name|number name|number [name|number ...]
+PLOTXY name|number name|number [name|number ...]
+```
+``` {.bash}
+PXY name|number name|number [name|number ...]
 ```
 
 ### 输入
 
-name
-
-:   数据文件表中的一个文件名
-
-number
-
-:   数据文件表中的一个文件号
+- `name`: 数据文件表中的一个文件名
+- `number`: 数据文件表中的一个文件号
 
 ### 说明
 

@@ -1,9 +1,9 @@
-## 调用libsac库 {#sec:libsac}
+## 调用libsac库
 
 ### next2
 
-SAC在做FFT时要保证数据点数为$2^n$个，对于不足$2^n$个点的数据需要补零至$2^n$
-次方个点。
+SAC在做FFT时要保证数据点数为 $$2^n$$ 个，对于不足 $$2^n$$ 个点的数据需要补零至
+$$2^n$$ 个点。
 
 next2函数定义为：
 
@@ -53,6 +53,8 @@ firtrn( char    *ftype,     // 类型，取'HILBERT'或'DERIVATIVE'
 ```
 
 下面的示例展示了如何计算数据的Hilbert变换:
+
+[include](firtrn.c)
 
 ### envelope
 
@@ -109,3 +111,5 @@ double rms( float *x,            // 输入数据
 ```
 
 示例代码：
+
+[include](rms.c)

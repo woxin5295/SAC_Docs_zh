@@ -1,4 +1,4 @@
-## plotpe {#spe:plotpe}
+## plotpe
 
 ### 概要
 
@@ -6,7 +6,12 @@
 
 ### 语法
 
-P`LOT`PE
+``` {.bash}
+PLOTPE
+```
+``` {.bash}
+PPE
+```
 
 ### 说明
 

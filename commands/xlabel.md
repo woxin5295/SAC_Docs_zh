@@ -1,4 +1,4 @@
-## xlabel 
+## xlabel
 
 ### 概要
 
@@ -7,47 +7,24 @@
 ### 语法
 
 ``` {.bash}
-XLAB!E!L [ON|OFF|text] [L!OCATION! T!OP!|B!OTTOM!|R!IGHT!|L!EFT!]
-    [S!IZE! T!INY!|S!MALL!|M!EDIUM!|L!ARGE!]
+XLABEL [ON|OFF|text] [LOCATION TOP|BOTTOM|RIGHT|LEFT]
+    [SIZE TINY|SMALL|MEDIUM|LARGE]
+```
+``` {.bash}
+XLABL [ON|OFF|text] [L T|B|R|L] [S T|S|M|L]
 ```
 
 ### 输入
 
-text
-
-:   打开X轴标签选项，设置标签为 `text`。若文本含空格， 需要用引号括起来
-
-ON
-
-:   打开X轴标签选项，但不改变标签文本
-
-OFF
-
-:   关闭X轴标签选项
-
-LOCATION
-
-:   设定X轴标签的位置。可以取 `TOP`、`BOTTOM`、 `RIGHT`、`LEFT`
-
-SIZE
-
-:   改变绘图标签的文本尺寸
-
-TINY
-
-:   每行132个字符
-
-SMALL
-
-:   每行100个字符
-
-MEDIUM
-
-:   每行80字符
-
-LARGE
-
-:   大尺寸，每行50字符
+- `text`: 打开X轴标签选项，设置标签为 `text`。若文本含空格， 需要用引号括起来
+- `ON`: 打开X轴标签选项，但不改变标签文本
+- `OFF`: 关闭X轴标签选项
+- `LOCATION`: 设定X轴标签的位置。可以取 `TOP`、`BOTTOM`、 `RIGHT`、`LEFT`
+- `SIZE`: 改变绘图标签的文本尺寸
+- `TINY`: 每行132个字符
+- `SMALL`: 每行100个字符
+- `MEDIUM`: 每行80字符
+- `LARGE`: 大尺寸，每行50字符
 
 ### 缺省值
 

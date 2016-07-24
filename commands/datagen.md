@@ -1,4 +1,4 @@
-## datagen 
+## datagen
 
 ### 概要
 
@@ -7,23 +7,17 @@
 ### 语法
 
 ``` {.bash}
-D!ATA!G!EN! [MORE] [SUB L!OCAL!|R!EGIONAL!|T!ELESEIS!] [filelist]
+DATAGEN [MORE] [SUB LOCAL|REGIONAL|TELESEIS] [filelist]
+```
+``` {.bash}
+DG [MORE] [SUB L|R|T] [filelist]
 ```
 
 ### 输入
 
-MORE
-
-:   将新生成的样本数据放在内存中旧文件后。若省略此项，则新数据
-    将替代内存中的旧数据
-
-SUB LOCAL|REGIONAL|TELESEIS
-
-:   要生成的数据的子类型，每个子类型对应 不同的样本数据
-
-filelist
-
-:   样本数据文件列表。每个子类型可选的文件列表在后面给出
+- `MORE`: 将新生成的样本数据放在内存中旧文件后。若省略此项，则新数据将替代内存中的旧数据
+- `SUB LOCAL|REGIONAL|TELESEIS`: 要生成的数据的子类型，每个子类型对应 不同的样本数据
+- `filelist`: 样本数据文件列表。每个子类型可选的文件列表在后面给出
 
 ### 说明
 
@@ -35,10 +29,9 @@ SAC提供了一些样本地震数据以供用户学习时使用，该命令将�
 `teleseis`，分别对应近震、区域地震和远震。不同的子类型，其所
 包含的数据文件也不同。
 
-#### LOCAL {#local .unnumbered}
+#### LOCAL
 
-该local事件发生在加州的Livermore
-Valley，是一个很小的无感地震（ML=1.6）， 其被Livermore Local Seismic
+该local事件发生在加州的Livermore Valley，是一个很小的无感地震（ML=1.6）， 其被Livermore Local Seismic
 Network (LLSN)所记录。
 
 LLSN拥有一系列垂直分量和三分量台站。该数据集中包含了9个三分量台站的数据。
@@ -57,7 +50,7 @@ LLSN拥有一系列垂直分量和三分量台站。该数据集中包含了9个
     cvy.z, cvy.n, cvy.e
 ```
 
-#### REGIONAL {#regional .unnumbered}
+#### REGIONAL
 
 该区域地震发生在Nevada，被Digital Seismic Network (DSS)所记录。DSS包含了
 美国西部的四个宽频带三分量台站。数据包含了从发震前5秒开始的为300秒地震
@@ -70,7 +63,7 @@ LLSN拥有一系列垂直分量和三分量台站。该数据集中包含了9个
     mnv.z, mnv.n, mnv.e
 ```
 
-#### TELESEIS {#teleseis .unnumbered}
+#### TELESEIS
 
 该远震事件于1984年9月10日发生在加州北海岸Eureka附近，其为中等偏大的地震
 （ML 6.6、MB 6.1、MS 6.7），多地有感。该数据集中包含了Regional Seismic

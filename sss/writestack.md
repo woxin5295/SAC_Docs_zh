@@ -1,4 +1,4 @@
-## writestack {#sss:writestack}
+## writestack
 
 ### 概要
 
@@ -6,14 +6,19 @@
 
 ### 语法
 
-W`RITE`S`TACK` \[filename\]
+``` {.bash}
+WRITESTACK [filename]
+```
+``` {.bash}
+WS [filename]
+```
 
 ### 输入
 
-filename
-
-:   要写入的磁盘文件名
+- `filename`: 要写入的磁盘文件名
 
 ### 缺省值
 
+``` {.bash}
 writestack sum
+```

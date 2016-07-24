@@ -1,4 +1,4 @@
-## xgrid 
+## xgrid
 
 ### 概要
 
@@ -7,26 +7,18 @@
 ### 语法
 
 ``` {.bash}
-XGRID ON|OFF|S!OLID!|D!OTTED!
+XGRID ON|OFF|SOLID|DOTTED
+```
+``` {.bash}
+XGRID ON|OFF|S|D
 ```
 
 ### 输入
 
-SOLID
-
-:   设置网格线为实线
-
-DOTTED
-
-:   设置网格线为虚线
-
-ON
-
-:   绘制网格，但不改变网格类型
-
-OFF
-
-:   不绘制网格
+- `SOLID`: 设置网格线为实线
+- `DOTTED`: 设置网格线为虚线
+- `ON`: 绘制网格，但不改变网格类型
+- `OFF`: 不绘制网格
 
 ### 缺省值
 

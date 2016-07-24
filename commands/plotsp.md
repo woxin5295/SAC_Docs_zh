@@ -1,4 +1,4 @@
-## plotsp 
+## plotsp
 
 ### 概要
 
@@ -7,30 +7,19 @@
 ### 语法
 
 ``` {.bash}
-P!LOT!SP [ASIS|RLIM|AMPH|RL|IM|AM|PH] [LINLIN|LINLOG|LOGLIN|LOGLOG]
+PLOTSP [ASIS|RLIM|AMPH|RL|IM|AM|PH] [LINLIN|LINLOG|LOGLIN|LOGLOG]
+```
+``` {.bash}
+PSP [ASIS|RLIM|AMPH|RL|IM|AM|PH] [LINLIN|LINLOG|LOGLIN|LOGLOG]
 ```
 
 ### 输入
 
-ASIS
-
-:   按照谱文件当前格式绘制分量
-
-RLIM
-
-:   绘制实部和虚部分量
-
-AMPH
-
-:   绘制振幅和相位分量
-
-RL|IM|AM|PH
-
-:   只绘制实部/虚部/振幅/相位分量
-
-LINLIN|LINLOG|LOGLIN|LOGLOG
-
-:   设置x-y轴为线型还是对数型，与单独的 [linlin](/commands/linlin.md)
+- `ASIS`: 按照谱文件当前格式绘制分量
+- `RLIM`: 绘制实部和虚部分量
+- `AMPH`: 绘制振幅和相位分量
+- `RL|IM|AM|PH`: 只绘制实部/虚部/振幅/相位分量
+- `LINLIN|LINLOG|LOGLIN|LOGLOG`: 设置x-y轴为线型还是对数型，与单独的 [linlin](/commands/linlin.md)
     等命令区分开
 
 ### 缺省值

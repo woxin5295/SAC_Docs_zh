@@ -1,4 +1,4 @@
-## setmacro 
+## setmacro
 
 ### 概要
 
@@ -12,13 +12,8 @@ SETMACRO [MORE] directory [directory ...]
 
 ### 输入
 
-directory
-
-:   放置SAC宏文件的目录，可以是相对路径或绝对路径
-
-MORE
-
-:   将 `directory` 加到已有的路径列表之后
+- `directory`: 放置SAC宏文件的目录，可以是相对路径或绝对路径
+- `MORE`: 将 `directory` 加到已有的路径列表之后
 
 ### 说明
 

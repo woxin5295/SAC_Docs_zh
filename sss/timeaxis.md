@@ -1,4 +1,4 @@
-## timeaxis {#sss:timeaxis}
+## timeaxis
 
 ### 概要
 
@@ -6,21 +6,23 @@
 
 ### 语法
 
-T`IME`A`XIS` F`IXED` v | S`CALED` v
+``` {.bash}
+TIMEAXIS FIXED v | SCALED v
+```
+``` {.bash}
+TA F v | S v
+```
 
 ### 输入
 
-FIXED v
-
-:   固定时间轴的长度为v
-
-SCALED v
-
-:   设定时间轴的长度为总时间窗长的v倍，v的单位为
+- `FIXED v`: 固定时间轴的长度为v
+- `SCALED v`: 设定时间轴的长度为总时间窗长的v倍，v的单位为
 
 ### 缺省值
 
+``` {.bash}
 timeaxis fixed 23.0
+```
 
 ### 示例
 

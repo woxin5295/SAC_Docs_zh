@@ -1,4 +1,4 @@
-## deletechannel 
+## deletechannel
 
 ### 概要
 
@@ -7,32 +7,27 @@
 ### 语法
 
 ``` {.bash}
-D!ELETE!C!HANNEL! ALL
+DELETECHANNEL ALL
+```
+``` {.bash}
+DC ALL
 ```
 
 或
 
 ``` {.bash}
-D!ELETE!C!HANNEL! fname|fno|range [fname|fno|range ...]
+DELETECHANNEL fname|fno|range [fname|fno|range ...]
+```
+``` {.bash}
+DC fname|fno|range [fname|fno|range ...]
 ```
 
 ### 输入
 
-ALL
-
-:   删除内存中全部文件
-
-fname
-
-:   要删除文件的文件名
-
-filenumber
-
-:   要删除文件的文件号。第一个文件的文件号是1
-
-range
-
-:   要删除文件的文件号范围，范围用破折号分开，如`11-20`
+- `ALL`: 删除内存中全部文件
+- `fname`: 要删除文件的文件名
+- `filenumber`: 要删除文件的文件号。第一个文件的文件号是1
+- `range`: 要删除文件的文件号范围，范围用破折号分开，如`11-20`
 
 ### 示例
 

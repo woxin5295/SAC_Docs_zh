@@ -1,4 +1,4 @@
-## plot2 
+## plot2
 
 ### 概要
 
@@ -7,14 +7,15 @@
 ### 语法
 
 ``` {.bash}
-P!LOT!2 [A!BSOLUTE!|R!ELATIVE!]
+PLOT2 [ABSOLUTE|RELATIVE]
+```
+``` {.bash}
+P2 [A|R]
 ```
 
 ### 输入
 
-ABSOLUTE|RELATIVE
-
-:   绝对/相对绘图模式
+- `ABSOLUTE|RELATIVE`: 绝对/相对绘图模式
 
 ### 缺省值
 

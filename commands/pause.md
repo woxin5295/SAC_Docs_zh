@@ -1,4 +1,4 @@
-## pause 
+## pause
 
 ### 概要
 
@@ -12,22 +12,10 @@ PAUSE [MESSAGE text] [PERIOD ON|OFF|v]
 
 ### 输入
 
-MESSAGE text
-
-:   暂停前发送到终端的文本，若文本包含空格则用引号括起来
-
-PERIOD v
-
-:   打开 `period` 选项并设置暂停的时间长度为 `v` 秒
-
-PERIOD ON
-
-:   打开 `period` 选项但不改变暂停的长度，若改选项
-    为开，SAC会暂停一段时间然后自动恢复执行
-
-PERIOD OFF
-
-:   关闭 `period` 选项开关。当该选项关闭时，SAC将 暂停直到终端输入回车键
+- `MESSAGE text`: 暂停前发送到终端的文本，若文本包含空格则用引号括起来
+- `PERIOD v`: 打开 `period` 选项并设置暂停的时间长度为 `v` 秒
+- `PERIOD ON`: 打开 `period` 选项但不改变暂停的长度，若改选项为开，SAC会暂停一段时间然后自动恢复执行
+- `PERIOD OFF`: 关闭 `period` 选项开关。当该选项关闭时，SAC将 暂停直到终端输入回车键
 
 ### 缺省值
 

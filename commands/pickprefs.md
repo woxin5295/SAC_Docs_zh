@@ -1,4 +1,4 @@
-## pickprefs 
+## pickprefs
 
 ### 概要
 
@@ -10,19 +10,17 @@ SAC将使用 [readcss](/commands/readcss.md) 命令中描述的参考文件
 ### 语法
 
 ``` {.bash}
-PICKPR!EFS! ON|OFF
+PICKPREFS ON|OFF
+```
+``` {.bash}
+PICKPR ON|OFF
 ```
 
 ### 输入
 
-ON
-
-:   指示SAC通过参考文件将到时信息由CSS缓冲区传送到SAC缓冲区。
+- `ON`: 指示SAC通过参考文件将到时信息由CSS缓冲区传送到SAC缓冲区。
     这对于需要特定到时位于特定头段变量的宏文件来说很有用
-
-OFF
-
-:   指示SAC绕过参考文件，载入给定文件的前10个震相拾取。这个是
+- `OFF`: 指示SAC绕过参考文件，载入给定文件的前10个震相拾取。这个是
     默认值，它允许用户注意一些在 `PICKPREFS ON` 时无法注意的拾取。
 
 ### 缺省值

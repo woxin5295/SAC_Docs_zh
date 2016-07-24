@@ -1,4 +1,4 @@
-## xvport 
+## xvport
 
 ### 概要
 
@@ -7,18 +7,17 @@
 ### 语法
 
 ``` {.bash}
-XVP!ORT! xvmin xvmax
+XVPORT xvmin xvmax
+```
+``` {.bash}
+XVP xvmin xvmax
 ```
 
 ### 输入
 
-xvmin
+- `xvmin`: X轴视口的最小值，范围为 `0.0` 到 `xvmax`
 
-:   X轴视口的最小值，范围为 `0.0` 到 `xvmax`
-
-xvmax
-
-:   X轴视口的最大值，范围为 `xmin` 到 `1.0`
+- `xvmax`: X轴视口的最大值，范围为 `xmin` 到 `1.0`
 
 ### 缺省值
 
@@ -43,4 +42,4 @@ xvport 0.1 0.9
 
 ### 示例
 
-参见 nameref-sec-composite-plots 一节。
+参见 [组合图](/graphics/composite-plots.md) 一节。

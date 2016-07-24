@@ -1,4 +1,4 @@
-## deletestack {#sss:deletestack}
+## deletestack
 
 ### 概要
 
@@ -6,16 +6,14 @@
 
 ### 语法
 
-D`ELETE`S`TACK` filename|filenumber
+``` {.bash}
+DELETESTACK filename|filenumber
+```
+``` {.bash}
+DS filename|filenumber
+```
 
 ### 输入
 
-filename
-
-:   迭加文件列表中的文件名
-
-filenumber
-
-:   迭加文件列表中的文件号
-
-
+- `filename`: 迭加文件列表中的文件名
+- `filenumber`: 迭加文件列表中的文件号

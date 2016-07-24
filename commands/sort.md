@@ -1,4 +1,4 @@
-## sort 
+## sort
 
 ### 概要
 
@@ -12,17 +12,9 @@ SORT header [ASCEND|DESCEND] [header [ASCEND|DESCEND]...]
 
 ### 输入
 
-header
-
-:   依据该头段变量的值进行文件排序
-
-ASCEND
-
-:   升序排列
-
-DESCEND
-
-:   降序排列
+- `header`: 依据该头段变量的值进行文件排序
+- `ASCEND`: 升序排列
+- `DESCEND`: 降序排列
 
 ### 说明
 
@@ -41,7 +33,4 @@ DESCEND
 
 ### BUGS
 
--   在 `SAC_USE_DATABASE=1`
-    的情况下，使用该命令会导致数据中的台站信息丢失（v101.6）
-
-
+-   在 `SAC_USE_DATABASE=1` 的情况下，使用该命令会导致数据中的台站信息丢失（v101.6）

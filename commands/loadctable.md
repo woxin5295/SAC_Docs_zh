@@ -1,4 +1,4 @@
-## loadctable 
+## loadctable
 
 ### 概要
 
@@ -7,26 +7,18 @@
 ### 语法
 
 ``` {.bash}
-L!OAD!CT!ABLE! n|[DIR CURRENT|name] [filelist]
+LOADCTABLE n|[DIR CURRENT|name] [filelist]
+```
+``` {.bash}
+LCT n|[DIR CURRENT|name] [filelist]
 ```
 
 ### 输入
 
-n
-
-:   标准SAC颜色表对于的号，`n`可以取1–17
-
-DIR CURRENT
-
-:   从当前目录载入颜色表，当前目录指的是你启动SAC的目录
-
-DIR name
-
-:   从目录 `name` 中载入颜色表，这是一个相对或绝对目录名
-
-filelist
-
-:   颜色表文件列表
+- `n`: 标准SAC颜色表对于的号，`n`可以取1–17
+- `DIR CURRENT`: 从当前目录载入颜色表，当前目录指的是你启动SAC的目录
+- `DIR name`: 从目录 `name` 中载入颜色表，这是一个相对或绝对目录名
+- `filelist`: 颜色表文件列表
 
 ### 说明
 

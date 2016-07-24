@@ -1,4 +1,4 @@
-## writecor {#spe:writecor}
+## writecor
 
 ### 概要
 
@@ -6,17 +6,22 @@
 
 ### 语法
 
-W`RITE`COR \[file\]
+``` {.bash}
+WRITECOR [file]
+```
+``` {.bash}
+WCOR [file]
+```
 
 ### 输入
 
-file
-
-:   要写入的SAC文件名
+- `file`: 要写入的SAC文件名
 
 ### 缺省值
 
+``` {.bash}
 writecor cor
+```
 
 ### 说明
 

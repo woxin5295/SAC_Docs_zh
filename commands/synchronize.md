@@ -1,4 +1,4 @@
-## synchronize 
+## synchronize
 
 ### 概要
 
@@ -7,27 +7,20 @@
 ### 语法
 
 ``` {.bash}
-SYNC!HRONIZE! [R!OUND! ON|OFF] [B!EGIN! ON|OFF]
+SYNCHRONIZE [ROUND ON|OFF] [BEGIN ON|OFF]
 ```
+``` {.bash}
+SYNC [R ON|OFF] [B ON|OFF]
+```
+
 
 ### 输入
 
-ROUND ON
-
-:   打开 `ROUND`选项。若打开该选项，则会对每个文件的
+- `ROUND ON`: 打开 `ROUND`选项。若打开该选项，则会对每个文件的
     开始时间做微调以使得开始时间是采样间隔的整数倍
-
-ROUND OFF
-
-:   关闭 `ROUND` 选项
-
-BEGIN ON
-
-:   设置每个文件的开始时间为0
-
-BEGIN OFF
-
-:   保持参考时间的绝对时刻不变
+- `ROUND OFF`: 关闭 `ROUND` 选项
+- `BEGIN ON`: 设置每个文件的开始时间为0
+- `BEGIN OFF`: 保持参考时间的绝对时刻不变
 
 ### 缺省值
 

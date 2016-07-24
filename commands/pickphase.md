@@ -1,4 +1,4 @@
-## pickphase 
+## pickphase
 
 ### 概要
 
@@ -8,35 +8,26 @@
 ### 语法
 
 ``` {.bash}
-PICKPH!ASE! header phase author [header phase author ...]
-PICKPH!ASE! FILE [filename]
-PICKPH!ASE! AUTHOR [filename]
+PICKPHASE header phase author [header phase author ...]
+PICKPHASE FILE [filename]
+PICKPHASE AUTHOR [filename]
+```
+``` {.bash}
+PICKPH header phase author [header phase author ...]
+PICKPH FILE [filename]
+PICKPH AUTHOR [filename]
 ```
 
 ### 输入
 
-header
-
-:   头段变量名：`t0-t9`
-
-phase
-
-:   对于给出的头段变量对应的拾取的震相名
-
-author
-
-:   告诉SAC作者列表，为某个头段所对应的作者，或者是 `-`
-
-FILE
-
-:   如果使用了 `FILE` 选项，SAC将从参考文件中读取震相列表。
+- `header`: 头段变量名：`t0-t9`
+- `phase`: 对于给出的头段变量对应的拾取的震相名
+- `author`: 告诉SAC作者列表，为某个头段所对应的作者，或者是 `-`
+- `FILE`: 如果使用了 `FILE` 选项，SAC将从参考文件中读取震相列表。
     如果参考文件的文件名在命令行上给出，则SAC将读取这个指定的文件，否则
     SAC将根据上一次执行 `pickphase` 读取最近输入的文件名。如果
     未给出文件名，则SAC使用 `$SACAUX/csspickprefs`
-
-AUTHOR
-
-:   与 `FILE` 选项相似，其另一个功能是允许SAC读取指定的 头段变量信息
+- `AUTHOR`: 与 `FILE` 选项相似，其另一个功能是允许SAC读取指定的 头段变量信息
 
 ### 缺省值
 

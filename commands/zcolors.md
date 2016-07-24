@@ -1,4 +1,4 @@
-## zcolors 
+## zcolors
 
 ### 概要
 
@@ -12,22 +12,11 @@ ZCOLORS [ON|OFF] LIST c1 c2 ... cn
 
 ### 输入
 
-ON
-
-:   打开等值线颜色显示开关
-
-OFF
-
-:   关闭等值线颜色显示开关
-
-LIST c1 c2 . cn
-
-:   设置等值线要使用的颜色列表，每一个颜色对应一条
+- `ON`: 打开等值线颜色显示开关
+- `OFF`: 关闭等值线颜色显示开关
+- `LIST c1 c2 . cn`: 设置等值线要使用的颜色列表，每一个颜色对应一条
     等值线，如果等值线数目多于这个列表长度，则整个列表不断重复
-
-cn
-
-:   SAC当前颜色表的颜色名
+- `cn`: SAC当前颜色表的颜色名
 
 ### 缺省值
 
@@ -37,4 +26,4 @@ zcolors off list red green blue
 
 ### 示例
 
-参考“nameref-sec-contour”中的相关示例。
+参见 [等值线图](/graphics/plot-contour.md) 中的相关示例。

@@ -1,4 +1,4 @@
-## plotalpha 
+## plotalpha
 
 ### 概要
 
@@ -7,40 +7,23 @@
 ### 语法
 
 ``` {.bash}
-P!LOT!A!LPHA! [MORE] [DIR CURRENT|name] [FREE|FORMAT text] [CONTENT text] [filelist]
+PLOTALPHA [MORE] [DIR CURRENT|name] [FREE|FORMAT text] [CONTENT text] [filelist]
+```
+``` {.bash}
+PA [MORE] [DIR CURRENT|name] [FREE|FORMAT text] [CONTENT text] [filelist]
 ```
 
 ### 输入
 
-MORE
-
-:   将新读入的文件加到内存中老文件之后。如果没有这个选项，新文件
+- `MORE`: 将新读入的文件加到内存中老文件之后。如果没有这个选项，新文件
     将代替内存中的老文件。参见 [read](/commands/read.md) 命令
-
-DIR CURRENT
-
-:   从当前目录读取并绘制所有文件
-
-DIR name
-
-:   从文件夹name中读取并绘制所有文件，其可以是相对或绝对路径
-
-FREE
-
-:   以自由格式（以空格分隔数据各字段）读取并绘制filelist中的数据文件
-
-FORMAT text
-
-:   以固定格式读取并绘制filelist中的数据文件，格式声明 位于 `text` 中
-
-CONTENT text
-
-:   定义filelist中数据每个字段的含义。`text` 的 含义参见
+- `DIR CURRENT`: 从当前目录读取并绘制所有文件
+- `DIR name`: 从文件夹name中读取并绘制所有文件，其可以是相对或绝对路径
+- `FREE`: 以自由格式（以空格分隔数据各字段）读取并绘制filelist中的数据文件
+- `FORMAT text`: 以固定格式读取并绘制filelist中的数据文件，格式声明 位于 `text` 中
+- `CONTENT text`: 定义filelist中数据每个字段的含义。`text` 的 含义参见
     [readtable](/commands/readtable.md) 命令中的
-
-filelist
-
-:   字符数字型文件列表，其可以包含简单文件名、绝对/相对路径、 通配符。
+- `filelist`: 字符数字型文件列表，其可以包含简单文件名、绝对/相对路径、 通配符。
 
 ### 缺省值
 

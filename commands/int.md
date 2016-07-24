@@ -1,4 +1,4 @@
-## int 
+## int
 
 ### 概要
 
@@ -7,7 +7,10 @@
 ### 语法
 
 ``` {.bash}
-INT [T!RAPEZEIDAL!|R!ECTANGULAR!]
+INT [TRAPEZEIDAL|RECTANGULAR]
+```
+``` {.bash}
+INT [T|R]
 ```
 
 ### 缺省值
@@ -22,7 +25,7 @@ int trapezoidal
 还会根据具体情况修改因变量类型 `idep`，并重新计算 `depmax`、
 `depmin`、`depmen`。
 
-对于函数$f(x)$其积分用梯形法表示为
+对于函数 $$f(x)$$ 其积分用梯形法表示为
 $$y_n = y_{n-1} + \frac{1}{2}(x_{n+1}-x_n) (f(x_n)+f(x_{n+1})), \quad n\in[1,npts-1]$$
 用矩形法表示为：
 $$y_n = y_{n-1} + (x_n-x_{n-1})f(x_n), \quad n\in[1,npts]$$
@@ -34,6 +37,3 @@ $$y_n = y_{n-1} + (x_n-x_{n-1})f(x_n), \quad n\in[1,npts]$$
 ### 头段变量
 
 depmin、depmax、depmen、idep、npts、b、e
-
-[^1]: 若使用矩形积分，理论上 `npts` 和 `b`
-    也应有所修改，但实际代码中却未对此多做处理，暂不确定是否是Bug。

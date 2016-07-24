@@ -6,16 +6,45 @@
 [![GitHub commits](https://img.shields.io/github/commits-since/seisman/SAC_Docs_zh/v3.5.svg)]()
 
 
-《SAC参考手册》是介绍地震学常用软件[SAC](http://ds.iris.edu/ds/nodes/dmc/forms/sac/)用法的中文手册。
+《SAC参考手册》是介绍地震学常用软件 [SAC](http://ds.iris.edu/ds/nodes/dmc/forms/sac/) 用法的中文手册。
 
 - 项目主页：https://github.com/seisman/SAC_Docs_zh
-- 正式版文档发布地址：http://seisman.info/sac-manual.html
-- 开发版文档发布地址：https://github.com/seisman/SAC_Docs_zh/raw/pdf/SAC_Docs.pdf
+- 在线阅读：https://seisman.github.io/SAC_Docs_zh/
+- PDF版下载地址：https://github.com/seisman/SAC_Docs_zh/raw/pdf/SAC_Docs.pdf
+
+## 文档版本
+
+本文档目前在不断更新与完善中，同时也会随着SAC新版本的发布而不断更新。
+下表列出了文档版本与SAC版本之间的对应关系。不论使用的是否是最新版本的
+SAC，都建议阅读最新版本的文档。
+
+文档版本| 文档发布日期 |  SAC版本 |  SAC 发布日期
+--------|--------------|----------|--------------
+  1.0   |  2012-01-08  |   101.4  |   2010-06-07
+  1.1   |  2012-09-03  |   101.4  |   2010-06-07
+  1.2   |  2012-09-18  |   101.5  |   2011-11-15
+  2.0   |  2013-03-29  |  101.5c  |   2012-02-01
+  2.1   |  2013-04-06  |  101.5c  |   2012-02-01
+  2.2   |  2013-04-12  |  101.5c  |   2012-02-01
+  2.3   |  2014-02-22  |  101.5c  |   2012-02-01
+  3.0   |  2014-04-18  |  101.6a  |   2013-11-11
+  3.1   |  2014-09-25  |  101.6a  |   2013-11-11
+  3.2   |  2015-05-02  |  101.6a  |   2013-11-11
+  3.3   |  2015-06-06  |  101.6a  |   2013-11-11
+  3.4   |  2015-09-15  |  101.6a  |   2013-11-11
+  3.5   |  2016-01-09  |  101.6a  |   2013-11-11
+
+
+## 维护者列表
+
+维护者                                   |  开始时间  |  结束时间
+-----------------------------------------|------------|------------
+[seisman](https://github.com/seisman)    | 2012-01-08 |     -
+[王亮](https://github.com/wangliang1989) | 2015-05-12 |     -
+[Wenxuan](https://github.com/eminenceG)  | 2016-04-14 |     -
+[kmo](https://github.com/likueimo)       | 2016-07-21 |     -
 
 ## 参与维护
-
-本项目由 [seisman](https://github.com/seisman) 发起，目前由 [seisman](https://github.com/seisman)
-和 [王亮](https://github.com/PeterPanwl) 负责维护。
 
 欢迎更多SAC用户参与到本项目的维护中。具体的维护工作包括：
 

@@ -1,4 +1,4 @@
-## sonogram 
+## sonogram
 
 ### 概要
 
@@ -7,56 +7,24 @@
 ### 语法
 
 ``` {.bash}
-SONO!GRAM! [WINDOW v] [SLICE v] [ORDER n] [CBAR ON|OFF] [YMIN v] [YMAX v]
+SONOGRAM [WINDOW v] [SLICE v] [ORDER n] [CBAR ON|OFF] [YMIN v] [YMAX v]
     [FMIN v] [FMAX v] [BINARY|FULL] [METHOD PDS|MEM|MLM] [COLOR|GRAY]
 ```
 
 ### 输入
 
-WINDOW v
-
-:   设置滑动数据窗的长度为 `v` 秒，窗长决定了FFT的尺寸
-
-SLICE v
-
-:   设置数据滑动间隔为 `v` 秒，对每个滑动间隔将产生一个频谱图线
-
-ORDER n
-
-:   指定用于计算谱估计的自相关中的点数
-
-CBAR ON|OFF
-
-:   打开/关闭参考颜色条
-
-BINARY|FULL
-
-:   产生一个双色或彩色图像
-
-YMIN v
-
-:   指定绘图的最小频率
-
-YMAX v
-
-:   指定绘图最大频率
-
-FMIN v
-
-:   指定每次滑动频谱图被平滑的最小带宽
-
-FMAX v
-
-:   指定每次滑动频谱图被平滑的最大带宽
-
-METHOD PDS|MEM|MLM
-
-:   指定使用的谱估计方法，`PDS` 代表功率 密度谱估计，`MLM`
+- `WINDOW v`: 设置滑动数据窗的长度为 `v` 秒，窗长决定了FFT的尺寸
+- `SLICE v`: 设置数据滑动间隔为 `v` 秒，对每个滑动间隔将产生一个频谱图线
+- `ORDER n`: 指定用于计算谱估计的自相关中的点数
+- `CBAR ON|OFF`: 打开/关闭参考颜色条
+- `BINARY|FULL`: 产生一个双色或彩色图像
+- `YMIN v`: 指定绘图的最小频率
+- `YMAX v`: 指定绘图最大频率
+- `FMIN v`: 指定每次滑动频谱图被平滑的最小带宽
+- `FMAX v`: 指定每次滑动频谱图被平滑的最大带宽
+- `METHOD PDS|MEM|MLM`: 指定使用的谱估计方法，`PDS` 代表功率 密度谱估计，`MLM`
     代表最大似然，`MEM` 代表最大熵谱估计。
-
-COLOR|GRAY
-
-:   指定是彩色图还是灰度图
+- `COLOR|GRAY`: 指定是彩色图还是灰度图
 
 ### 缺省值
 

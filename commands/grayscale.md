@@ -1,65 +1,40 @@
-## grayscale 
+## grayscale
 
 ### 概要
 
-产生内存中数据的灰度图像[^1]
+产生内存中数据的灰度图像
 
 ### 语法
 
 ``` {.bash}
-G!RAY!S!CALE! [VIDEOTYPE NORMAL|REVERSED] [SCALE v] [ZOOM n]
+GRAYSCALE [VIDEOTYPE NORMAL|REVERSED] [SCALE v] [ZOOM n]
+    [XCROP n1 n2|ON|OFF] [YCROP n1 n2|ON|OFF]
+```
+``` {.bash}
+GS [VIDEOTYPE NORMAL|REVERSED] [SCALE v] [ZOOM n]
     [XCROP n1 n2|ON|OFF] [YCROP n1 n2|ON|OFF]
 ```
 
 ### 输入
 
-VIDEO NORMAL
-
-:   设置video类型为 `normal`。在Normal模式中，
+- `VIDEO NORMAL`: 设置video类型为 `normal`。在Normal模式中，
     最小值附近的数据位黑色，最大值附近的数据为白色
-
-VIDEO REVERSED
-
-:   设置video类型为 `reversed`。在Reversed模式
+- `VIDEO REVERSED`: 设置video类型为 `reversed`。在Reversed模式
     中，最小值附近的数据位白色，最大值附近的数据为黑色
-
-SCALE v
-
-:   改变数据的比例因子为v，The data is scaled by raising it to the vth
+- `SCALE v`: 改变数据的比例因子为v，The data is scaled by raising it to the vth
     power。小于1的值将平滑图像、降低峰和谷，大于1的值将伸展 整个数据
-
-ZOOM n
-
-:   Image is increased to n times its normal size by pixel replication.
-
-XCROP n1 n2
-
-:   Turn x cropping option on and change cropping limits to n1 and n2.
+- `ZOOM n`: Image is increased to n times its normal size by pixel replication.
+- `XCROP n1 n2`: Turn x cropping option on and change cropping limits to n1 and n2.
     The limits are in terms of the image size.
-
-XCROP ON
-
-:   Turn x cropping option on and use previously specified
+- `XCROP ON`: Turn x cropping option on and use previously specified
     cropping limits.
-
-XCROP OFF
-
-:   Turn x cropping option off. All of the data in the x direction
+- `XCROP OFF`: Turn x cropping option off. All of the data in the x direction
     is displayed.
-
-YCROP n1 n2
-
-:   Turn y cropping option on and change cropping limits to n1 and n2.
+- `YCROP n1 n2`: Turn y cropping option on and change cropping limits to n1 and n2.
     The limits are in terms of the image size.
-
-YCROP ON
-
-:   Turn y cropping option on and use previous specified
+- `YCROP ON`: Turn y cropping option on and use previous specified
     cropping limits.
-
-YCROP OFF
-
-:   Turn y cropping option off. All of the data in the y direction
+- `YCROP OFF`: Turn y cropping option off. All of the data in the y direction
     is displayed.
 
 ### 缺省值
@@ -85,9 +60,4 @@ grayscale videotype normal scale 1.0 zoom 1 xcrop off ycrop off
 需要：iftype、nxsize、nysize
 
 ### 错误消息
-
-SAC&gt; getsun: Command not found. （需要Utah Raster
-Toolkit提供一些工具程序）
-
-[^1]: 这个命令使用了未在SAC中发布的命令， 要使用这个命令你必须安装Utah
-    Raster Toolkit。
+- `SAC&gt; gets`:ommand not found. （需要Utah Raster Toolkit提供一些工具程序）

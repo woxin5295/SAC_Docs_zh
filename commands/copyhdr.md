@@ -1,4 +1,4 @@
-## copyhdr 
+## copyhdr
 
 ### 概要
 
@@ -12,17 +12,9 @@ COPYHDR [FROM name|n] hdrlist
 
 ### 输入
 
-FROM name
-
-:   从内存中文件名为 `name` 的文件中复制头段变量
-
-FROM n
-
-:   从内存中第n个文件中复制头段变量
-
-hdrlist
-
-:   要复制的头段变量列表
+- `FROM name`: 从内存中文件名为 `name` 的文件中复制头段变量
+- `FROM n`: 从内存中第n个文件中复制头段变量
+- `hdrlist`: 要复制的头段变量列表
 
 ### 缺省值
 

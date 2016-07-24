@@ -10,10 +10,17 @@ GMT地图，也可以在命令行上指定一个事件文件。每个地震事�
 ### 语法
 
 ``` {.bash}
-MAP [MER!CATOR!|EQ!UIDISTANT!|AZ!IMUTHAL_EQUIDISTANT!|ROB!INSON!]
+MAP [MERCATOR|EQUIDISTANT|AZIMUTHAL_EQUIDISTANT|ROBINSON]
     [WEST minlon] [EAST maxlon] [NORTH maxlat] [SOUTH minlat]
-    [MAG!NITUDE!|RE!SIDUAL!|RM!EAN_RESIDUAL!] [EV!EVNTFILE! filename]
-    [TOPO!GRAPHY!] [STAN!AMES!] [MAPSCALE on|off] [PLOTSTATIONS on|off]
+    [MAGNITUDE|RESIDUAL|RMEAN_RESIDUAL] [EVEVNTFILE filename]
+    [TOPOGRAPHY] [STANAMES] [MAPSCALE on|off] [PLOTSTATIONS on|off]
+    [PLOTEVENTS on|off] [PLOTLEGEND on|off] [LEGENDXY x y]
+    [FILE output-file]
+```
+``` {.bash}
+MAP [MER|EQ|AZ|ROB]
+    [WEST minlon] [EAST maxlon] [NORTH maxlat] [SOUTH minlat] [MAG|RE|RM]
+    [EV filename] [TOPO] [STAN] [MAPSCALE on|off] [PLOTSTATIONS on|off]
     [PLOTEVENTS on|off] [PLOTLEGEND on|off] [LEGENDXY x y]
     [FILE output-file]
 ```
@@ -23,13 +30,9 @@ MAP [MER!CATOR!|EQ!UIDISTANT!|AZ!IMUTHAL_EQUIDISTANT!|ROB!INSON!]
 SAC中可以使用的投影方式包括：
 
 -   `MERCATOR`：投影方式为Mercator投影
-
 -   `EQUIDISTANT`：投影方式为等间距圆柱投影，经纬度为线性
-
 -   `ROBINSON`：投影方式为Robinson投影，适用于世界地图
-
 -   `LAMBERT`：适用于东西范围较大的区域
-
 -   `UTM`：通用横向Mercator（尚未实现）
 
 下面的选项允许用户指定地图的区域，其默认使用台站以及事件经纬度的最小
@@ -37,51 +40,36 @@ SAC中可以使用的投影方式包括：
 将位于地图的边界处，但是实际上地图范围给的还是不错的）：
 
 -   `WEST`：地图的最小经度
-
 -   `EAST`：地图的最大经度
-
 -   `NORTH`：地图的最大纬度
-
 -   `SOUTH`：地图的最小纬度
-
 -   `AUTOLIMITS`：自动决定地图的区域 \[缺省值\]
 
 下面的选项允许用户向地图中添加位置和注释：
 
 -   `STANames on|off`：在地图上绘制台站名\[默认为off\]
-
 -   `MAPSCALE on|off`：在地图上绘制地图比例尺\[默认为off\]
-
 -   `PLOTSTATIONS on|off`：绘制地震图给出的全部台站\[默认为on\]
-
--   `PLOTEVENTS on|off`：绘制eventfile和/或地震图给出的全部事件
-    \[默认为on\]
+-   `PLOTEVENTS on|off`：绘制eventfile和/或地震图给出的全部事件 \[默认为on\]
 
 下面的选项允许用户根据不同的值给出不同地震事件符号的大小。默认值是所有
 符号大小一样：
 
 -   `MAGnitude`：`user0` 定义地震震级，`user0` 越大， 则事件符号越大
-
 -   `REsidual`：`user0` 定义残差。根据 `user0` 的
     绝对值定义事件符号的大小。正值为`+` 负值为 `-`
-
 -   `RMean_residual`：与residual相同，除了将所有残差去除均值之外
-
 -   `PLTLEGEND on|off`：绘制地震震级以及残差的图例\[默认为on\]
-
 -   `LEGENDXY x y`：绘制图例的绝对位置，默认为 `[1,1]`。
     位置是相对于页面的左下角，其单位为inch。这是一个与地震震级和残差有关
     的图例。
-
 -   `EVENTFILE`：指定一个自由格式的ASCII文本文件，其包含了额外的
     事件数据，文件的每一行包含单个事件的数据。每行的头两列必须包含纬度和
     经度（单位为度）。第三列可以包含符号大小信息（比如震级、深度、走时残差等）。
-
 -   `TOPOgraphy on|off`：设置TOPO为开允许用户向地图中添加地形和
     海洋深度。该命令读取GMT中 `grdraster.info` 的第一个地形文件，
     当然地形文件中必须要有该区域的数据。地形彩色图使用
     `$SACAUX/ctables/gmt.cpt`。网格文件被写入当前目录
-
 -   `FILE`：默认的输出文件名为 `gmt.ps`，你可以通过 `FILE`
     选项指定文件名
 
@@ -106,8 +94,7 @@ Using Default Postscript Viewer
     gs -sDEVICE=x11 -q -dNOPROMPT -dTTYPAUSE
 ```
 
-绘制出的地图如图 nameref-fig-map
-所示，整个地图的边界控制的还算不错，还算
+绘制出的地图如下图所示，整个地图的边界控制的还算不错，还算
 比较美观，三角形代表台站位置，圆形代表地震位置，大小也控制的不错。生成这
 个图的同时，还有一个可以用于生成该地图的shell脚本。
 

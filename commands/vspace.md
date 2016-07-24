@@ -1,4 +1,4 @@
-## vspace 
+## vspace
 
 ### 概要
 
@@ -7,18 +7,16 @@
 ### 语法
 
 ``` {.bash}
-VSP!ACE! [FULL|v]
+VSPACE [FULL|v]
+```
+``` {.bash}
+VSP [FULL|v]
 ```
 
 ### 输入
 
-FULL
-
-:   使用整个viewspace，这是最大窗口尺寸
-
-v
-
-:   设置viewspace的纵横比为v，具有这个纵横比的最大区域即为viewspace
+- `FULL`: 使用整个viewspace，这是最大窗口尺寸
+- `v`: 设置viewspace的纵横比为v，具有这个纵横比的最大区域即为viewspace
 
 ### 缺省值
 
@@ -32,9 +30,7 @@ viewspace是屏幕上可以用于绘图的部分。viewspace的形状和尺寸�
 设备之间有很大的变化。
 
 1.  尽管在尺寸上有很大不同，许多图形终端都具有0.75的纵横比
-
 2.  SGF文件的纵横比为0.75，其大约是标准的8.5\*11英寸纸张的纵横比
-
 3.  由XWindows或SunWindows图形设备建立的窗口可以有你想要的任意纵横比
 
 默认情况下绘图会占据整个viewspace。该命令可以控制viewspace的纵横比，
