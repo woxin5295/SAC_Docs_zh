@@ -1,4 +1,4 @@
-## zcolors {#cmd:zcolors}
+## zcolors 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-ZCOLORS \[ON|OFF\] LIST c1 c2 ... cn
+``` {.bash}
+ZCOLORS [ON|OFF] LIST c1 c2 ... cn
+```
 
 ### 输入
 
@@ -29,7 +31,9 @@ cn
 
 ### 缺省值
 
+``` {.bash}
 zcolors off list red green blue
+```
 
 ### 示例
 

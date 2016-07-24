@@ -1,4 +1,4 @@
-## markvalue {#cmd:markvalue}
+## markvalue 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-MARKV`ALUE` \[GE|LE v\] \[TO marker\]
+``` {.bash}
+MARKV!ALUE! [GE|LE v] [TO marker]
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ TO marker
 
 ### 缺省值
 
+``` {.bash}
 markvalue ge 1 to t0
+```
 
 ### 说明
 

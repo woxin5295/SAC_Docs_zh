@@ -1,4 +1,4 @@
-## envelope {#cmd:envelope}
+## envelope 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 ENVELOPE
+```
 
 ### 说明
 

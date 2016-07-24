@@ -1,4 +1,4 @@
-## merge {#cmd:merge}
+## merge 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-MERGE \[V`ERBOSE`\] \[G`AP` Z`ERO`|I`NTERP`\] \[O`VERLAP`
-C`OMPARE`|A`VERAGE`\] \[filelist\]
+``` {.bash}
+MERGE [V!ERBOSE!] [G!AP! Z!ERO!|I!NTERP!] [O!VERLAP! C!OMPARE!|A!VERAGE!] [filelist]
+```
 
 ### 输入
 

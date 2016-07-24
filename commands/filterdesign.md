@@ -1,4 +1,4 @@
-## filterdesign {#cmd:filterdesign}
+## filterdesign 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-F`ILTER`D`ESIGN` \[FILE \[prefix\]\] \[filteroptions\] \[delta\]
+``` {.bash}
+F!ILTER!D!ESIGN! [FILE [prefix]] [filteroptions] [delta]
+```
 
 ### 输入
 

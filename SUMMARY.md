@@ -1,6 +1,7 @@
 # Summary
 
 * [前言](README.md)
+* [文档更新历史](ChangeLog.md)
 
 * [简介](introduction/README.md)
   * [SAC是什么?](introduction/what-is-sac.md)
@@ -334,13 +335,7 @@
   * [writecor](spe/writecor.md)
   * [writespe](spe/writespe.md)
 
-* [错误与警告](appendix/messages/README.md)
-  * [](appendix/messages/msg0.md)
-  * [](appendix/messages/msg1.md)
-  * [](appendix/messages/msg2.md)
-  * [](appendix/messages/msg5.md)
-  * [](appendix/messages/msg9.md)
-  * [](appendix/messages/msgn.md)
+* [错误与警告](appendix/messages.md)
 
 * [仪器响应](appendix/resp/README.md)
   * [仪器响应简介](appendix/resp/intro-to-resp.md)
@@ -353,4 +348,3 @@
   * [数据来源](appendix/data-fetch/data-source.md)
   * [IRIS地震数据申请工具](appendix/data-fetch/iris-tools.md)
 
-* [文档更新历史](appendix/changelog.md)

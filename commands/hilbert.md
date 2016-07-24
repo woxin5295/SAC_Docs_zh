@@ -1,4 +1,4 @@
-## hilbert {#cmd:hilbert}
+## hilbert 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 HILBERT
+```
 
 ### 说明
 

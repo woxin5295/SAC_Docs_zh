@@ -1,4 +1,4 @@
-## addf {#cmd:addf}
+## addf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-ADDF \[N`EWHDR` \[ON|OFF\]\] filelist
+``` {.bash}
+ADDF [N!EWHDR! [ON|OFF]] filelist
+```
 
 ### 输入
 

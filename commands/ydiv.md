@@ -1,4 +1,4 @@
-## ydiv {#cmd:ydiv}
+## ydiv 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-YDIV \[NI`CE`|I`NCREMENT` v|NU`MBER` n\] \[P`OWER` ON|OFF\]
+``` {.bash}
+YDIV [NI!CE!|I!NCREMENT! v|NU!MBER! n] [P!OWER! ON|OFF]
+```
 
 ### 说明
 

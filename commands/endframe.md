@@ -1,4 +1,4 @@
-## endframe {#cmd:endframe}
+## endframe 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-E`ND`F`RAME`
+``` {.bash}
+E!ND!F!RAME!
+```
 
 ### 说明
 

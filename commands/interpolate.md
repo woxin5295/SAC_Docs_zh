@@ -1,4 +1,4 @@
-## interpolate {#cmd:interpolate}
+## interpolate 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-INTERP`OLATE` \[D`ELTA` v|N`PTS` v\] \[B`EGIN` v\]
+``` {.bash}
+INTERP!OLATE! [D!ELTA! v|N!PTS! v] [B!EGIN! v]
+```
 
 ### 输入
 

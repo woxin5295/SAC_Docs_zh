@@ -1,4 +1,4 @@
-## trace {#cmd:trace}
+## trace 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-TRACE \[ON|OFF\] name \[name ...\]
+``` {.bash}
+TRACE [ON|OFF] name [name ...]
+```
 
 ### 输入
 
@@ -22,7 +24,9 @@ name
 
 ### 缺省值
 
+``` {.bash}
 trace on
+```
 
 ### 说明
 

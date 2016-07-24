@@ -1,4 +1,4 @@
-## benioff {#cmd:benioff}
+## benioff
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 BENIOFF
+```
 
 ### 说明
 
@@ -20,7 +22,7 @@ BENIOFF
 
 该滤波器的响应函数如下图所示：
 
-![Benioff滤波器的响应函数](benioff){width="80.00000%"}
+![Benioff滤波器的响应函数](/figures/benioff.png)
 
 ### 头段变量
 

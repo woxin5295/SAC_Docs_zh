@@ -1,4 +1,4 @@
-## wiener {#cmd:wiener}
+## wiener 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-W`IE`N`E`R \[W`INDOW` pdw\] \[N`COEFF` n\] \[MU OFF|ON|v\] \[EPS`ILON`
-OFF|ON|e\]
+``` {.bash}
+W!IE!N!E!R [W!INDOW! pdw] [N!COEFF! n] [MU OFF|ON|v] [EPS!ILON! OFF|ON|e]
+```
 
 ### 输入
 
@@ -41,7 +42,9 @@ EPSILON ON|OFF|e
 
 ### 缺省值
 
+``` {.bash}
 wiener window b 0 10 ncoeff 30 mu off epsilon off
+```
 
 ### 说明
 

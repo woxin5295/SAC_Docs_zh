@@ -1,4 +1,4 @@
-## readbbf {#cmd:readbbf}
+## readbbf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-R`EAD`BBF \[file\]
+``` {.bash}
+R!EAD!BBF [file]
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ file
 
 ### 缺省值
 
+``` {.bash}
 readbbf bbf
+```
 
 ### 说明
 

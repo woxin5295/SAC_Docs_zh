@@ -1,4 +1,4 @@
-## begindevices {#cmd:begindevices}
+## begindevices 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-B`EGIN`D`EVICES` S`GF`|X`WINDOWS`
+``` {.bash}
+B!EGIN!D!EVICES! S!GF!|X!WINDOWS!
+```
 
 ### 输入
 

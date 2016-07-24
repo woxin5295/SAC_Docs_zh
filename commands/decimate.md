@@ -1,4 +1,4 @@
-## decimate {#cmd:decimate}
+## decimate 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-DEC`IMATE` \[n\] \[F`ILTER` ON|OFF\]
+``` {.bash}
+DEC!IMATE! [n] [F!ILTER! ON|OFF]
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ FILTER ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 decimate 2 filter on
+```
 
 ### 说明
 

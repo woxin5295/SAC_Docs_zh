@@ -1,4 +1,4 @@
-## ticks {#cmd:ticks}
+## ticks 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-TICKS \[ON|OFF|ONLY\] \[A`LL`\] \[T`OP`\] \[B`OTTOM`\] \[R`IGHT`\]
-\[L`EFT`\]
+``` {.bash}
+TICKS [ON|OFF|ONLY] [A!LL!] [T!OP!] [B!OTTOM!] [R!IGHT!] [L!EFT!]
+```
 
 ### 输入
 
@@ -45,12 +46,14 @@ LEFT
 
 ### 缺省值
 
+``` {.bash}
 ticks on all
+```
 
 ### 说明
 
-刻度轴可以画图形四边的一边或几边上，刻度间隔由
-[xdiv](/commands/xdiv.md) 命令控制。
+刻度轴可以画图形四边的一边或几边上，刻度间隔由 [xdiv](/commands/xdiv.md)
+命令控制。
 
 ### 示例
 

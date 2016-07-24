@@ -1,4 +1,4 @@
-## ygrid {#cmd:ygrid}
+## ygrid 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-YGRID ON|OFF|S`OLID`|D`OTTED`
+``` {.bash}
+YGRID ON|OFF|S!OLID!|D!OTTED!
+```
 
 ### 输入
 
@@ -28,4 +30,6 @@ OFF
 
 ### 缺省值
 
+``` {.bash}
 ygrid off
+```

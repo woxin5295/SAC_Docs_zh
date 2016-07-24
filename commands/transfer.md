@@ -1,4 +1,4 @@
-## transfer {#cmd:transfer}
+## transfer
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-TRANS`FER` \[FROM type \[options\]\] \[TO type \[options\]\]
-\[FREQ`LIMITS` f1 f2 f3 f4\] \[PREWH`ITENING` ON|OFF|n\]
+``` {.bash}
+TRANS!FER! [FROM type [options]] [TO type [options]] [FREQ!LIMITS! f1 f2 f3 f4]
+    [PREWH!ITENING! ON|OFF|n]
+```
 
 ### 输入
 
@@ -29,7 +31,9 @@ PREWHITENING ON|OFF|n
 
 ### 缺省值
 
+``` {.bash}
 trans from none to none
+```
 
 ### 说明
 
@@ -97,7 +101,7 @@ fap
 `f3` 到 `f4` 之间从1渐渐变成0，大于 `f4`
 的频段值为0。过渡带内分别为余弦波的 四分之一周期。如下图所示：
 
-![Freqlimits尖灭函数](freqlimits){width="90.00000%"}
+![Freqlimits尖灭函数](/figures/freqlimits.png)
 
 四个频率参数除了要满足 `f1<f2<f3<f4` 外，还应注意如下几条原则：
 
@@ -295,7 +299,7 @@ PZ文件合并得到总的PZ文件。下面的例子中读入全部波形数据�
 SAC> r *.SAC          // 读入全部数据
 SAC> rmean; rtr; taper
 SAC> trans from polezero s event.pz to none freq 0.05 0.1 10.0 15.0
-SAC> mul 1.0e9        // 需要乘以1.0e9 \verb||\verb||!
+SAC> mul 1.0e9        // 需要乘以1.0e9 !!\verb!!!
 SAC> w over
 ```
 

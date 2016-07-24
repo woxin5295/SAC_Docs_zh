@@ -1,4 +1,4 @@
-## title {#cmd:title}
+## title 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-TITLE \[ON|OFF|text\] \[L`OCATION` T`OP`|B`OTTOM`|R`IGHT`|L`EFT`\]
-\[S`IZE` T`INY`|S`MALL`|M`EDIUM`|L`ARGE`\]
+``` {.bash}
+TITLE [ON|OFF|text] [L!OCATION! T!OP!|B!OTTOM!|R!IGHT!|L!EFT!]
+    [S!IZE! T!INY!|S!MALL!|M!EDIUM!|L!ARGE!]
+```
 
 ### 输入
 
@@ -33,7 +35,9 @@ SIZE
 
 ### 缺省值
 
+``` {.bash}
 title off location top size small
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## fft {#cmd:fft}
+## fft 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-FFT \[WO`MEAN`|W`MEAN`\] \[R`LIM`|A`MPH`\]
+``` {.bash}
+FFT [WO!MEAN!|W!MEAN!] [R!LIM!|A!MPH!]
+```
 
 ### 输入
 
@@ -28,7 +30,9 @@ AMPH
 
 ### 缺省值
 
+``` {.bash}
 fft wmean amph
+```
 
 ### 说明
 

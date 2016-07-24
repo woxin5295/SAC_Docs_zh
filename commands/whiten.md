@@ -1,4 +1,4 @@
-## whiten {#cmd:whiten}
+## whiten 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-W`H`IT`EN` n
+``` {.bash}
+W!H!IT!EN! n
+```
 
 ### 输入
 
@@ -18,7 +20,9 @@ n
 
 ### 缺省值
 
+``` {.bash}
 whiten 6
+```
 
 ### 说明
 

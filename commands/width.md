@@ -1,4 +1,4 @@
-## width {#cmd:width}
+## width 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-WIDTH \[ON|OFF|width\] \[SK`ELETON` width\] \[I`NCREMENT` ON|OFF\]
-\[L`IST` S`TANDARD`|widthlist\]
+``` {.bash}
+WIDTH [ON|OFF|width] [SK!ELETON! width] [I!NCREMENT! ON|OFF] [L!IST! S!TANDARD!|widthlist]
+```
 
 其中 `width` 只能取整数
 
@@ -49,7 +50,9 @@ INCREMENT OFF
 
 ### 缺省值
 
+``` {.bash}
 width off skeleton 1 increment off list standard
+```
 
 ### 说明
 

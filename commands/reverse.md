@@ -1,4 +1,4 @@
-## reverse {#cmd:reverse}
+## reverse 
 
 ### 概要
 
@@ -6,4 +6,6 @@
 
 ### 语法
 
+``` {.bash}
 REVERSE
+```

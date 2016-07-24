@@ -1,4 +1,4 @@
-## wild {#cmd:wild}
+## wild 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-WILD \[ECHO ON|OFF\] \[SINGLE char\] \[MULTIPLE char\] \[CONCATENATION
-chars\]
+``` {.bash}
+WILD [ECHO ON|OFF] [SINGLE char] [MULTIPLE char] [CONCATENATION chars]
+```
 
 ### 输入
 

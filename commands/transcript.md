@@ -1,4 +1,4 @@
-## transcript {#cmd:transcript}
+## transcript 
 
 ### 概要
 
@@ -6,10 +6,11 @@
 
 ### 语法
 
-TRANSCRIPT \[OPEN|CREATE|CLOSE|CHANGE|WRITE|HISTORY\] \[FILE filename\]
-\[CONTENTS
-ALL|E`RRORS`|W`ARNINGS`|O`UTPUT`|C`OMMANDS`|M`ACROS`|P`ROCESSED`\]
-\[MESSAGE text\]
+``` {.bash}
+TRANSCRIPT [OPEN|CREATE|CLOSE|CHANGE|WRITE|HISTORY] [FILE filename]
+    [CONTENTS ALL|E!RRORS!|W!ARNINGS!|O!UTPUT!|C!OMMANDS!|M!ACROS!|P!ROCESSED!]
+    [MESSAGE text]
+```
 
 ### 输入
 
@@ -77,7 +78,9 @@ CONTENTS PROCESSED
 
 ### 缺省值
 
+``` {.bash}
 transcript open file transcript contents all
+```
 
 ### 说明
 

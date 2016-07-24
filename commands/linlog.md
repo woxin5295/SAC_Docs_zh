@@ -1,4 +1,4 @@
-## linlog {#cmd:linlog}
+## linlog 
 
 ### 概要
 
@@ -6,4 +6,6 @@
 
 ### 语法
 
+``` {.bash}
 LINLOG
+```

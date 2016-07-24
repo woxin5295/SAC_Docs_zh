@@ -1,4 +1,4 @@
-## map {#cmd:map}
+## map
 
 ### 概要
 
@@ -9,12 +9,14 @@ GMT地图，也可以在命令行上指定一个事件文件。每个地震事�
 
 ### 语法
 
-MAP \[MER`CATOR`|EQ`UIDISTANT`|AZ`IMUTHAL_EQUIDISTANT`|ROB`INSON`\]
-\[WEST minlon\] \[EAST maxlon\] \[NORTH maxlat\] \[SOUTH minlat\]
-\[MAG`NITUDE`|RE`SIDUAL`|RM`EAN_RESIDUAL`\] \[EV`EVNTFILE` filename\]
-\[TOPO`GRAPHY`\] \[STAN`AMES`\] \[MAPSCALE on|off\] \[PLOTSTATIONS
-on|off\] \[PLOTEVENTS on|off\] \[PLOTLEGEND on|off\] \[LEGENDXY x y\]
-\[FILE output-file\]
+``` {.bash}
+MAP [MER!CATOR!|EQ!UIDISTANT!|AZ!IMUTHAL_EQUIDISTANT!|ROB!INSON!]
+    [WEST minlon] [EAST maxlon] [NORTH maxlat] [SOUTH minlat]
+    [MAG!NITUDE!|RE!SIDUAL!|RM!EAN_RESIDUAL!] [EV!EVNTFILE! filename]
+    [TOPO!GRAPHY!] [STAN!AMES!] [MAPSCALE on|off] [PLOTSTATIONS on|off]
+    [PLOTEVENTS on|off] [PLOTLEGEND on|off] [LEGENDXY x y]
+    [FILE output-file]
+```
 
 ### 输入
 
@@ -46,13 +48,13 @@ SAC中可以使用的投影方式包括：
 
 下面的选项允许用户向地图中添加位置和注释：
 
--   `STANames on`off|：在地图上绘制台站名\[默认为off\]
+-   `STANames on|off`：在地图上绘制台站名\[默认为off\]
 
--   `MAPSCALE on`off|：在地图上绘制地图比例尺\[默认为off\]
+-   `MAPSCALE on|off`：在地图上绘制地图比例尺\[默认为off\]
 
--   `PLOTSTATIONS on`off|：绘制地震图给出的全部台站\[默认为on\]
+-   `PLOTSTATIONS on|off`：绘制地震图给出的全部台站\[默认为on\]
 
--   `PLOTEVENTS on`off|：绘制eventfile和/或地震图给出的全部事件
+-   `PLOTEVENTS on|off`：绘制eventfile和/或地震图给出的全部事件
     \[默认为on\]
 
 下面的选项允许用户根据不同的值给出不同地震事件符号的大小。默认值是所有
@@ -65,7 +67,7 @@ SAC中可以使用的投影方式包括：
 
 -   `RMean_residual`：与residual相同，除了将所有残差去除均值之外
 
--   `PLTLEGEND on`off|：绘制地震震级以及残差的图例\[默认为on\]
+-   `PLTLEGEND on|off`：绘制地震震级以及残差的图例\[默认为on\]
 
 -   `LEGENDXY x y`：绘制图例的绝对位置，默认为 `[1,1]`。
     位置是相对于页面的左下角，其单位为inch。这是一个与地震震级和残差有关
@@ -75,7 +77,7 @@ SAC中可以使用的投影方式包括：
     事件数据，文件的每一行包含单个事件的数据。每行的头两列必须包含纬度和
     经度（单位为度）。第三列可以包含符号大小信息（比如震级、深度、走时残差等）。
 
--   `TOPOgraphy on`off|：设置TOPO为开允许用户向地图中添加地形和
+-   `TOPOgraphy on|off`：设置TOPO为开允许用户向地图中添加地形和
     海洋深度。该命令读取GMT中 `grdraster.info` 的第一个地形文件，
     当然地形文件中必须要有该区域的数据。地形彩色图使用
     `$SACAUX/ctables/gmt.cpt`。网格文件被写入当前目录
@@ -87,7 +89,10 @@ SAC中可以使用的投影方式包括：
 
 ### 缺省值
 
-map mercator topo off stan off file gmt.ps plotstations on plotevents on
+``` {.bash}
+map mercator topo off stan off file gmt.ps plotstations on
+    plotevents on
+```
 
 ### 示例
 
@@ -110,7 +115,7 @@ Using Default Postscript Viewer
 可以通过修改环境变量 `SACPSVIEWER` 来实现，比如
 `export SACPSVIERER=evince`。
 
-![map绘制地震、台站分布图](map){width="70.00000%"}
+![map绘制地震、台站分布图](/figures/map.png)
 
 ### 头段数据
 

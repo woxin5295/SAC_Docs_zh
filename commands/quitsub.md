@@ -1,4 +1,4 @@
-## quitsub {#cmd:quitsub}
+## quitsub 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-Q`UIT`S`UB`
+``` {.bash}
+Q!UIT!S!UB!
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## print {#cmd:print}
+## print 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-PRINT \[printer\]
+``` {.bash}
+PRINT [printer]
+```
 
 ### 说明
 

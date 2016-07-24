@@ -1,4 +1,4 @@
-## fir {#cmd:fir}
+## fir 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-FIR \[REC|FFT\] file
+``` {.bash}
+FIR [REC|FFT] file
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ file
 
 ### 缺省值
 
+``` {.bash}
 fir fft fir
+```
 
 ### 说明
 

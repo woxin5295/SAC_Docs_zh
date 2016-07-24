@@ -1,4 +1,4 @@
-## taper {#cmd:taper}
+## taper
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-TAPER \[T`YPE` HAN`NING`|HAM`MING`|C`OSINE`\] \[W`IDTH` v\]
+``` {.bash}
+TAPER [T!YPE! HAN!NING!|HAM!MING!|C!OSINE!] [W!IDTH! v]
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ WIDTH v
 
 ### 缺省值
 
+``` {.bash}
 taper type hanning width 0.05
+```
 
 ### 说明
 
@@ -48,7 +52,7 @@ taper命令的通用形式为 $$Data(j) = Data(j)*(F_0 - F_1\cos(\omega(j-1)))$$
 图 nameref-fig-taper-functions 给出了不同taper衰减函数的曲线图，图中可以
 看出，hamming窗实际上并没有完全实现尖灭。
 
-![taper衰减函数曲线](taper-functions){width="80.00000%"}
+![taper衰减函数曲线](/figures/taper-functions.png)
 
 ### 头段变量
 

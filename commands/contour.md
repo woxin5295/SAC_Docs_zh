@@ -1,4 +1,4 @@
-## contour {#cmd:contour}
+## contour 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-CONT`OUR` \[A`SPECT` ON|OFF\]
+``` {.bash}
+CONT!OUR! [A!SPECT! ON|OFF]
+```
 
 ### 输入
 
@@ -21,7 +23,9 @@ ASPECT OFF
 
 ### 缺省值
 
+``` {.bash}
 contour aspect off
+```
 
 ### 说明
 

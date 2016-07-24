@@ -1,4 +1,4 @@
-## writebbf {#cmd:writebbf}
+## writebbf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-W`RITE`BBF \[file\]
+``` {.bash}
+W!RITE!BBF [file]
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ file
 
 ### 缺省值
 
+``` {.bash}
 writebbf bbf
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## unwrap {#cmd:unwrap}
+## unwrap 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-UNWRAP \[F`ILL` ON|OFF|n\] \[I`NTTHR` v\] \[P`VTHR` v\]
+``` {.bash}
+UNWRAP [F!ILL! ON|OFF|n] [I!NTTHR! v] [P!VTHR! v]
+```
 
 ### 输入
 
@@ -28,7 +30,9 @@ PVTHR v
 
 ### 缺省值
 
+``` {.bash}
 unwrap fill off intthr 1.5 pvthr 0.5
+```
 
 ### 说明
 

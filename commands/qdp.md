@@ -1,4 +1,4 @@
-## qdp {#cmd:qdp}
+## qdp 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-QDP \[ON|OFF|n\] \[TERM ON|OFF|n\] \[SGF ON|OFF|n\]
+``` {.bash}
+QDP [ON|OFF|n] [TERM ON|OFF|n] [SGF ON|OFF|n]
+```
 
 ### 输入
 
@@ -36,7 +38,9 @@ SGF n
 
 ### 缺省值
 
+``` {.bash}
 qdp term 5000 sgf 5000
+```
 
 ### 说明
 

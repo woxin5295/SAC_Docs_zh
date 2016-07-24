@@ -1,4 +1,4 @@
-## beginframe {#cmd:beginframe}
+## beginframe 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-B`EGIN`F`RAME`
+``` {.bash}
+B!EGIN!F!RAME!
+```
 
 ### 说明
 

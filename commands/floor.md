@@ -1,4 +1,4 @@
-## floor {#cmd:floor}
+## floor 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-FLOOR \[ON|OFF|v\]
+``` {.bash}
+FLOOR [ON|OFF|v]
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ v
 
 ### 缺省值
 
+``` {.bash}
 floor 1.0e-10
+```
 
 ### 说明
 

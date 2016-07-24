@@ -1,4 +1,4 @@
-## xfull {#cmd:xfull}
+## xfull 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-XFULL \[ON|OFF\]
+``` {.bash}
+XFULL [ON|OFF]
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 xfull on
+```
 
 ### 说明
 

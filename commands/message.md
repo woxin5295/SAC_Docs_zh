@@ -1,4 +1,4 @@
-## message {#cmd:message}
+## message 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-MES`SAGE` text
+``` {.bash}
+MES!SAGE! text
+```
 
 ### 输入
 

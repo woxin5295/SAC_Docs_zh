@@ -1,4 +1,4 @@
-## vspace {#cmd:vspace}
+## vspace 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-VSP`ACE` \[FULL|v\]
+``` {.bash}
+VSP!ACE! [FULL|v]
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ v
 
 ### 缺省值
 
+``` {.bash}
 vspace full
+```
 
 ### 说明
 

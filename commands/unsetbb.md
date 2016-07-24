@@ -1,4 +1,4 @@
-## unsetbb {#cmd:unsetbb}
+## unsetbb 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 UNSETBB ALL|variable ...
+```
 
 ### 输入
 

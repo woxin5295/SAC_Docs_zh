@@ -1,4 +1,4 @@
-## axes {#cmd:axes}
+## axes 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-AXES \[ON|OFF|ONL`Y`\] \[A`LL`\] \[T`OP`\] \[B`OTTOM`\] \[R`IGHT`\]
-\[L`EFT`\]
+``` {.bash}
+AXES [ON|OFF|ONL!Y!] [A!LL!] [T!OP!] [B!OTTOM!] [R!IGHT!] [L!EFT!]
+```
 
 ### 输入
 
@@ -45,7 +46,9 @@ LEFT
 
 ### 缺省值
 
+``` {.bash}
 axes only bottom left
+```
 
 即只有下边和左边使用注释轴
 

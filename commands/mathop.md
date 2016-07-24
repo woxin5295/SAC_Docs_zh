@@ -1,4 +1,4 @@
-## mathop {#cmd:mathop}
+## mathop 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 MATHOP NORMAL|MATH|FORTRAN|NONE|OLD
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ NONE|OLD
 
 ### 缺省值
 
+``` {.bash}
 mathop NORMAL
+```
 
 ### 说明
 

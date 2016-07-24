@@ -1,4 +1,4 @@
-## arraymap {#cmd:arraymap}
+## arraymap 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-ARRAY`MAP` \[A`RRAY`|C`OARRAY`\]
+``` {.bash}
+ARRAY!MAP! [A!RRAY!|C!OARRAY!]
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ COARRAY
 
 ### 缺省值
 
+``` {.bash}
 arraymap array
+```
 
 ### 头段数据
 

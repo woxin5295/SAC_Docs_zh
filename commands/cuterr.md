@@ -1,4 +1,4 @@
-## cuterr {#cmd:cuterr}
+## cuterr 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-CUTERR FA`TAL`|U`SEBE`|FI`LLZ`
+``` {.bash}
+CUTERR FA!TAL!|U!SEBE!|FI!LLZ!
+```
 
 ### 输入
 

@@ -1,4 +1,4 @@
-## line {#cmd:line}
+## line 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-LINE \[ON|OFF|S`OLID`|D`OTTED`|n\] \[FILL ON|OFF|pos\_color/neg\_color\]
-\[I`NCREMENT` \[ON|OFF\]\] \[L`IST` STANDARD|nlist\]
+``` {.bash}
+LINE [ON|OFF|S!OLID!|D!OTTED!|n] [FILL ON|OFF|pos_color/neg_color]
+    [I!NCREMENT! [ON|OFF]] [L!IST! STANDARD|nlist]
+```
 
 ### 输入
 
@@ -57,7 +59,9 @@ LIST STANDARD
 
 ### 缺省值
 
+``` {.bash}
 line solid increment off list standard
+```
 
 ### 说明
 

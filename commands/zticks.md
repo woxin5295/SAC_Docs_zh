@@ -1,4 +1,4 @@
-## zticks {#cmd:zticks}
+## zticks 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-ZTICKS \[ON|OFF\] \[Spacing v\] \[LE`NGTH` v\] \[D`IRECTION` DOWN|UP\]
-\[`LIST` c1 c2 ... cn\]
+``` {.bash}
+ZTICKS [ON|OFF] [Spacing v] [LE!NGTH! v] [D!IRECTION! DOWN|UP] [!LIST! c1 c2 ... cn]
+```
 
 ### 输入
 
@@ -35,7 +36,9 @@ LIST c1 c2 . cn
 
 ### 缺省值
 
+``` {.bash}
 zticks off spacing 0.1 length 0.005 direction down list on
+```
 
 ### 示例
 

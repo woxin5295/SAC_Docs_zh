@@ -1,4 +1,4 @@
-## keepam {#cmd:keepam}
+## keepam 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-`KEEP`AM
+``` {.bash}
+!KEEP!AM
+```
 
 ### 说明
 

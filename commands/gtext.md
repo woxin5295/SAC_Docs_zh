@@ -1,4 +1,4 @@
-## gtext {#cmd:gtext}
+## gtext 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-GT`EXT` \[S`OFTWARE`|H`ARDWARE`\] \[F`ONT` n\] \[SIZE size\] \[SYS`TEM`
-system\] \[N`AME` name\]
+``` {.bash}
+GT!EXT! [S!OFTWARE!|H!ARDWARE!] [F!ONT! n] [SIZE size] [SYS!TEM! system] [N!AME! name]
+```
 
 ### 输入
 
@@ -40,7 +41,9 @@ NAME name
 
 ### 缺省值
 
+``` {.bash}
 gtext software font 1 size small
+```
 
 ### 说明
 

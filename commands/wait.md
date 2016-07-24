@@ -1,4 +1,4 @@
-## wait {#cmd:wait}
+## wait 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-WAIT \[T`EXT` ON|OFF\] \[P`LOTS` ON|OFF|E`VERY`\]
+``` {.bash}
+WAIT [T!EXT! ON|OFF] [P!LOTS! ON|OFF|E!VERY!]
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ PLOTS EVERY
 
 ### 缺省值
 
+``` {.bash}
 wait text on plots on
+```
 
 ### 说明
 

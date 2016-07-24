@@ -1,4 +1,4 @@
-## writecss {#cmd:writecss}
+## writecss 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-W`RITE`CSS \[B`INARY`|A`SCII`\] \[DIR ON|OFF|CURRENT|name\] name
+``` {.bash}
+W!RITE!CSS [B!INARY!|A!SCII!] [DIR ON|OFF|CURRENT|name] name
+```
 
 ### 输入
 
@@ -44,7 +46,9 @@ name
 
 ### 缺省值
 
+``` {.bash}
 wirtecss ascii dir off
+```
 
 ### 说明
 

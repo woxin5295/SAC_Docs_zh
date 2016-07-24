@@ -1,4 +1,4 @@
-## plot1 {#cmd:plot1}
+## plot1 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-P`LOT`1 \[A`BSOLUTE`|R`ELATIVE`\] \[P`ERPLOT` ON|OFF|n\]
+``` {.bash}
+P!LOT!1 [A!BSOLUTE!|R!ELATIVE!] [P!ERPLOT! ON|OFF|n]
+```
 
 ### 输入
 
@@ -28,7 +30,9 @@ PERPLOT OFF
 
 ### 缺省值
 
+``` {.bash}
 plot1 absolute perplot off
+```
 
 ### 说明
 

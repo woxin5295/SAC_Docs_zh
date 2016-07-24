@@ -1,4 +1,4 @@
-## funcgen {#cmd:funcgen}
+## funcgen 
 
 ### 概要
 
@@ -6,13 +6,17 @@
 
 ### 语法
 
-F`UNC`G`EN` \[type\] \[D`ELTA` v\] \[N`PTS` n\] \[BE`GIN` v\]
+``` {.bash}
+F!UNC!G!EN! [type] [D!ELTA! v] [N!PTS! n] [BE!GIN! v]
+```
 
 其中 `type` 是下面中的一个：
 
-IMP`ULSE` | ST`EP` | B`OXCAR` | T`RIANGLE` | SINE \[v1 v2\] | L`INE`
-\[v1 v2\] | Q`UADRATIC` \[v1 v2 v3\] | CUBIC \[v1 v2 v3 v4\] |
-SEIS`MOGRAM` | R`ANDOM` \[v1 v2\] | IMPSTRIN \[n1 n2 ... nN\]
+``` {.bash}
+IMP!ULSE! | ST!EP! | B!OXCAR! | T!RIANGLE! | SINE [v1 v2] | L!INE! [v1 v2] |
+Q!UADRATIC! [v1 v2 v3] | CUBIC [v1 v2 v3 v4] | SEIS!MOGRAM! |
+R!ANDOM! [v1 v2] | IMPSTRIN  [n1 n2 ... nN]
+```
 
 ### 输入
 
@@ -80,7 +84,9 @@ BEGIN v
 
 ### 缺省值
 
+``` {.bash}
 funcgen impulse npts 100 delta 1.0 begin 0.
+```
 
 对于正弦函数频率和相位缺省值分别为0.05和0。
 一次、二次、三次函数的系数都是1。 随机序列数为1，种子是12357。

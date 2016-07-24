@@ -1,4 +1,4 @@
-## deletechannel {#cmd:deletechannel}
+## deletechannel 
 
 ### 概要
 
@@ -6,11 +6,15 @@
 
 ### 语法
 
-D`ELETE`C`HANNEL` ALL
+``` {.bash}
+D!ELETE!C!HANNEL! ALL
+```
 
 或
 
-D`ELETE`C`HANNEL` fname|fno|range \[fname|fno|range ...\]
+``` {.bash}
+D!ELETE!C!HANNEL! fname|fno|range [fname|fno|range ...]
+```
 
 ### 输入
 

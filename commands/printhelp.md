@@ -1,4 +1,4 @@
-## printhelp {#cmd:printhelp}
+## printhelp 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-P`RINT`H`ELP` \[item ...\]
+``` {.bash}
+P!RINT!H!ELP! [item ...]
+```
 
 ### 输入
 
@@ -16,5 +18,5 @@ item
 
 ### 说明
 
-该命令与 [help](/commands/help.md) 命令的用法相同，其调用系统命令
-`lpr` 将文档传递给默认打印机。若 `lpr` 未设置默认打印机，则报错。
+该命令与 [help](/commands/help.md) 命令的用法相同，其调用系统命令 `lpr`
+将文档传递给默认打印机。若 `lpr` 未设置默认打印机，则报错。

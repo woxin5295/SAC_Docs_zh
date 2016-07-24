@@ -1,4 +1,4 @@
-## datagen {#cmd:datagen}
+## datagen 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-D`ATA`G`EN` \[MORE\] \[SUB L`OCAL`|R`EGIONAL`|T`ELESEIS`\] \[filelist\]
+``` {.bash}
+D!ATA!G!EN! [MORE] [SUB L!OCAL!|R!EGIONAL!|T!ELESEIS!] [filelist]
+```
 
 ### 输入
 

@@ -1,4 +1,4 @@
-## getbb {#cmd:getbb}
+## getbb 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-GETBB \[TO TERM`INAL`|filename\] \[NAMES ON|OFF\] \[NEWLINE ON|OFF\]
-ALL|variable \[variable ...\]
+``` {.bash}
+GETBB [TO TERM!INAL!|filename] [NAMES ON|OFF] [NEWLINE ON|OFF]
+    ALL|variable [variable ...]
+```
 
 ### 输入
 
@@ -45,7 +47,9 @@ variable
 
 ### 缺省值
 
+``` {.bash}
 getbb to terminal names on newline on all
+```
 
 ### 说明
 

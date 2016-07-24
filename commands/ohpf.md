@@ -1,4 +1,4 @@
-## ohpf {#cmd:ohpf}
+## ohpf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-OHPF \[file\]
+``` {.bash}
+OHPF [file]
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ file
 
 ### 缺省值
 
+``` {.bash}
 OHPF HPF
+```
 
 ### 说明
 

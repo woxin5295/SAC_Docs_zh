@@ -1,4 +1,4 @@
-## apk {#cmd:apk}
+## apk 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-APK \[param v \[param v\] ... \] \[V`ALIDATION` ON|OFF\]
+``` {.bash}
+APK [param v [param v] ... ] [V!ALIDATION! ON|OFF]
+```
 
 ### 输入
 
@@ -24,8 +26,10 @@ VALIDATION OFF
 
 ### 缺省值
 
-apk c1 0.985 c2 3.0 c3 0.6 c4 0.03 c5 5.0 c6 0.0039 c7 100. c8 -0.1 d5
-2. d8 3. d9 1. i3 3 i4 40 i6 3 validation on
+``` {.bash}
+apk c1 0.985 c2 3.0 c3 0.6 c4 0.03 c5 5.0 c6 0.0039 c7 100. c8 -0.1
+    d5 2. d8 3. d9 1. i3 3 i4 40 i6 3 validation on
+```
 
 ### 说明
 

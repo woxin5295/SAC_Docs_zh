@@ -1,4 +1,4 @@
-## int {#cmd:int}
+## int 
 
 ### 概要
 
@@ -6,11 +6,15 @@
 
 ### 语法
 
-INT \[T`RAPEZEIDAL`|R`ECTANGULAR`\]
+``` {.bash}
+INT [T!RAPEZEIDAL!|R!ECTANGULAR!]
+```
 
 ### 缺省值
 
+``` {.bash}
 int trapezoidal
+```
 
 ### 说明
 

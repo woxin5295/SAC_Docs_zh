@@ -1,4 +1,4 @@
-## loglog {#cmd:loglog}
+## loglog 
 
 ### 概要
 
@@ -6,4 +6,6 @@
 
 ### 语法
 
+``` {.bash}
 LOGLOG
+```

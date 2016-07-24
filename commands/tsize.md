@@ -1,4 +1,4 @@
-## tsize {#cmd:tsize}
+## tsize 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-TSIZE \[T`INY`|S`MALL`|M`EDIUM`|L`ARGE` v \] \[R`ATIO` v\] \[OLD|NEW\]
+``` {.bash}
+TSIZE [T!INY!|S!MALL!|M!EDIUM!|L!ARGE! v ] [R!ATIO! v] [OLD|NEW]
+```
 
 ### 输入
 
@@ -28,7 +30,9 @@ NEW
 
 ### 缺省值
 
+``` {.bash}
 tsize ratio 1.0 new
+```
 
 ### 说明
 

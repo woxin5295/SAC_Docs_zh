@@ -1,4 +1,4 @@
-## plotdy {#cmd:plotdy}
+## plotdy 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-PLOTDY \[ASPECT ON|OFF\] name|number \[name|number\]
+``` {.bash}
+PLOTDY [ASPECT ON|OFF] name|number [name|number]
+```
 
 ### 输入
 

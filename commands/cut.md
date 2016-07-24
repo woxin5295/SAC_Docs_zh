@@ -1,4 +1,4 @@
-## cut {#cmd:cut}
+## cut 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-CUT \[ON|OFF|pdw|SIGNAL\]
+``` {.bash}
+CUT [ON|OFF|pdw|SIGNAL]
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ SIGNAL
 
 ### 缺省值
 
+``` {.bash}
 cut off
+```
 
 ### 说明
 

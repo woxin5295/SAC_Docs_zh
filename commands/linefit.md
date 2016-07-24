@@ -1,4 +1,4 @@
-## linefit {#cmd:linefit}
+## linefit 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 LINEFIT
+```
 
 ### 说明
 

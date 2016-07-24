@@ -1,4 +1,4 @@
-## divf {#cmd:divf}
+## divf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-DIVF \[NEWHDR \[ON|OFF\]\] filelist
+``` {.bash}
+DIVF [NEWHDR [ON|OFF]] filelist
+```
 
 ### 输入
 

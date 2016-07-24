@@ -1,4 +1,4 @@
-## synchronize {#cmd:synchronize}
+## synchronize 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-SYNC`HRONIZE` \[R`OUND` ON|OFF\] \[B`EGIN` ON|OFF\]
+``` {.bash}
+SYNC!HRONIZE! [R!OUND! ON|OFF] [B!EGIN! ON|OFF]
+```
 
 ### 输入
 
@@ -29,7 +31,9 @@ BEGIN OFF
 
 ### 缺省值
 
+``` {.bash}
 synchronize round off begin off
+```
 
 ### 说明
 

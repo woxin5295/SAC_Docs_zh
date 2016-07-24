@@ -1,4 +1,4 @@
-## plot2 {#cmd:plot2}
+## plot2 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-P`LOT`2 \[A`BSOLUTE`|R`ELATIVE`\]
+``` {.bash}
+P!LOT!2 [A!BSOLUTE!|R!ELATIVE!]
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ ABSOLUTE|RELATIVE
 
 ### 缺省值
 
+``` {.bash}
 p2 absolute
+```
 
 ### 说明
 
@@ -42,9 +46,9 @@ p2 absolute
 模式绘图。在频率域 `b`、`e` 和 `delta` 分别被设置为0、
 Nqquist频率以及频率间隔 `df`。头段值 `depmin` 和 `depmax` 未改变。与
 [plotsp](/commands/plotsp.md) 类似，若 `xlim off`，绘图将从 `df=delta`
-处开始，而非0。若 [xlim](/commands/xlim.md) 或
-[ylim](/commands/ylim.md) 在数据变换到频率域之前被改变了，最好在使用
-`plot2` 绘图之前输入 `xlim off` 和 `ylim off`。
+处开始，而非0。若 [xlim](/commands/xlim.md) 或 [ylim](/commands/ylim.md)
+在数据变换到频率域之前被改变了，最好在使用 `plot2` 绘图之前输入
+`xlim off` 和 `ylim off`。
 
 若内存中同时存在时间序列文件和谱文件，且绘图时没有选择 `relative`
 模式，则时间序列将以绝对模式绘图，谱文件将以相对模式绘图绘图。相对

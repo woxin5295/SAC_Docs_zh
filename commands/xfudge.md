@@ -1,4 +1,4 @@
-## xfudge {#cmd:xfudge}
+## xfudge 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-XFUDGE \[ON|OFF|v\]
+``` {.bash}
+XFUDGE [ON|OFF|v]
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ OFF
 
 ### 缺省值
 
+``` {.bash}
 xfudge 0.03
+```
 
 ### 说明
 

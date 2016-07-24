@@ -1,4 +1,4 @@
-## hanning {#cmd:hanning}
+## hanning 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-HAN`NING`
+``` {.bash}
+HAN!NING!
+```
 
 ### 说明
 

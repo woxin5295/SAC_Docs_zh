@@ -1,4 +1,4 @@
-## plot {#cmd:plot}
+## plot 
 
 ### 概要
 
@@ -6,12 +6,14 @@
 
 ### 语法
 
-P`LOT`
+``` {.bash}
+P!LOT!
+```
 
 ### 说明
 
-每个数据文件绘制在单独窗口中，图形的大小由
-[xvport](/commands/xvport.md) 和 [yvport](/commands/yvport.md)
+每个数据文件绘制在单独窗口中，图形的大小由 [xvport](/commands/xvport.md)
+和 [yvport](/commands/yvport.md)
 决定。每个图形的Y轴范围由数据的极值决定，也可以用
 [ylim](/commands/ylim.md) 手动限制Y轴的范围。X轴的范围由
 [xlim](/commands/xlim.md) 命令控制。用户可以用

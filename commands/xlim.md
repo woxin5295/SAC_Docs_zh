@@ -1,4 +1,4 @@
-## xlim {#cmd:xlim}
+## xlim
 
 ### 概要
 
@@ -6,9 +6,11 @@
 
 ### 语法
 
-XLIM \[ON|OFF|pdw|SIGNAL\]
+``` {.bash}
+XLIM [ON|OFF|pdw|SIGNAL]
+```
 
-subsection<span>输入</span>
+### 输入
 
 pdw
 
@@ -29,7 +31,9 @@ OFF
 
 ### 缺省值
 
+``` {.bash}
 xlim off
+```
 
 ### 说明
 

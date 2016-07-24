@@ -1,4 +1,4 @@
-## enddevices {#cmd:enddevices}
+## enddevices 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-E`ND`D`EVICES` \[ALL|S`GF`|X`WINDOWS`\]
+``` {.bash}
+E!ND!D!EVICES! [ALL|S!GF!|X!WINDOWS!]
+```
 
 ### 输入
 

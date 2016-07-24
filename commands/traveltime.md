@@ -1,4 +1,4 @@
-## traveltime {#cmd:traveltime}
+## traveltime
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-TRAVELTIME \[M`ODEL` model\] \[PICKS n\] \[PHASE phaselist\]
-\[VERBOSE|QUIET\] \[M|KM\]
+``` {.bash}
+TRAVELTIME [M!ODEL! model] [PICKS n] [PHASE phaselist] [VERBOSE|QUIET] [M|KM]
+```
 
 ### 输入
 
@@ -37,15 +38,17 @@ M|KM
 
 ### 缺省值
 
+``` {.bash}
 traveltime MODEL iasp91 KM PHASE P S Pn Pg Sn Sg
+```
 
 ### 说明
 
 该命令使用
-nameref-https-//seiscode.iris.washington.edu/projects/iaspei-tau<span>iaspei-tau</span>
+[isapei-tau](https://seiscode.iris.washington.edu/projects/iaspei-tau)
 程序计算标准速度模型下的震相理论走时，要求内存中的SAC数据文件中必须包含
 事件位置、台站位置以及发震时刻。震相名区分大小写，可使用的震相名参考
-nameref-https-//seiscode.iris.washington.edu/projects/iaspei-tau<span>iaspei-tau</span>
+[iaspei-tau](https://seiscode.iris.washington.edu/projects/iaspei-tau)
 的相关文档。
 
 若使用了 `PICKS n` 选项，则会将震相列表中第一个震相的到时存储在 头段变量

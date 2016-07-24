@@ -1,4 +1,4 @@
-## mulomega {#cmd:mulomega}
+## mulomega 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 MULOMEGA
+```
 
 ### 说明
 

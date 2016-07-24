@@ -1,4 +1,4 @@
-## null {#cmd:null}
+## null 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-NULL \[ON|OFF|value\]
+``` {.bash}
+NULL [ON|OFF|value]
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ OFF
 
 ### 缺省值
 
+``` {.bash}
 null off
+```
 
 ### 说明
 

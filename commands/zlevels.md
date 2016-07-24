@@ -1,4 +1,4 @@
-## zlevels {#cmd:zlevels}
+## zlevels 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-ZLEVELS \[SCALE\] \[RANGE v1 v2\] \[INCREMENT v\] \[NUMBER n\] \[LIST v1
-v2 ... vn\]
+``` {.bash}
+ZLEVELS [SCALE] [RANGE v1 v2] [INCREMENT v] [NUMBER n] [LIST v1 v2 ... vn]
+```
 
 ### 输入
 
@@ -35,7 +36,9 @@ LIST v1 v2 .. vn
 
 ### 缺省值
 
+``` {.bash}
 zlevels scale number 20
+```
 
 ### 示例
 

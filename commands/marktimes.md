@@ -1,4 +1,4 @@
-## marktimes {#cmd:marktimes}
+## marktimes 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-MARKT`IMES` \[T`O` marker\] \[D`ISTANCE` H`EADER`|v\] \[O`RIGIN`
-H`EADER`|v|GMT time\] \[V`ELOCITIES` v ... \]
+``` {.bash}
+MARKT!IMES! [T!O! marker] [D!ISTANCE! H!EADER!|v] [O!RIGIN! H!EADER!|v|GMT time]
+    [V!ELOCITIES! v ... ]
+```
 
 ### 输入
 
@@ -18,7 +20,7 @@ TO marker
 
 marker
 
-:   `T0`T1|T2|T3|T4|T5|T6|T7|T8|T9|
+:   `T0|T1|T2|T3|T4|T5|T6|T7|T8|T9`
 
 DISTANCE HEADER
 
@@ -50,7 +52,9 @@ VELOCITIES v ...
 
 ### 缺省值
 
+``` {.bash}
 marktimes velocities 2. 3. 4. 5. 6. distance header origin header to t0
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## ylim {#cmd:ylim}
+## ylim 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-YLIM \[ON|OFF|ALL|min max|PM v\]
+``` {.bash}
+YLIM [ON|OFF|ALL|min max|PM v]
+```
 
 ### 输入
 
@@ -32,7 +34,9 @@ OFF
 
 ### 缺省值
 
+``` {.bash}
 ylim off
+```
 
 ### 说明
 

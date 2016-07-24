@@ -1,4 +1,4 @@
-## erase {#cmd:erase}
+## erase 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-ERA`SE`
+``` {.bash}
+ERA!SE!
+```
 
 ### 说明
 

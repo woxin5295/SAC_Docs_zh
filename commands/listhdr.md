@@ -1,4 +1,4 @@
-## listhdr {#cmd:listhdr}
+## listhdr 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-L`IST`H`DR` \[D`EFAULT`|P`ICKS`|SP`ECIAL`\] \[FILES ALL|NONE|list\]
-\[COLUMNS 1|2\] \[INCLUSIVE ON|OFF\] \[hdrlist\]
+``` {.bash}
+L!IST!H!DR! [D!EFAULT!|P!ICKS!|SP!ECIAL!] [FILES ALL|NONE|list] [COLUMNS 1|2]
+    [INCLUSIVE ON|OFF] [hdrlist]
+```
 
 ### 输入
 
@@ -49,7 +51,9 @@ hdrlist
 
 ### 缺省值
 
+``` {.bash}
 listhdr default files all columns 1 inclusive off
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## xvport {#cmd:xvport}
+## xvport 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-XVP`ORT` xvmin xvmax
+``` {.bash}
+XVP!ORT! xvmin xvmax
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ xvmax
 
 ### 缺省值
 
+``` {.bash}
 xvport 0.1 0.9
+```
 
 ### 说明
 

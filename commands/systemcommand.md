@@ -1,4 +1,4 @@
-## systemcommand {#cmd:systemcommand}
+## systemcommand 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-S`YSTEM`C`OMMAND` command \[options\]
+``` {.bash}
+S!YSTEM!C!OMMAND! command [options]
+```
 
 ### 输入
 

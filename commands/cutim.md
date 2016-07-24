@@ -1,4 +1,4 @@
-## cutim {#cmd:cutim}
+## cutim 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-CUTIM pdw \[pdw ... \]
+``` {.bash}
+CUTIM pdw [pdw ... ]
+```
 
 ### 输入
 

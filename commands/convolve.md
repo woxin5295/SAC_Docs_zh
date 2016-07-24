@@ -1,4 +1,4 @@
-## convolve {#cmd:convolve}
+## convolve 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-CONVO`LVE` \[M`ASTER` name|n\] \[N`UMBER` n\] \[L`ENGTH` ON|OFF|v\]
-\[T`YPE` R`ECTANGLE`|HAM`MING`|HAN`NING`|C`OSINE`|T`RIANGLE`\]
+``` {.bash}
+CONVO!LVE! [M!ASTER! name|n] [N!UMBER! n] [L!ENGTH! ON|OFF|v]
+    [T!YPE! R!ECTANGLE!|HAM!MING!|HAN!NING!|C!OSINE!|T!RIANGLE!]
+```
 
 ### 输入
 
@@ -38,7 +40,9 @@ TYPE HAMMING|HANNING|COSINE|TRIANGlE
 
 ### 缺省值
 
+``` {.bash}
 convolve master 1 number 1 length off type rectangle
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## sgf {#cmd:sgf}
+## sgf 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-SGF \[P`REFIX` text\] \[N`UMBER` n\] \[D`IRECTORY` CURRENT|pathname\]
-\[S`IZE` N`ORMAL`|F`IXED` v|S`CALED` v\] \[O`VERWRITE` ON|OFF\]
+``` {.bash}
+SGF [P!REFIX! text] [N!UMBER! n] [D!IRECTORY! CURRENT|pathname]
+    [S!IZE! N!ORMAL!|F!IXED! v|S!CALED! v] [O!VERWRITE! ON|OFF]
+```
 
 ### 输入
 
@@ -48,7 +50,9 @@ OVERWRITE ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 sgf prefix f number 1 directory current size normal
+```
 
 ### 说明
 

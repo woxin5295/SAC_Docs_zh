@@ -1,4 +1,4 @@
-## color {#cmd:color}
+## color 
 
 ### 概要
 
@@ -6,12 +6,16 @@
 
 ### 语法
 
-COL`OR` \[ON|OFF|color\] \[I`NCREMENT` \[ON|OFF\]\] \[S`KELETON` color\]
-\[B`ACKGROUND` color\] \[L`IST` S`TANDARD`|colorlist\]
+``` {.bash}
+COL!OR! [ON|OFF|color] [I!NCREMENT! [ON|OFF]] [S!KELETON! color] [B!ACKGROUND! color]
+    [L!IST! S!TANDARD!|colorlist]
+```
 
 color是下面中的一个：
 
-W`HITE`|R`ED`|G`REEN`|Y`ELLOW`|BLU`E`|M`AGENTA`|C`YAN`|BLA`CK`
+``` {.bash}
+W!HITE!|R!ED!|G!REEN!|Y!ELLOW!|BLU!E!|M!AGENTA!|C!YAN!|BLA!CK!
+```
 
 这里有些参数在缩写的情况下可能会有歧义，请谨慎使用，且`LIST`
 选项必须放在命令的最后。
@@ -56,7 +60,9 @@ LIST STANDARD
 
 ### 缺省值
 
+``` {.bash}
 color black increment off skeleton black background white list standard
+```
 
 ### 说明
 

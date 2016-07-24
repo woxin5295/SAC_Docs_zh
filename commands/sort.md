@@ -1,4 +1,4 @@
-## sort {#cmd:sort}
+## sort 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-SORT header \[ASCEND|DESCEND\] \[header \[ASCEND|DESCEND\]...\]
+``` {.bash}
+SORT header [ASCEND|DESCEND] [header [ASCEND|DESCEND]...]
+```
 
 ### 输入
 

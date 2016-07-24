@@ -1,4 +1,4 @@
-## rms {#cmd:rms}
+## rms 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-RMS \[NOISE ON|OFF|pdw\] \[TO USERn\]
+``` {.bash}
+RMS [NOISE ON|OFF|pdw] [TO USERn]
+```
 
 ### 输入
 
@@ -20,12 +22,14 @@ TO USERn
 
 ### 缺省值
 
+``` {.bash}
 rms noise off to user0
+```
 
 ### 说明
 
-该命令用于计算当前测量时间窗（由 [mtw](/commands/mtw.md)
-定义）内数据的 均方根，并将计算结果保存到头段变量 `USERn` 中。
+该命令用于计算当前测量时间窗（由 [mtw](/commands/mtw.md) 定义）内数据的
+均方根，并将计算结果保存到头段变量 `USERn` 中。
 
 均方根的定义为： $$RMS = \sqrt{\frac{1}{N} \sum_{i=1}^N y_i^2}$$
 

@@ -1,4 +1,4 @@
-## xlabel {#cmd:xlabel}
+## xlabel 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-XLAB`E`L \[ON|OFF|text\] \[L`OCATION` T`OP`|B`OTTOM`|R`IGHT`|L`EFT`\]
-\[S`IZE` T`INY`|S`MALL`|M`EDIUM`|L`ARGE`\]
+``` {.bash}
+XLAB!E!L [ON|OFF|text] [L!OCATION! T!OP!|B!OTTOM!|R!IGHT!|L!EFT!]
+    [S!IZE! T!INY!|S!MALL!|M!EDIUM!|L!ARGE!]
+```
 
 ### 输入
 
@@ -49,7 +51,9 @@ LARGE
 
 ### 缺省值
 
+``` {.bash}
 xlabel off location bottom size small
+```
 
 ### 说明
 

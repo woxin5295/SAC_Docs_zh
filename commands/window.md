@@ -1,4 +1,4 @@
-## window {#cmd:window}
+## window 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-WIN`DOW` n \[X`SIZE` xwmin xwmax\] \[Y`SIZE` ywmin ywmax\] \[ASPECT
-\[value|ON|OFF\]\]
+``` {.bash}
+WIN!DOW! n [X!SIZE! xwmin xwmax] [Y!SIZE! ywmin ywmax] [ASPECT [value|ON|OFF]]
+```
 
 ### 输入
 

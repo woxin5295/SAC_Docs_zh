@@ -1,4 +1,4 @@
-## quantize {#cmd:quantize}
+## quantize 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-QUANTIZE \[GAINS n ...\] \[LEVEL v\] \[MANTISSA n\]
+``` {.bash}
+QUANTIZE [GAINS n ...] [LEVEL v] [MANTISSA n]
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ MANTISSA n
 
 ### 缺省值
 
+``` {.bash}
 quantize gains 128 32 8 1 level 0.00001 mantissa 14
+```
 
 ### 说明
 

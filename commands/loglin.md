@@ -1,4 +1,4 @@
-## loglin {#cmd:loglin}
+## loglin 
 
 ### 概要
 
@@ -6,4 +6,6 @@
 
 ### 语法
 
+``` {.bash}
 LOGLIN
+```

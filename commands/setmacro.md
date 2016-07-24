@@ -1,4 +1,4 @@
-## setmacro {#cmd:setmacro}
+## setmacro 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-SETMACRO \[MORE\] directory \[directory ...\]
+``` {.bash}
+SETMACRO [MORE] directory [directory ...]
+```
 
 ### 输入
 

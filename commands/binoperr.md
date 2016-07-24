@@ -1,15 +1,15 @@
-## binoperr {#cmd:binoperr}
+## binoperr 
 
 ### 概要
 
-控制二元文件操作
-[addf](/commands/addf.md)、[subf](/commands/subf.md)、
+控制二元文件操作 [addf](/commands/addf.md)、[subf](/commands/subf.md)、
 [mulf](/commands/mulf.md)、[divf](/commands/divf.md) 中的错误
 
 ### 语法
 
-BINOPERR \[N`PTS` F`ATAL`|W`ARNING`|I`GNORE`\] \[D`ELTA`
-F`ATAL`|W`ARNING`|I`GNORE`\]
+``` {.bash}
+BINOPERR [N!PTS! F!ATAL!|W!ARNING!|I!GNORE!] [D!ELTA! F!ATAL!|W!ARNING!|I!GNORE!]
+```
 
 该命令可以简写为 `boec`
 
@@ -37,7 +37,9 @@ IGNORE
 
 ### 缺省值
 
+``` {.bash}
 binoperr npts fatal delta fatal
+```
 
 ### 说明
 

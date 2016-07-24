@@ -5,15 +5,20 @@
 ### 语法约定
 
 1.  命令和选项使用大写字母，参数使用小写字母
-2.  命令和选项均使用全称，简写形式可省略的部分用灰色表示
+2.  在介绍命令语法时，会先列出其完整形式，再列出最简略形式
 3.  `[XXX]` 表示中括号内的 `XXX` 为可选项
 4.  `A|B|C` 表示可以在A、B、C中任选一项
 
 示例如下：
 
-B`AND`P`ASS` \[BU`TTER`|BE`SSEL`|C1|C2\] \[C`ORNERS` v1 v2\] \[N`POLES`
-n\] \[P`ASSES` n\] \[T`RANBW` v\] \[A`TTEN` v\]
+```
+BANDPASS [BUTTER|BESSEL|C1|C2] [CORNERS v1 v2] [NPOLES n] [PASSES n] [TRANBW v] [ATTEN v]
+```
+```
+BP [BU|BE|C1|C2] [C v1 v2] [N n] [P n] [T v] [A v]
+```
 
+本例中，第一行是命令语法的完整形式，第二行是命令语法的简略形式。
 需要特别说明的是，命令语法中选项的简写形式是在保证不产生歧义下的前提下
 所允许的**最简形式**。本例中，`CORNERS` 的最简形式为首字符 `C`
 ，用户也可以使用 `CO`、`COR` 等来表示 `CORNERS`。

@@ -1,4 +1,4 @@
-## convert {#cmd:convert}
+## convert 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-CONV`ERT` \[FROM\] \[format\] infile \[TO \[format\] outfile\]|\[OVER
-\[format\]\]
+``` {.bash}
+CONV!ERT! [FROM] [format] infile [TO [format] outfile]|[OVER [format]]
+```
 
 ### 输入
 
@@ -29,7 +30,9 @@ format
 
 ### 缺省值
 
+``` {.bash}
 convert from sac infile over sac
+```
 
 ### 说明
 

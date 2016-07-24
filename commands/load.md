@@ -1,4 +1,4 @@
-## load {#cmd:load}
+## load 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-LOAD comname \[ABBREV abbrevname\]
+``` {.bash}
+LOAD comname [ABBREV abbrevname]
+```
 
 ### 输入
 

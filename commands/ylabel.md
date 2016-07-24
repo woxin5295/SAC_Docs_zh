@@ -1,4 +1,4 @@
-## ylabel {#cmd:ylabel}
+## ylabel 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-YLAB`E`L \[ON|OFF|text\] \[L`OCATION` T`OP`|B`OTTOM`|R`IGHT`|L`EFT`\]
-\[S`IZE` T`INY`|S`MALL`|M`EDIUM`|L`ARGE`\]
+``` {.bash}
+YLAB!E!L [ON|OFF|text] [L!OCATION! T!OP!|B!OTTOM!|R!IGHT!|L!EFT!]
+    [S!IZE! T!INY!|S!MALL!|M!EDIUM!|L!ARGE!]
+```
 
 ### 说明
 

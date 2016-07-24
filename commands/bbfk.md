@@ -1,4 +1,4 @@
-## bbfk {#cmd:bbfk}
+## bbfk 
 
 ### 概要
 
@@ -6,9 +6,10 @@
 
 ### 语法
 
-BBFK \[F`ILTER`\] \[NO`RMALIZE`\] \[EPS v\] \[MLM|PDS\] \[E`XP` n\]
-\[WA`WVENUMBER` v\] \[S`IZE` m n\] \[L`EVELS` n\] \[D`B`\] \[T`ITLE`
-text\] \[WR`ITE` \[ON|OFF fname\] \[S`SQ` n\]\]
+``` {.bash}
+BBFK [F!ILTER!] [NO!RMALIZE!] [EPS v] [MLM|PDS] [E!XP! n] [WA!WVENUMBER! v]
+    [S!IZE! m n] [L!EVELS! n] [D!B!] [T!ITLE! text] [WR!ITE! [ON|OFF fname] [S!SQ! n]]
+```
 
 ### 输入
 
@@ -71,8 +72,10 @@ SSQ n
 
 ### 缺省值
 
-bbfk eps .01 pds exp 1 wvenumber 1.0 size 90 32 levels 11 write off ssq
-100
+``` {.bash}
+bbfk eps .01 pds exp 1 wvenumber 1.0 size 90 32 levels 11
+    write off ssq 100
+```
 
 ### 头段数据
 

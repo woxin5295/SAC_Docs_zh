@@ -1,4 +1,4 @@
-## linlin {#cmd:linlin}
+## linlin 
 
 ### 概要
 
@@ -6,4 +6,6 @@
 
 ### 语法
 
+``` {.bash}
 LINLIN
+```

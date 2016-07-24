@@ -1,4 +1,4 @@
-## picks {#cmd:picks}
+## picks 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-PICKS \[ON|OFF\] \[pick V`ERTICAL`|H`ORIZONTAL`|C`ROSS`\] \[W`IDTH` v\]
-\[H`EIGHT` v\]
+``` {.bash}
+PICKS [ON|OFF] [pick V!ERTICAL!|H!ORIZONTAL!|C!ROSS!] [W!IDTH! v] [H!EIGHT! v]
+```
 
 ### 输入
 
@@ -42,7 +43,9 @@ HEIGHT v
 
 ### 缺省值
 
+``` {.bash}
 picks on width 0.1 height 0.1
+```
 
 所有时间标记的类型都是 `VERTICAL`
 

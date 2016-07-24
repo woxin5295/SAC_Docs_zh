@@ -1,4 +1,4 @@
-## readcss {#cmd:readcss}
+## readcss 
 
 ### 概要
 
@@ -6,15 +6,19 @@
 
 ### 语法
 
-R`EAD`CSS \[BINARY|ASCII\] \[MAX`MEM` v\] \[MORE\] \[TRUST ON|OFF\]
-\[VER`BOSE` ON|OFF\] \[SHIFT ON|OFF\] \[SCALE ON|OFF\] \[MAG`NITUDE`
-MB|MS|ML|DEF\] \[DIR name\] wfdisclist \[filelist\] \[cssoptions\]
+``` {.bash}
+R!EAD!CSS [BINARY|ASCII] [MAX!MEM! v] [MORE] [TRUST ON|OFF] [VER!BOSE! ON|OFF]
+    [SHIFT ON|OFF] [SCALE ON|OFF] [MAG!NITUDE! MB|MS|ML|DEF] [DIR name] wfdisclist
+    [filelist] [cssoptions]
+```
 
 其中 `cssoptions` 用于进一步从 `wfdisc` 文件中筛选满足
 条件的数据文件，`cssoptions` 可以取：
 
-\[STA`TION` station\] \[CHAN`NEL` channel\] \[BAND`WIDTH` bandcode\]
-\[ORIENT`ATION` orientation-code\]
+``` {.bash}
+    [STA!TION! station] [CHAN!NEL! channel] [BAND!WIDTH! bandcode]
+    [ORIENT!ATION! orientation-code]
+```
 
 ### 输入
 
@@ -61,8 +65,8 @@ SCALE ON|OFF
     值，在某种程度上可以认为是对数据去除了仪器
     响应，但该方法很粗糙，完整地去除仪器响应应使用
     [transfer](/commands/transfer.md) 命令。仅当
-    [transfer](/commands/transfer.md)
-    命令所需的仪器响应信息无法获取时， 才建议使用 `SCALE ON`。
+    [transfer](/commands/transfer.md) 命令所需的仪器响应信息无法获取时，
+    才建议使用 `SCALE ON`。
 
 MAGNITUDE
 
@@ -114,7 +118,9 @@ ORIENTATION orientation-code
 
 ### 默认值
 
-readcss ascii maxmem 0.3 verbose off station \* band \* chan \* orient
+``` {.bash}
+readcss ascii maxmem 0.3 verbose off station * band * chan * orient
+```
 
 ### 说明
 

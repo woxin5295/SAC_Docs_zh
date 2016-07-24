@@ -1,4 +1,4 @@
-## image {#cmd:image}
+## image 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-IMAGE \[COLOR|GREY\] \[BINARY|FULL\]
+``` {.bash}
+IMAGE [COLOR|GREY] [BINARY|FULL]
+```
 
 ### 输入
 
@@ -21,7 +23,9 @@ BINARY|FULL
 
 ### 缺省值
 
+``` {.bash}
 image color full
+```
 
 ### 说明
 

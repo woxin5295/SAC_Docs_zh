@@ -1,4 +1,4 @@
-## readtable {#cmd:readtable}
+## readtable 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-R`EAD`TAB`LE` \[MORE\] \[DIR CURRENT|name\] \[FREE|FORMAT tex\]
-\[CONTENT text\] \[HEADER number\] \[filelist\]
+``` {.bash}
+R!EAD!TAB!LE! [MORE] [DIR CURRENT|name] [FREE|FORMAT tex] [CONTENT text]
+    [HEADER number] [filelist]
+```
 
 所有的选项必须位于filelist之前。最后两个选项可以放在每个文件的第一行。
 
@@ -48,7 +50,9 @@ filelist
 
 ### 缺省值
 
+``` {.bash}
 readtable free content y. dir current
+```
 
 ### 说明
 

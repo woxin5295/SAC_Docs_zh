@@ -1,4 +1,4 @@
-## beam {#cmd:beam}
+## beam 
 
 ### 概要
 
@@ -6,9 +6,11 @@
 
 ### 语法
 
-BEAM \[B`EARING` v\] \[V`ELOCITY` v\] \[REF`ERENCE` ON|OFF| lat lon
-\[el\]\] \[OFFSET REF|USER|STATION|EVENT|CASCADE\] \[E`C` anginc
-survel\] \[C`ENTER` x y z\] \[WR`ITE` fname\]
+``` {.bash}
+BEAM [B!EARING! v] [V!ELOCITY! v] [REF!ERENCE! ON|OFF| lat lon [el]]
+    [OFFSET REF|USER|STATION|EVENT|CASCADE] [E!C! anginc survel]
+    [C!ENTER! x y z] [WR!ITE! fname]
+```
 
 ### 输入
 
@@ -73,7 +75,9 @@ WRITE fname
 
 ### 缺省值
 
-beam b 90 v 9.0 ec 33 6.0 c 0. 0. 0. w BEAM
+``` {.bash}
+beam  b 90  v 9.0 ec 33  6.0 c  0. 0. 0. w BEAM
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## yfull {#cmd:yfull}
+## yfull 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-YFULL \[ON|OFF\]
+``` {.bash}
+YFULL [ON|OFF]
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 yfull on
+```
 
 ### 说明
 

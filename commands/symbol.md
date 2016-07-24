@@ -1,4 +1,4 @@
-## symbol {#cmd:symbol}
+## symbol 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-SYM`BOL` \[ON|OFF|n\] \[SIZE v\] \[SPACING v\] \[INCRE`MENT` ON|OFF\]
-\[LIST STANDARD|nlist\]
+``` {.bash}
+SYM!BOL! [ON|OFF|n] [SIZE v] [SPACING v] [INCRE!MENT! ON|OFF] [LIST STANDARD|nlist]
+```
 
 ### 输入
 
@@ -50,7 +51,9 @@ LIST STANDARD
 
 ### 缺省值
 
+``` {.bash}
 symbol off size 0.01 spacing 0. increment off list standard
+```
 
 ### 说明
 

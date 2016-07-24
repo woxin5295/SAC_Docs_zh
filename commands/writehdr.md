@@ -1,4 +1,4 @@
-## writehdr {#cmd:writehdr}
+## writehdr 
 
 ### 概要
 
@@ -6,12 +6,13 @@
 
 ### 语法
 
-W`RITE`H`DR`
+``` {.bash}
+W!RITE!H!DR!
+```
 
 ### 说明
 
-[write](/commands/write.md) 命令的 `over`
-选项可以用内存中头段区和数据区
+[write](/commands/write.md) 命令的 `over` 选项可以用内存中头段区和数据区
 覆盖磁盘文件中的头段区和数据区。该命令用内存中头段区覆盖磁盘文件中的头段区，
 数据区不会被覆盖。如果使用了 [cut](/commands/cut.md)
 命令，读取数据时将仅读入 部分数据，内存中的头段区将会做相应修改以反映

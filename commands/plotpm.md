@@ -1,4 +1,4 @@
-## plotpm {#cmd:plotpm}
+## plotpm 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-P`LOT`PM
+``` {.bash}
+P!LOT!PM
+```
 
 ### 说明
 

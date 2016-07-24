@@ -1,4 +1,4 @@
-## echo {#cmd:echo}
+## echo 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-ECHO ON|OFF E`RRORS`|W`ARNINGS`|O`UTPUT`|C`OMMANDS`|M`ACROS`|P`ROCESS`
+``` {.bash}
+ECHO ON|OFF E!RRORS!|W!ARNINGS!|O!UTPUT!|C!OMMANDS!|M!ACROS!|P!ROCESS!
+```
 
 ### 输入
 
@@ -41,7 +43,9 @@ PROCESSED
 
 ### 缺省值
 
+``` {.bash}
 echo on errors warnings output off commands macros processed
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## setbb {#cmd:setbb}
+## setbb 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-SETBB variable \[APPEND\] value \[variable \[APPEND\] value ...\]
+``` {.bash}
+SETBB variable [APPEND] value [variable [APPEND] value ...]
+```
 
 ### 输入
 

@@ -1,31 +1,24 @@
+# 数据命名规则
+
 用 `rdseed` 程序从标准SEED格式中解压得到的SAC文件，通常都具有
 固定格式的文件名。具体格式为：
 
-        yyyy.ddd.hh.mm.ss.ffff.NN.SSSSS.LL.CCC.Q.SAC
+    yyyy.ddd.hh.mm.ss.ffff.NN.SSSSS.LL.CCC.Q.SAC
 
 其中
 
 -   `yyyy.ddd.hh.mm.ss.ffff` 是SAC文件中第一个数据点对应的时间
 
     -   `yyyy` 为年；
-
     -   `ddd` 为一年的第多少天；
-
     -   `hh.mm.ss` 为时、分、秒；
+    -   `ffff` 为毫秒；需要注意的是 1 s = 1000 ms，这里毫秒用了4位来表示。
 
-    -   `ffff` 为毫秒；需要注意的是 $\SI{1}{\s}=\SI{1000}{\ms}$，
-        这里毫秒用了4位来表示。
-
--   `NN` 为台网名[^1]，长度不超过2个字符；
-
+-   `NN` 为台网名，长度不超过2个字符；
 -   `SSSSS` 为台站名，长度不超过5个字符；
-
 -   `LL` 为位置码，为空或两字符；
-
 -   `CCC` 为通道名；
-
 -   `Q` 为质量控制标识；
-
 -   `SAC` 为文件后缀；
 
 ## 位置码
@@ -33,19 +26,16 @@
 位置码（Location ID）用于区分同一个台站处几套类似的仪器，这些仪器可能是
 相同的型号，但位于不同的深度或者指向不同的方位；也有可能是不同型号的仪器。
 
-位置码通常用两位字母或数字表示，比如常见的 `00`、`01`、 `10`
-等。对于一个台站只有一套仪器的情况，位置码通常是空值。
+位置码通常用两位字母或数字表示，比如常见的 `00`、`01`、 `10` 等。
+对于一个台站只有一套仪器的情况，位置码通常是空值。
 
-## 质量控制 {#sec:quality-control}
+## 质量控制
 
 质量控制符 `Q` 用于表征当前SAC数据的数据质量。该标识符可以 取如下四种：
 
 -   `D` 不确定状态的数据
-
 -   `M` 已合并的数据
-
 -   `R` 原始波形数据
-
 -   `Q` 经过质量控制的数据
 
 常见的质量控制符为 `M` 或 `Q`。
@@ -59,42 +49,40 @@
 
 频带码是通道名的第一个字符，代表了仪器的采样率以及响应频带等信息。
 
-   频带码  频带类型                            采样率（）          拐角周期（sec）
-  -------- ----------------------------------- ------------------ -----------------
-     F     ...                                 1000-5000               &gt; 10
-     G     ...                                 1000-5000               &lt; 10
-     D     ...                                 250-1000                &lt; 10
-     C     ...                                 250-1000                &gt; 10
-     E     Extremely Short Period              80-250                  &lt; 10
-     S     Short Period                        10-80                   &lt; 10
-     H     High Broad Band                     80-250                  &lt; 10
-     B     Broad Band                          10-80                   &gt; 10
-     M     Mid Period                          1-10                    &gt; 10
-     L     Long Period                         $\approx$ 1        
-     V     Very Long Period                    $\approx$ 0.1      
-     U     Ultra Long Period                   $\approx$ 0.01     
-     R     Extremely Long Period               0.0001-0.001       
-     P     Order of 0.1 to 1 days              0.00001-0.0001     
-     T     Order of 1 to 10 days               0.000001-0.00001   
-     Q     Greater than 10 days                &lt; 0.000001      
-     Q     Administrative Instrument Channel   variable                  NA
-     O     Opaque Instrument Channel           variable                  NA
+频带码  |频带类型                           | 采样率（Hz）     |   拐角周期（sec）
+--------|-----------------------------------|------------------|-----------------
+   F    | ...                               |  1000-5000       |        >10
+   G    | ...                               |  1000-5000       |        <10
+   D    | ...                               |  250-1000        |        <10
+   C    | ...                               |  250-1000        |        >10
+   E    | Extremely Short Period            |  80-250          |        <10
+   S    | Short Period                      |  10-80           |        <10
+   H    | High Broad Band                   |  80-250          |        <10
+   B    | Broad Band                        |  10-80           |        >10
+   M    | Mid Period                        |  1-10            |        >10
+   L    | Long Period                       |  ~1              |
+   V    | Very Long Period                  |  ~0.1            |
+   U    | Ultra Long Period                 |  ~0.01           |
+   R    | Extremely Long Period             |  0.0001-0.001    |
+   P    | Order of 0.1 to 1 days            |  0.00001-0.0001  |
+   T    | Order of 1 to 10 days             |  0.000001-0.00001|
+   Q    | Greater than 10 days              |  <0.000001       |
+   Q    | Administrative Instrument Channel |  variable        |          NA
+   O    | Opaque Instrument Channel         |  variable        |          NA
 
-  : 频带码<span data-label="tbl:bandcode"></span>
 
 ### 仪器码
 
 仪器码是通道名的第二个字符，代表了不同的仪器传感器。
 
-   仪器码  说明
-  -------- ---------------------------
-    `H`    High Gain Seismometer
-    `L`    Low Gain Seismometer
-    `G`    Gravimeter
-    `M`    Mass position Seismometer
-    `N`    Accelerometer
+ 仪器码 | 说明
+--------|---------------------------
+  `H`   | High Gain Seismometer
+  `L`   | Low Gain Seismometer
+  `G`   | Gravimeter
+  `M`   | Mass position Seismometer
+  `N`   | Accelerometer
 
-  : 仪器码
 
 常见的是高增益（H）仪器，记录地面运动速度。
 
@@ -102,18 +90,14 @@
 
 方位码表示了传感器记录的地面运动的方向。地震学中常见的方位码有如下几种：
 
-   方位码   说明
-  --------- ---------------------------------------------------------
-   `N E Z`  南北向、东西向、垂向
-   `1 2 3`  3为垂向；1、2为水平方向，正交但与正东西、正南北向有偏离
-   `T R Z`  T为切向、R为径向，通常R方向是震中到台站的大圆连线方向
-
-  : 方位码
+方位码   | 说明
+---------|---------------------------------------------------------
+ `N E Z` | 南北向、东西向、垂向
+ `1 2 3` | 3为垂向；1、2为水平方向，正交但与正东西、正南北向有偏离
+ `T R Z` | T为切向、R为径向，通常R方向是震中到台站的大圆连线方向
 
 通常情况下，若仪器的方向与正东西方向的夹角小于2度时，方位码取为 `E`；
 当与正东西方向夹角大于2度时，方位码取为 `1` 或 `2`。因而， 方位码为 `E`
 并不意味着分量是正东西方向的，真实的分量方向应以SAC 头段中的 `cmpaz` 和
 `cpminc` 为准。更进一步，由于仪器放置 过程中的技术问题，SAC头段中的
 `cmpaz` 在某些情况下也会产生一定的 误差。
-
-[^1]: 所有永久或临时台网的台网名列表： <http://www.fdsn.org/networks/>

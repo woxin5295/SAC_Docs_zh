@@ -1,4 +1,4 @@
-## about {#cmd:about}
+## about 
 
 ### 概要
 
@@ -6,4 +6,6 @@
 
 ### 语法
 
+``` {.bash}
 ABOUT
+```

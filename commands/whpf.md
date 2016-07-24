@@ -1,4 +1,4 @@
-## whpf {#cmd:whpf}
+## whpf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 WHPF IC n m
+```
 
 ### 输入
 

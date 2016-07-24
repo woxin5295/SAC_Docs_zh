@@ -1,4 +1,4 @@
-## readhdr {#cmd:readhdr}
+## readhdr 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-R`EAD`H`DR` \[MORE\] \[DIR CURRENT|name\] \[filelist\]
+``` {.bash}
+R!EAD!H!DR! [MORE] [DIR CURRENT|name] [filelist]
+```
 
 ### 输入
 

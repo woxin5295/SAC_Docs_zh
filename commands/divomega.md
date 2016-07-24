@@ -1,4 +1,4 @@
-## divomega {#cmd:divomega}
+## divomega 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 DIVOMEGA
+```
 
 ### 说明
 

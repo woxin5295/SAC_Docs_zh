@@ -1,4 +1,4 @@
-## macro {#cmd:macro}
+## macro 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-M`ACRO` name \[arguments\]
+``` {.bash}
+M!ACRO! name [arguments]
+```
 
 ### 输入
 

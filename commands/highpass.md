@@ -1,4 +1,4 @@
-## highpass {#cmd:highpass}
+## highpass 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-H`IGH`P`ASS` \[BU`TTER`|BE`SSEL`|C1|C2\] \[C`ORNERS` v1 v2\] \[N`POLES`
-n\] \[P`ASSES` n\] \[T`RANBW` v\] \[A`TTEN` v\]
+``` {.bash}
+H!IGH!P!ASS! [BU!TTER!|BE!SSEL!|C1|C2] [C!ORNERS! v1 v2] [N!POLES! n] [P!ASSES! n]
+    [T!RANBW! v] [A!TTEN! v]
+```
 
 ### 输入
 
@@ -49,7 +51,9 @@ ATTEN v
 
 ### 缺省值
 
+``` {.bash}
 highpass butter corner 0.2 npoles 2 passes 1 tranbw 0.3 atten 30
+```
 
 ### 说明
 

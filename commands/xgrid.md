@@ -1,4 +1,4 @@
-## xgrid {#cmd:xgrid}
+## xgrid 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-XGRID ON|OFF|S`OLID`|D`OTTED`
+``` {.bash}
+XGRID ON|OFF|S!OLID!|D!OTTED!
+```
 
 ### 输入
 
@@ -28,4 +30,6 @@ OFF
 
 ### 缺省值
 
+``` {.bash}
 xgrid off
+```

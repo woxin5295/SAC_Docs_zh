@@ -1,4 +1,4 @@
-## inicm {#cmd:inicm}
+## inicm 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 INICM
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## spectrogram {#cmd:spectrogram}
+## spectrogram 
 
 ### 概要
 
@@ -6,9 +6,11 @@
 
 ### 语法
 
-SP`ECTRO`G`RAM` \[WINDOW v\] \[SLICE v\] \[ORDER n\] \[CBAR ON|OFF\]
-\[SQRT|NLOG|LOG10|NOSCALING\] \[YMIN v\] \[YMAX v\] \[METHOD
-PDS|MEM|MLM\] \[COLOR|GRAY\]
+``` {.bash}
+SP!ECTRO!G!RAM! [WINDOW v] [SLICE v] [ORDER n] [CBAR ON|OFF]
+    [SQRT|NLOG|LOG10|NOSCALING] [YMIN v] [YMAX v] [METHOD PDS|MEM|MLM]
+    [COLOR|GRAY]
+```
 
 ### 输入
 
@@ -51,8 +53,10 @@ COLOR|GRAY
 
 ### 缺省值
 
-spectrogram window 2 slice 1 method mem order 100 noscaling ymin 0 ymax
-fnyquist color
+``` {.bash}
+spectrogram window 2 slice 1 method mem order 100 noscaling
+    ymin 0 ymax fnyquist color
+```
 
 此处 `fnyquist` 代表Nyquist采样频率。
 

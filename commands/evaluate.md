@@ -1,4 +1,4 @@
-## evaluate {#cmd:evaluate}
+## evaluate 
 
 ### 概要
 
@@ -6,14 +6,18 @@
 
 ### 语法
 
-EVAL`UATE` \[TO TERM|name\] \[v\] op v \[op v ...\]
+``` {.bash}
+EVAL!UATE! [TO TERM|name] [v] op v [op v ...]
+```
 
 其中 `op` 可以取下面中的一个：
 
+``` {.bash}
 ADD|SUBTRACT|MULTIPLY|DIVIDE|POWER|SQRT|EXP|ALOG|ALOG10|
 SIN|ASIN|COS|ACOS|TAN|ATAN|EQ|NE|LE|GE|LT|GT
+```
 
-其中， `ADD`SUBTRACT|MULTIPLY|DIVIDE|POWER| 可以分别用
+其中， `ADD|SUBTRACT|MULTIPLY|DIVIDE|POWER` 可以分别用
 `+`、`-`、`*`、`/`、`**` 替代。
 
 ### 输入
@@ -36,7 +40,9 @@ op
 
 ### 缺省值
 
-evaluate to term 1. \* 1.
+``` {.bash}
+evaluate to term 1. * 1.
+```
 
 ### 说明
 

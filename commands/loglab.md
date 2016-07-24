@@ -1,4 +1,4 @@
-## loglab {#cmd:loglab}
+## loglab 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-LOGLAB \[ON|OFF\]
+``` {.bash}
+LOGLAB [ON|OFF]
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 loglab on
+```
 
 ### 说明
 

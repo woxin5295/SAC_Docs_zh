@@ -1,4 +1,4 @@
-## smooth {#cmd:smooth}
+## smooth 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-SMOOTH \[MEAN|MEDIAN\] \[H`ALFWIDTH` n\]
+``` {.bash}
+SMOOTH [MEAN|MEDIAN] [H!ALFWIDTH! n]
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ HALFWIDTH n
 
 ### 缺省值
 
+``` {.bash}
 smooth mean halfwidth 1
+```
 
 ### 说明
 

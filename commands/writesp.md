@@ -1,4 +1,4 @@
-## writesp {#cmd:writesp}
+## writesp 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-W`RITE`SP \[ASIS|RLIM|AMPH|RL|IM|AM|PH\] \[OVER|filelist\]
+``` {.bash}
+W!RITE!SP [ASIS|RLIM|AMPH|RL|IM|AM|PH] [OVER|filelist]
+```
 
 ### 输入
 
@@ -32,7 +34,9 @@ filelist
 
 ### 缺省值
 
+``` {.bash}
 writesp asis
+```
 
 ### 说明
 

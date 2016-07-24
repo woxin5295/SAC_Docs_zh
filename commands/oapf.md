@@ -1,4 +1,4 @@
-## oapf {#cmd:oapf}
+## oapf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-OAPF \[STANDARD|NAME\] \[file\]
+``` {.bash}
+OAPF [STANDARD|NAME] [file]
+```
 
 ### 输入
 
@@ -26,7 +28,9 @@ file
 
 ### 缺省值
 
+``` {.bash}
 oapf standard apf
+```
 
 ### 说明
 

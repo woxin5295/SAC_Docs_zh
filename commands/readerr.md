@@ -1,4 +1,4 @@
-## readerr {#cmd:readerr}
+## readerr 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-R`EAD`ERR \[B`ADFILE` F`ATAL`|W`ARNING`|I`GNORE`\] \[N`OFILES`
-F`ATAL`|W`ARNING`|I`GNORE`\] \[M`EMORY` S`AVE`|D`ELETE`\]
+``` {.bash}
+R!EAD!ERR [B!ADFILE! F!ATAL!|W!ARNING!|I!GNORE!] [N!OFILES! F!ATAL!|W!ARNING!|I!GNORE!]
+          [M!EMORY! S!AVE!|D!ELETE!]
+```
 
 ### 输入
 
@@ -45,7 +47,9 @@ SAVE
 
 ### 缺省值
 
+``` {.bash}
 readerr badfile warning nofiles fatal memory delete
+```
 
 ### 说明
 

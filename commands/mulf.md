@@ -1,4 +1,4 @@
-## mulf {#cmd:mulf}
+## mulf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-MULF \[NEWHDR \[ON|OFF\]\] filelist
+``` {.bash}
+MULF [NEWHDR [ON|OFF]] filelist
+```
 
 ### 输入
 

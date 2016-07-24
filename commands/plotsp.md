@@ -1,4 +1,4 @@
-## plotsp {#cmd:plotsp}
+## plotsp 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-P`LOT`SP \[ASIS|RLIM|AMPH|RL|IM|AM|PH\] \[LINLIN|LINLOG|LOGLIN|LOGLOG\]
+``` {.bash}
+P!LOT!SP [ASIS|RLIM|AMPH|RL|IM|AM|PH] [LINLIN|LINLOG|LOGLIN|LOGLOG]
+```
 
 ### 输入
 
@@ -33,7 +35,9 @@ LINLIN|LINLOG|LOGLIN|LOGLOG
 
 ### 缺省值
 
+``` {.bash}
 plotsp asis loglog
+```
 
 ### 说明
 

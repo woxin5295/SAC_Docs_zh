@@ -1,4 +1,4 @@
-## plotalpha {#cmd:plotalpha}
+## plotalpha 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-P`LOT`A`LPHA` \[MORE\] \[DIR CURRENT|name\] \[FREE|FORMAT text\]
-\[CONTENT text\] \[filelist\]
+``` {.bash}
+P!LOT!A!LPHA! [MORE] [DIR CURRENT|name] [FREE|FORMAT text] [CONTENT text] [filelist]
+```
 
 ### 输入
 
@@ -43,7 +44,9 @@ filelist
 
 ### 缺省值
 
+``` {.bash}
 plotalpha free content y. dir current
+```
 
 ### 说明
 

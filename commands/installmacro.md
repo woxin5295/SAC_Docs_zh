@@ -1,4 +1,4 @@
-## installmacro {#cmd:installmacro}
+## installmacro 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-INSTALLMACRO name \[name ...\]
+``` {.bash}
+INSTALLMACRO name [name ...]
+```
 
 ### 输入
 

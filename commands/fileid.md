@@ -1,4 +1,4 @@
-## fileid {#cmd:fileid}
+## fileid 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-FILEID \[ON|OFF\] \[T`YPE` D`EFAULT`|N`AME`|L`IST` hdrlist\]
-\[L`OCATION` UR|UL|LR|LL\] \[F`ORMAT` E`QUALS`|C`OLONS`|N`ONAMES`\]
+``` {.bash}
+FILEID [ON|OFF] [T!YPE! D!EFAULT!|N!AME!|L!IST! hdrlist] [L!OCATION! UR|UL|LR|LL]
+    [F!ORMAT! E!QUALS!|C!OLONS!|N!ONAMES!]
+```
 
 ### 输入
 
@@ -49,7 +51,9 @@ FORMAT NONAMES
 
 ### 缺省值
 
+``` {.bash}
 fileid on type default location ur format nonames
+```
 
 ### 说明
 

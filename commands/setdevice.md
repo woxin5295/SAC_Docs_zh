@@ -1,4 +1,4 @@
-## setdevice {#cmd:setdevice}
+## setdevice 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
+``` {.bash}
 SETDEVICE name
+```
 
 ### 输入
 

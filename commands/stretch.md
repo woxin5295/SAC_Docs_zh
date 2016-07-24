@@ -1,4 +1,4 @@
-## stretch {#cmd:stretch}
+## stretch 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-STRETCH n \[F`ILTER` ON|OFF\]
+``` {.bash}
+STRETCH n [F!ILTER! ON|OFF]
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ FILTER ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 stretch 2 filter on
+```
 
 ### 说明
 

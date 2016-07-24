@@ -1,4 +1,4 @@
-## subf {#cmd:subf}
+## subf 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-SUBF \[N`EWHDR` \[ON|OFF\]\] filelist
+``` {.bash}
+SUBF [N!EWHDR! [ON|OFF]] filelist
+```
 
 ### 输入
 

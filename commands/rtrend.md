@@ -1,4 +1,4 @@
-## rtrend {#cmd:rtrend}
+## rtrend 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-RTR`END` \[Q`UIET`|`V`ERBOSE\]
+``` {.bash}
+RTR!END! [Q!UIET!|!V!ERBOSE]
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ VERBOSE
 
 ### 缺省值
 
+``` {.bash}
 rtrend quiet
+```
 
 ### 说明
 

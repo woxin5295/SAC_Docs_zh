@@ -1,4 +1,4 @@
-## production {#cmd:production}
+## production 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-PROD`UCTION` ON|OFF
+``` {.bash}
+PROD!UCTION! ON|OFF
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 production off
+```
 
 ### 说明
 

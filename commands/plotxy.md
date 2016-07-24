@@ -1,4 +1,4 @@
-## plotxy {#cmd:plotxy}
+## plotxy 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-P`LOT`XY name|number name|number \[name|number ...\]
+``` {.bash}
+P!LOT!XY name|number name|number [name|number ...]
+```
 
 ### 输入
 

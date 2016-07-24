@@ -1,4 +1,4 @@
-## filenumber {#cmd:filenumber}
+## filenumber 
 
 ### 概要
 
@@ -6,11 +6,15 @@
 
 ### 语法
 
-F`ILE`N`UMBER` \[ON|OFF\]
+``` {.bash}
+F!ILE!N!UMBER! [ON|OFF]
+```
 
 ### 缺省值
 
+``` {.bash}
 filenumber off
+```
 
 ### 说明
 

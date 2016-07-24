@@ -1,4 +1,4 @@
-## help {#cmd:help}
+## help 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-H`ELP` \[item ... \]
+``` {.bash}
+H!ELP! [item ... ]
+```
 
 ### 输入
 

@@ -1,4 +1,4 @@
-## saveimg {#cmd:saveimg}
+## saveimg 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-SAVE`IMG` filename.format
+``` {.bash}
+SAVE!IMG! filename.format
+```
 
 ### 输入
 

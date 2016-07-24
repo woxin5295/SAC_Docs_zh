@@ -1,4 +1,4 @@
-## comcor {#cmd:comcor}
+## comcor 
 
 ### 概要
 
@@ -6,11 +6,15 @@
 
 ### 语法
 
-COMCOR \[ON|OFF\]
+``` {.bash}
+COMCOR [ON|OFF]
+```
 
 ### 缺省值
 
+``` {.bash}
 comcor off
+```
 
 ### 输入
 
@@ -20,7 +24,9 @@ ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 comcor off
+```
 
 ### 说明
 

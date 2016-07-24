@@ -1,4 +1,4 @@
-## rotate {#cmd:rotate}
+## rotate 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-ROT`ATE` \[TO G`CP`|TO v|TH`ROUGH` v\] \[N`ORMAL`|R`EVERSED`\]
+``` {.bash}
+ROT!ATE! [TO G!CP!|TO v|TH!ROUGH! v] [N!ORMAL!|R!EVERSED!]
+```
 
 ### 输入
 
@@ -30,7 +32,9 @@ NORMAL|REVERSED
 
 ### 缺省值
 
+``` {.bash}
 rotate to gcp normal
+```
 
 ### 说明
 

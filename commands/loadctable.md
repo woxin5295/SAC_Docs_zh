@@ -1,4 +1,4 @@
-## loadctable {#cmd:loadctable}
+## loadctable 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-L`OAD`CT`ABLE` n|\[DIR CURRENT|name\] \[filelist\]
+``` {.bash}
+L!OAD!CT!ABLE! n|[DIR CURRENT|name] [filelist]
+```
 
 ### 输入
 

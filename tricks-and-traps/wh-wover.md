@@ -1,4 +1,4 @@
-## wh与w over {#sec:wh-and-wover}
+## wh与w over
 
 将SAC数据读入内存，做些许修改，然后再写回到磁盘，这是最常见的操作。
 有两个命令可以完成将数据写回磁盘的操作，即 `wh` 和 `w over`。

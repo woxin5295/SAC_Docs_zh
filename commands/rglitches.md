@@ -1,4 +1,4 @@
-## rglitches {#cmd:rglitches}
+## rglitches 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-RGL`ITCHES` \[TH`RESHOLD` v\] \[TY`PE` L`INEAR`|Z`ERO`\] \[W`INDOW`
-ON|OF`F`|pdw\] \[METHOD A`BSOLUTE`|P`OWER`|R`UNAVG`\]
+``` {.bash}
+RGL!ITCHES! [TH!RESHOLD! v] [TY!PE! L!INEAR!|Z!ERO!] [W!INDOW! ON|OF!F!|pdw]
+    [METHOD A!BSOLUTE!|P!OWER!|R!UNAVG!]
+```
 
 ### 输入
 
@@ -55,8 +57,10 @@ MINAMP v
 
 ### 缺省值
 
+``` {.bash}
 rglitches threshold 1.0e+10 type linear window off method absolute
-swinlen 0.5 thresh2 5.0 minamp 50
+    swinlen 0.5 thresh2 5.0 minamp 50
+```
 
 ### 说明
 

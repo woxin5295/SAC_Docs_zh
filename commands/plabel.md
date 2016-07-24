@@ -1,4 +1,4 @@
-## plabel {#cmd:plabel}
+## plabel 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-PLABEL \[n\] \[ON|OFF|text\] \[S`IZE` T`INY`|S`MALL`|M`EDIUM`|L`ARGE`\]
-\[B`ELOW`|P`OSITION` x y \[a\]\]
+``` {.bash}
+PLABEL [n] [ON|OFF|text] [S!IZE! T!INY!|S!MALL!|M!EDIUM!|L!ARGE!]
+    [B!ELOW!|P!OSITION! x y [a]]
+```
 
 ### 输入
 

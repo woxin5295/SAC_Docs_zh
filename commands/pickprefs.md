@@ -1,4 +1,4 @@
-## pickprefs {#cmd:pickprefs}
+## pickprefs 
 
 ### 概要
 
@@ -9,7 +9,9 @@ SAC将使用 [readcss](/commands/readcss.md) 命令中描述的参考文件
 
 ### 语法
 
-PICKPR`EFS` ON|OFF
+``` {.bash}
+PICKPR!EFS! ON|OFF
+```
 
 ### 输入
 
@@ -25,7 +27,9 @@ OFF
 
 ### 缺省值
 
+``` {.bash}
 pickprefs off
+```
 
 ### 说明
 

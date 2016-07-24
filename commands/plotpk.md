@@ -1,4 +1,4 @@
-## plotpk {#cmd:plotpk}
+## plotpk 
 
 ### 概要
 
@@ -6,9 +6,10 @@
 
 ### 语法
 
-P`LOT`PK \[P`ERPLOT` ON|OFF|n\] \[B`ELL` ON|OFF\]
-\[A`BSOLUTE`|R`ELATIVE`\] \[REF`ERENCE` ON|OFF|v\] \[M`ARKALL` ON|OFF\]
-\[S`AVELOC` ON|OFF\]
+``` {.bash}
+P!LOT!PK [P!ERPLOT! ON|OFF|n] [B!ELL! ON|OFF] [A!BSOLUTE!|R!ELATIVE!]
+    [REF!ERENCE! ON|OFF|v] [M!ARKALL! ON|OFF] [S!AVELOC! ON|OFF]
+```
 
 ### 输入
 
@@ -51,7 +52,9 @@ MARKALL OFF
 
 ### 缺省值
 
+``` {.bash}
 plotpk perplot off absolute reference off markall off savelocs off
+```
 
 ### 说明
 

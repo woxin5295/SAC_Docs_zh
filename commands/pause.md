@@ -1,4 +1,4 @@
-## pause {#cmd:pause}
+## pause 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-PAUSE \[MESSAGE text\] \[PERIOD ON|OFF|v\]
+``` {.bash}
+PAUSE [MESSAGE text] [PERIOD ON|OFF|v]
+```
 
 ### 输入
 
@@ -29,7 +31,9 @@ PERIOD OFF
 
 ### 缺省值
 
-pause message ’Pausing’ period off
+``` {.bash}
+pause message 'Pausing' period off
+```
 
 ### 说明
 

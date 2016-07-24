@@ -1,4 +1,4 @@
-## correlate {#cmd:correlate}
+## correlate 
 
 ### 概要
 
@@ -6,9 +6,10 @@
 
 ### 语法
 
-COR`RELATE` \[M`ASTER` name|n\] \[N`UMBER` n\] \[L`ENGTH` ON|OFF|v\]
-\[NO`RMALIZED`\] \[T`YPE`
-R`ECTANGLE`|HAM`MING`|HAN`NING`|C`OSINE`|T`RIANGLE`\]
+``` {.bash}
+COR!RELATE! [M!ASTER! name|n] [N!UMBER! n] [L!ENGTH! ON|OFF|v] [NO!RMALIZED!]
+    [T!YPE! R!ECTANGLE!|HAM!MING!|HAN!NING!|C!OSINE!|T!RIANGLE!]
+```
 
 ### 输入
 
@@ -50,7 +51,9 @@ TYPE TRIANGLE
 
 ### 缺省值
 
+``` {.bash}
 correlate master 1 number 1 length off type rectangle
+```
 
 ### 说明
 

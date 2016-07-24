@@ -1,4 +1,4 @@
-## zlines {#cmd:zlines}
+## zlines 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-ZLINES \[ON|OFF\] \[LIST n1 n2 ... nn\] \[REGIONS v1 v2 ... vn\]
+``` {.bash}
+ZLINES  [ON|OFF] [LIST n1 n2 ... nn] [REGIONS v1 v2 ... vn]
+```
 
 ### 输入
 
@@ -28,7 +30,9 @@ REGIONS v1 v2 .. vn
 
 ### 缺省值
 
+``` {.bash}
 zlines on list 1
+```
 
 ### 示例
 

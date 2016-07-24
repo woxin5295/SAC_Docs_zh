@@ -1,4 +1,4 @@
-## markptp {#cmd:markptp}
+## markptp 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-MARKP`TP` \[L`ENGTH` v\] \[T`O` marker\]
+``` {.bash}
+MARKP!TP! [L!ENGTH! v] [T!O! marker]
+```
 
 ### 输入
 
@@ -22,7 +24,9 @@ TO marker
 
 ### 缺省值
 
+``` {.bash}
 markptp length 5.0 to t0
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## pickphase {#cmd:pickphase}
+## pickphase 
 
 ### 概要
 
@@ -7,8 +7,11 @@
 
 ### 语法
 
-PICKPH`ASE` header phase author \[header phase author ...\] PICKPH`ASE`
-FILE \[filename\] PICKPH`ASE` AUTHOR \[filename\]
+``` {.bash}
+PICKPH!ASE! header phase author [header phase author ...]
+PICKPH!ASE! FILE [filename]
+PICKPH!ASE! AUTHOR [filename]
+```
 
 ### 输入
 
@@ -37,7 +40,9 @@ AUTHOR
 
 ### 缺省值
 
+``` {.bash}
 pickphase file
+```
 
 ### 说明
 

@@ -1,4 +1,4 @@
-## mtw {#cmd:mtw}
+## mtw 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-MTW \[ON|OFF|pdw\]
+``` {.bash}
+MTW [ON|OFF|pdw]
+```
 
 ### 输入
 
@@ -21,7 +23,9 @@ OFF
 
 ### 缺省值
 
+``` {.bash}
 mtw off
+```
 
 ### 说明
 

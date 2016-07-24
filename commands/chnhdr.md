@@ -1,4 +1,4 @@
-## chnhdr {#cmd:chnhdr}
+## chnhdr 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-C`HN`H`DR` \[FILE n1 n2 ...\] field v \[field v ...\] \[ALLT v\]
+``` {.bash}
+C!HN!H!DR! [FILE n1 n2 ...] field v [field v ...] [ALLT v]
+```
 
 ### 输入
 
@@ -46,8 +48,7 @@ ALLT v
 则对内存中的所有文件进行操作。要将内存中修改后的头段覆盖磁盘文件的头段，
 需要使用 [write](/commands/write.md) 或
 [writehdr](/commands/writehdr.md) 命令，SAC会对新值
-做有效性检查，不过你可以使用 [listhdr](/commands/listhdr.md)
-自己检查。
+做有效性检查，不过你可以使用 [listhdr](/commands/listhdr.md) 自己检查。
 
 头段中用6个变量定义了参考时刻，这是SAC中唯一的绝对时刻，其它时刻都被转换
 成相对于参考时刻的相对时间。可以使用 `ALLT v` 修改参考时刻以及相对

@@ -1,4 +1,4 @@
-## yvport {#cmd:yvport}
+## yvport 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-YVP`ORT` yvmin yvmax
+``` {.bash}
+YVP!ORT! yvmin yvmax
+```
 
 ### 输入
 
@@ -20,7 +22,9 @@ yvmax
 
 ### 缺省值
 
+``` {.bash}
 yvport 0.1 0.9
+```
 
 ### 说明
 

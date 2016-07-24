@@ -1,4 +1,4 @@
-## copyhdr {#cmd:copyhdr}
+## copyhdr 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-COPYHDR \[FROM name|n\] hdrlist
+``` {.bash}
+COPYHDR [FROM name|n] hdrlist
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ hdrlist
 
 ### 缺省值
 
+``` {.bash}
 copyhdr from 1
+```
 
 ### 说明
 

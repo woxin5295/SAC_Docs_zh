@@ -1,4 +1,4 @@
-## dif {#cmd:dif}
+## dif 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-DIF \[TW`O`|TH`REE`|F`IVE`\]
+``` {.bash}
+DIF [TW!O!|TH!REE!|F!IVE!]
+```
 
 ### 输入
 
@@ -24,7 +26,9 @@ FIVE
 
 ### 缺省值
 
+``` {.bash}
 dif two
+```
 
 ### 说明
 

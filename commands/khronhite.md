@@ -1,4 +1,4 @@
-## khronhite {#cmd:khronhite}
+## khronhite 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-KHRONHITE \[v\]
+``` {.bash}
+KHRONHITE [v]
+```
 
 ### 输入
 
@@ -16,7 +18,9 @@ v
 
 ### 缺省值
 
+``` {.bash}
 khronhite 2.0
+```
 
 ### 说明
 

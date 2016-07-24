@@ -1,4 +1,4 @@
-## grayscale {#cmd:grayscale}
+## grayscale 
 
 ### 概要
 
@@ -6,8 +6,10 @@
 
 ### 语法
 
-G`RAY`S`CALE` \[VIDEOTYPE NORMAL|REVERSED\] \[SCALE v\] \[ZOOM n\]
-\[XCROP n1 n2|ON|OFF\] \[YCROP n1 n2|ON|OFF\]
+``` {.bash}
+G!RAY!S!CALE! [VIDEOTYPE NORMAL|REVERSED] [SCALE v] [ZOOM n]
+    [XCROP n1 n2|ON|OFF] [YCROP n1 n2|ON|OFF]
+```
 
 ### 输入
 
@@ -62,7 +64,9 @@ YCROP OFF
 
 ### 缺省值
 
+``` {.bash}
 grayscale videotype normal scale 1.0 zoom 1 xcrop off ycrop off
+```
 
 ### 说明
 

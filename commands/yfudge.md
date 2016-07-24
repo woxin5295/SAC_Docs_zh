@@ -1,4 +1,4 @@
-## yfudge {#cmd:yfudge}
+## yfudge 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-YFUDGE \[ON|OFF|v\]
+``` {.bash}
+YFUDGE [ON|OFF|v]
+```
 
 ### 说明
 

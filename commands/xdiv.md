@@ -1,4 +1,4 @@
-## xdiv {#cmd:xdiv}
+## xdiv 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-XDIV \[NI`CE`|I`NCREMENT` v|NU`MBER` n\] \[P`OWER` ON|OFF\]
+``` {.bash}
+XDIV [NI!CE!|I!NCREMENT! v|NU!MBER! n] [P!OWER! ON|OFF]
+```
 
 ### 输入
 
@@ -32,7 +34,9 @@ POWER OFF
 
 ### 缺省值
 
+``` {.bash}
 xdiv nice power on
+```
 
 ### 说明
 

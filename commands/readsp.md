@@ -1,4 +1,4 @@
-## readsp {#cmd:readsp}
+## readsp 
 
 ### 概要
 
@@ -6,7 +6,9 @@
 
 ### 语法
 
-R`EAD`SP \[AMPH|RLIM|SPE\] \[filelist\]
+``` {.bash}
+R!EAD!SP [AMPH|RLIM|SPE] [filelist]
+```
 
 ### 输入
 
@@ -28,7 +30,9 @@ filelist
 
 ### 缺省值
 
+``` {.bash}
 READSP AMPH
+```
 
 ### 说明
 
@@ -37,5 +41,5 @@ READSP AMPH
 你可以分别处理每个分量。这个命令让你能从两个分量重建谱数据，参见
 [writesp](/commands/writesp.md)。 SPE选项允许你读取并转换由
 nameref-spe-writespe 写出的谱文件格式。 这也使你可以使用
-[mulomega](/commands/mulomega.md) 和
-[divomega](/commands/divomega.md) 命令。
+[mulomega](/commands/mulomega.md) 和 [divomega](/commands/divomega.md)
+命令。

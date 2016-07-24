@@ -1,4 +1,4 @@
-## plotc {#cmd:plotc}
+## plotc 
 
 ### 概要
 
@@ -6,8 +6,9 @@
 
 ### 语法
 
-P`LOT`C \[R`EPLAY`|C`REATE`\] \[F`ILE`|M`ACRO` filename\] \[B`ORDER`
-ON|OFF\]
+``` {.bash}
+P!LOT!C [R!EPLAY!|C!REATE!] [F!ILE!|M!ACRO! filename] [B!ORDER! ON|OFF]
+```
 
 ### 输入
 
@@ -33,7 +34,9 @@ BORDER ON|OFF
 
 ### 缺省值
 
+``` {.bash}
 plotc create file out border on
+```
 
 ### 说明
 
@@ -61,9 +64,8 @@ plotc create file out border on
 
 当你重新显示一个文件或者宏时，图形在终端屏幕上将会重新绘制，光标也将打开。
 你可以像你当初创建这个文件一样向其中加入目标。当你完成创建图件之后你可以
-将其发送到不同的图形设备，使用
-[begindevices](/commands/begindevices.md) 命令临时关闭
-终端屏幕打开其他图形设备（比如
+将其发送到不同的图形设备，使用 [begindevices](/commands/begindevices.md)
+命令临时关闭 终端屏幕打开其他图形设备（比如
 [sgf](/commands/sgf.md)），然后重新显示这个文件。
 
 为了注释一个SAC绘图，要执行 [vspace](/commands/vspace.md)

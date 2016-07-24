@@ -7,80 +7,73 @@
 
 ### 内置仪器响应
 
-SAC内置了很多标准地震仪器的仪器响应，如表 nameref-table-instrument-type
-所示。部分仪器类型还拥有子类型，如表 nameref-table-instrument-subtype
-所示。 在SAC命令中，可以直接使用这些仪器类型。
+SAC内置了很多标准地震仪器的仪器响应，如下表所示。在SAC命令中，可以直接使用这些仪器类型。
 
-  type       说明
-  ---------- ---------------------------------------------------
-  BBDISP     Blacknest specification of Broadband Displacement
-  BBVEL      Blacknest specification of Broadband Velocity
-  BENBOG     Blacknest specification of Benioff by Bogert
-  DSS        LLNL Digital Seismic System
-  DWWSSN     Digital World Wide Standard Seismograph Station
-  EKALP6     Blacknest specification of EKA LP6
-  EKASP2     Blacknest specification of EKA SP2
-  ELMAG      Electromagnetic
-  GBALP      Blacknest specification of GBA LP
-  GBASP      Blacknest specification of GBA SP
-  GENERAL    General seismometer
-  GSREF      USGS Refraction
-  HFSLPWB    Blacknest specification of HFS LPWB
-  IW         EYEOMG-spectral differentiation
-  LLL        LLL broadband analog seismometer
-  LLSN       LLSN L-4 seismometer
-  LNN        Livermore NTS Network instrument
-  LRSMLP     Blacknest specification of LRSM LP
-  LRSMSP     Blacknest specification of LRSM SP
-  NORESS     NORESS (NRSA)
-  NORESSHF   NORESS high frequency element
-  OLDBB      Old Blacknest specification of BB
-  OLDKIR     Old Blacknest specification of Kirnos
-  PORTABLE   Portable seismometer with PDR2
-  PTBLLP     Blacknest specification of PTBL LP
-  REDKIR     Blacknest specification of RED Kirnos
-  REFTEK     Reftek 97-01 portable instrument
-  RSTN       Regional Seismic Test Network
-  S750       S750 Seismometer
-  SANDIA     Sandia system 23 instrument
-  SANDIA3    Sandia new system with SL-210
-  SRO        Seismic Research Observatory
-  WA         Wood-Anderson
-  WABN       Blacknest specification of Wood-Anderson
-  WIECH      Wiechert seismometer
-  WWLPBN     Blacknest specification of WWSSN long period
-  WWSP       WWSSN short period
-  WWSPBN     Blacknest specification of WWSSN short period
-  YKALP      Blacknest specification of YKA long period
-  YKASP      Blacknest specification of YKA short period
+type      | 说明
+----------|---------------------------------------------------
+BBDISP    | Blacknest specification of Broadband Displacement
+BBVEL     | Blacknest specification of Broadband Velocity
+BENBOG    | Blacknest specification of Benioff by Bogert
+DSS       | LLNL Digital Seismic System
+DWWSSN    | Digital World Wide Standard Seismograph Station
+EKALP6    | Blacknest specification of EKA LP6
+EKASP2    | Blacknest specification of EKA SP2
+ELMAG     | Electromagnetic
+GBALP     | Blacknest specification of GBA LP
+GBASP     | Blacknest specification of GBA SP
+GENERAL   | General seismometer
+GSREF     | USGS Refraction
+HFSLPWB   | Blacknest specification of HFS LPWB
+IW        | EYEOMG-spectral differentiation
+LLL       | LLL broadband analog seismometer
+LLSN      | LLSN L-4 seismometer
+LNN       | Livermore NTS Network instrument
+LRSMLP    | Blacknest specification of LRSM LP
+LRSMSP    | Blacknest specification of LRSM SP
+NORESS    | NORESS (NRSA)
+NORESSHF  | NORESS high frequency element
+OLDBB     | Old Blacknest specification of BB
+OLDKIR    | Old Blacknest specification of Kirnos
+PORTABLE  | Portable seismometer with PDR2
+PTBLLP    | Blacknest specification of PTBL LP
+REDKIR    | Blacknest specification of RED Kirnos
+REFTEK    | Reftek 97-01 portable instrument
+RSTN      | Regional Seismic Test Network
+S750      | S750 Seismometer
+SANDIA    | Sandia system 23 instrument
+SANDIA3   | Sandia new system with SL-210
+SRO       | Seismic Research Observatory
+WA        | Wood-Anderson
+WABN      | Blacknest specification of Wood-Anderson
+WIECH     | Wiechert seismometer
+WWLPBN    | Blacknest specification of WWSSN long period
+WWSP      | WWSSN short period
+WWSPBN    | Blacknest specification of WWSSN short period
+YKALP     | Blacknest specification of YKA long period
+YKASP     | Blacknest specification of YKA short period
 
-  : SAC内置仪器类型列表
+部分仪器类型还拥有子类型，如下下表所示。
 
-  主类型            子类型
-  ----------------- ------------------------------------------------
-  LLL               LV, LR, LT, MV, MR, MT, EV, ER, ET, KV, KR, KT
-  LNN               BB|HF
-  NORESS            LP|IP|SP
-  RSTN              \[CP|ON|NTR|NY|SD\]\[KL|KM|KS|7S\]\[Z|N|E\]
-  SANDIA            \[N|O\]\[T|L|B|D|N|E\]\[V|R|T\]
-  SRO               BB|SP|LPDE
-  FREEPERIOD v      ELMAG, GENERAL, IW, LLL SUBTYPE BB, REFTEK
-  MAGNIFICATION n   ELMAG, GENERAL
-  NZEROS n          GENERAL, IW
-  DAMPING v         GENERAL, LLL SUBTYPE BB, REFTEK
-  CORNER v          LLL SUBTYPE BB, REFTEK
-  GAIN v
-  HIGHPASS v        REFTEK
+主类型            | 子类型
+-----------------|------------------------------------------------
+LLL              | `LV, LR, LT, MV, MR, MT, EV, ER, ET, KV, KR, KT`
+LNN              | `BB|HF`
+NORESS           | `LP|IP|SP`
+RSTN             | `[CP|ON|NTR|NY|SD] [KL|KM|KS|7S][Z|N|E]`
+SANDIA           | `[N|O][T|L|B|D|N|E][V|R|T]`
+SRO              | `BB|SP|LPDE`
+FREEPERIOD v     | `ELMAG, GENERAL, IW, LLL SUBTYPE BB, REFTEK`
+MAGNIFICATION n  | `ELMAG, GENERAL`
+NZEROS n         | `GENERAL, IW`
+DAMPING v        | `GENERAL, LLL SUBTYPE BB, REFTEK`
+CORNER v         | `LLL SUBTYPE BB, REFTEK`
+GAIN v           |
+HIGHPASS v       | `REFTEK`
 
-  : 部分仪器子类型
-
-除了表 nameref-table-instrument-type 中列出的众多仪器类型之外，还有几个
-特别的仪器类型：
+除了前表中列出的众多仪器类型之外，还有几个特别的仪器类型：
 
 -   `none`：即位移，也是SAC的默认值
-
 -   `vel`：速度
-
 -   `acc`：加速度
 
 ### RESP文件
@@ -90,11 +83,8 @@ RESP文件是用于描述仪器响应的文件，其包含了描述仪器响应�
 RESP仪器响应文件可以通过如下几种方式获得：
 
 -   用rdseed程序从SEED数据中提取；
-
 -   用evalresp程序从SEED数据中提取；
-
--   从IRIS DMC resp Web Service[^1]下载；
-
+-   从 [IRIS DMC resp Web Service](http://service.iris.edu/irisws/resp/1/) 下载；
 -   手写RESP文件；
 
 一个RESP文件中可以只包含一个仪器响应函数，也可以包含多个台站、多通道、
@@ -103,14 +93,11 @@ RESP仪器响应文件可以通过如下几种方式获得：
 分成多个Stage，每个Stage中又分为多个block，包含了仪器响应的不同信息。
 
 -   Stage1一般对应模拟信号阶段，从中可以提取中这一阶段的输入单位、
-    零极点、归一化因子$A_0$以及第一阶段的增益。
-
+    零极点、归一化因子 $$A_0$$ 以及第一阶段的增益。
 -   Stage2一般对应ADC阶段，从中可以提取出这一阶段的放大系数。
-
 -   Stage3一般对应于数字滤波和减采样阶段。通常需要对数字信号多次
     滤波或减采样，因而Stage3后面可能会接多个类似的Stage。从这几个
     Stage中提取的信息是增益，一般值为1。
-
 -   Stage0是会给出前面所有Stage的增益的乘积，主要是起到了辅助验证的作用。
 
 ### SAC PZ文件
@@ -120,8 +107,9 @@ RESP文件中包含了仪器响应的完整信息，同时也包含了不少冗�
 相对于RESP文件而言，PZ文件中仅包含仪器响应中的零极点和增益信息，在去
 仪器响应时更方便。
 
-SAC PZ文件可以用rdseed程序从SEED文件中提取，也可以从IRIS DMC SAC PZ Web
-Service [^2]获取，当然也可以 手写SAC PZ文件。
+SAC PZ文件可以用rdseed程序从SEED文件中提取，也可以从
+[IRIS DMC SAC PZ Web Service](http://service.iris.edu/irisws/sacpz/1/) 获取，
+当然也可以 手写SAC PZ文件。
 
 下面是某个台站的SAC PZ文件：
 
@@ -172,23 +160,21 @@ SAC PZ文件中，以星号开始的行为注释行，给出了该PZ文件所对
 
 根据零极点以及 `CONSTANT`，即可计算得到仪器响应函数：
 $$H(s) = C_0 * \frac{(s-z_1)(s-z_2)...(s-z_{nz})}{(s-p_1)(s-p_2)...(s-p_{nz})}$$
-其中$s=2\pi i f$。
+其中 $$s=2\pi i f$$。
 
 一些说明：
 
 -   若有零点 `(0.0,0.0)`，则这样的“零”零点可以省略。因而
     列出的零点数可能会少于“ZEROS”行给出的零点数；上例中的三个零点
     可以不列出；
-
 -   `CONSTANT` 对应于RESP文件中所有阶段的增益$Sd_0$以及归一化
-    因子$A_0$的乘积；
-
+    因子 $$A_0$$ 的乘积；
 -   若未指定 `CONSTANT`，则默认值为1.0；
 
 ### FAP文件
 
 FAP文件是响应函数的另一种表现形式，其包含了很多记录行，每行三个字段，
-分别是频率（）、振幅及相位。
+分别是频率（Hz）、振幅及相位。
 
 频率不需要等间隔分段。在执行 `transfer` 时，低于第一行频率的
 频段将使用第一行的振幅和相位；同理大于最后一行频率的频段将使用最后
@@ -205,20 +191,14 @@ RESP、PZ和FAP都可以用于表征仪器的响应函数，常见的是RESP和P
 
 -   RESP文件包含了仪器响应的完整信息，而PZ文件中仅包含了零极点
     和增益信息，二者的主要差异在于PZ文件中未包含FIR滤波器的信息；
-
 -   RESP文件中可以知道输入数据是位移、速度还是加速度，而PZ文件默认输入
     为位移。因而若RESP文件中输入是速度，则PZ文件中会多一个“零”零点；
     若RESP文件中输入是加速度，则PZ文件中会多两个“零”零点；
-
--   SAC中的默认位移单位是 ，RESP文件中有指定输入单位为 ，
+-   SAC中的默认位移单位是 nm，RESP文件中有指定输入单位为 m，
     因而在用RESP去仪器响应时，transfer会在去除仪器响应之后在对数据做单位
-    上的变换以使得得到的位移数据的单位是 ，即与SAC的标准相一致。
+    上的变换以使得得到的位移数据的单位是 nm，即与SAC的标准相一致。
     而PZ文件中并未提供输入单位信息，或者说即便提供了也没有被利用到，故而
-    用PZ文件去除仪器响应得到的位移物理量单位是 ，为了与SAC标准相
-    一致，需要对数据乘以10的9次方将数据单位由 转换成 ；
+    用PZ文件去除仪器响应得到的位移物理量单位是m，为了与SAC标准相
+    一致，需要对数据乘以10的9次方将数据单位由 m 转换成 nm；
 
 对于大多数情况，建议使用PZ文件，数据处理速度要快很多。
-
-[^1]: <http://service.iris.edu/irisws/resp/1/>
-
-[^2]: <http://service.iris.edu/irisws/sacpz/1/>
