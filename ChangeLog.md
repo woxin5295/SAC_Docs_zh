@@ -125,3 +125,8 @@
 -   更新命令说明：`plotpk`、`plot1`、`plot2`、`datagen`
 -   新增命令：`writecss`
 -   修正Bugs和Typos
+
+## xxxx-xx-xx 3.6版
+
+-   新增内容：调用SAC库中的 `rms` 子函数
+-   新增示例： `cut`
