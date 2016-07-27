@@ -11,4 +11,4 @@
 
 `rglitches` 的效果可以从下图中直观地看到。
 
-![地震波形去毛刺。上图为包含glitches的地震信号，下图为去除glitches后的地震信号。](/figures/rglicthes.png)
+![地震波形去毛刺。上图为包含glitches的地震信号，下图为去除glitches后的地震信号。](/figures/rglitches.png)
