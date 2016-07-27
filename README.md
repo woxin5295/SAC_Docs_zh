@@ -1,11 +1,5 @@
 # SAC参考手册
 
-[![Language](https://img.shields.io/badge/Powered%20by-LaTeX-red.svg)](https://www.latex-project.org/)
-[![Build Status](https://travis-ci.org/seisman/SAC_Docs_zh.svg?branch=master)](https://travis-ci.org/seisman/SAC_Docs_zh)
-[![GitHub release](https://img.shields.io/github/release/seisman/SAC_Docs_zh.svg)]()
-[![GitHub commits](https://img.shields.io/github/commits-since/seisman/SAC_Docs_zh/v3.5.svg)]()
-
-
 《SAC参考手册》是介绍地震学常用软件 [SAC](http://ds.iris.edu/ds/nodes/dmc/forms/sac/) 用法的中文手册。
 
 - 项目主页：https://github.com/seisman/SAC_Docs_zh
@@ -64,9 +58,6 @@ SAC，都建议阅读最新版本的文档。
 3. 在项目主页提交Pull Request，详情见 [Wiki](https://github.com/seisman/SAC_Docs_zh/wiki)
 
 ## 许可协议
-
-[![License (CC BY-NC-SA 3.0 CN)](https://img.shields.io/badge/license-CC%20BY--NC--SA%203.0%20CN-red.svg)](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/)
-[![License (CC0 1.0)](https://img.shields.io/badge/license-CC0%201.0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 本项目的文档部分遵循 [**署名-非商业性使用-相同方式共享 3.0 中国大陆 (CC BY-NC-SA 3.0 CN)**](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 许可协议。
 任何人都可以自由地分享、修改本作品，但必须遵循如下条件：
