@@ -2,7 +2,10 @@
     "plugins": [
         "include-codeblock",
         "katex",
-        "editlink"
+        "editlink",
+        "anchors",
+        "page-toc",
+        "-sharing"
     ],
     "pluginsConfig": {
         "editlink": {
