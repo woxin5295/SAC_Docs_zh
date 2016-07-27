@@ -17,6 +17,9 @@
         },
         "forkmegithub": {
             "url": "https://github.com/seisman/SAC_Docs_zh"
+        },
+        "image-captions": {
+            "caption": "图 _BOOK_IMAGE_NUMBER_ : _CAPTION_"
         }
     }
 }
