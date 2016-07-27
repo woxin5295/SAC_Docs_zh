@@ -5,13 +5,18 @@
         "editlink",
         "anchors",
         "page-toc",
-        "-sharing"
+        "-sharing",
+        "forkmegithub",
+        "image-captions"
     ],
     "pluginsConfig": {
         "editlink": {
             "base": "https://github.com/seisman/SAC_Docs_zh/edit/gitbook/",
             "label": "编辑此页面",
             "multilingual": false
+        },
+        "forkmegithub": {
+            "url": "https://github.com/seisman/SAC_Docs_zh"
         }
     }
 }
