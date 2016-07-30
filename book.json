@@ -7,7 +7,8 @@
         "page-toc",
         "-sharing",
         "forkmegithub",
-        "image-captions"
+        "image-captions",
+        "git-author"
     ],
     "pluginsConfig": {
         "editlink": {
@@ -20,6 +21,12 @@
         },
         "image-captions": {
             "caption": "图 _BOOK_IMAGE_NUMBER_ : _CAPTION_"
+        },
+        "git-author":{
+            "position": "bottom",
+            "createTpl": "Created by {user} {timeStamp}",
+            "modifyTpl": "Last modified by {user} {timeStamp}",
+            "timeStampFormat": "YYYY-MM-DD HH:mm"
         }
     }
 }
