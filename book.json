@@ -20,6 +20,6 @@
         },
         "image-captions": {
             "caption": "图 _BOOK_IMAGE_NUMBER_ : _CAPTION_"
-        },
+        }
     }
 }
