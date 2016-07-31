@@ -7,8 +7,7 @@
 ### 语法
 
 ``` {.bash}
-HIGHPASS [BUTTER|BESSEL|C1|C2] [CORNERS v1 v2] [NPOLES n] [PASSES n]
-    [TRANBW v] [ATTEN v]
+HIGHPASS [BUTTER|BESSEL|C1|C2] [CORNERS v1 v2] [NPOLES n] [PASSES n] [TRANBW v] [ATTEN v]
 ```
 ``` {.bash}
 HP [BU|BE|C1|C2] [C v1 v2] [N n] [P n] [T v] [A v]
