@@ -35,8 +35,7 @@ SAC> trans from evalresp to none freq 0.004 0.007 0.2 0.4
 ``` {.bash}
 SAC> r 2006.253.14.30.24.0000.TA.N11A..LHZ.Q.SAC
 SAC> rmean; rtr; taper
-SAC> trans from evalresp fname RESP.TA.N11A..LHZ to none \
-                                freq 0.004 0.007 0.2 0.4
+SAC> trans from evalresp fname RESP.TA.N11A..LHZ to none freq 0.004 0.007 0.2 0.4
 ```
 
 该方法的优点在于，RESP文件的文件名可以任意，使用起来更灵活。缺点在于，
@@ -50,8 +49,7 @@ SAC> trans from evalresp fname RESP.TA.N11A..LHZ to none \
 
 ``` {.bash}
 SAC> r *.SAC
-SAC> trans from evalresp fname RESP.ALL to none \
-                            freq 0.004 0.007 0.2 0.4
+SAC> trans from evalresp fname RESP.ALL to none freq 0.004 0.007 0.2 0.4
 ```
 
 ### PZ文件

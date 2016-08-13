@@ -3,7 +3,7 @@
 SAC中有四个常用的绘图命令，分别是
 [plot](/commands/plot.md)、[plot1](/commands/plot1.md)、
 [plot2](/commands/plot2.md)、[plotpk](/commands/plotpk.md)。这一节只介绍最基础的
-`plot` 命令，其他的命令及更多的绘图功能将在 [SAC 绘图](/graphics] 中说明。
+`plot` 命令，其他的命令及更多的绘图功能将在 [SAC 绘图](/graphics) 中说明。
 
 `plot` 命令会在单个图形窗口中显示单个波形：
 
